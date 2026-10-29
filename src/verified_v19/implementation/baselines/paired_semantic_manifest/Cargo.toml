@@ -1,0 +1,31 @@
+[package]
+name = "plan-a-paired-semantic-manifest"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+ark-bls12-377 = "0.4"
+ark-bls12-381 = "0.4"
+ark-bw6-761 = "0.4"
+ark-ed-on-bls12-381 = "0.4"
+ark-ff = "0.4"
+ark-groth16 = "0.4"
+ark-serialize = "0.4"
+ark-snark = "0.4"
+blake2 = "0.10"
+delegatable_credentials = { path = "../../../third_party/dock-crypto-source/delegatable_credentials" }
+plan-a-dac-fixed-wrapper = { path = "../dac_fixed_wrapper" }
+plan-a-joint-circuit = { path = "../.." }
+rand = "0.8"
+rand_chacha = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+vb_accumulator = { path = "../../../third_party/dock-crypto-source/vb_accumulator" }
+
+[[bin]]
+name = "paired_semantic_manifest"
+path = "src/main.rs"

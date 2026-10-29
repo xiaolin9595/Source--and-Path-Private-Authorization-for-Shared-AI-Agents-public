@@ -1,0 +1,24 @@
+E8 certified-state-map three-backend formal gate source freeze (v16)
+
+This version replaces the failed v15 direct cross-version point-codec decode
+with an explicit affine-coordinate bridge. It does not change the augmented
+authorization relation or the formal trial design.
+
+Pre-run source hashes:
+90f5bb7f82ac99cfd1ba99fcf9b684d819ee937a5f5c2882383a997a4100a4af  Cargo.toml
+3c82016c4e8ec10d53723ece56bca008fa5eeb0eb5b84676107e7a9c33a207ff  Cargo.lock
+03a7f07adcf7462ced3edb5627c047aa24c1b3b7ec36f8013627c0a4a3fa3521  src/lib.rs
+3c4316bb4487955d0617b597f3649f30de74347a8a516cfed630fec9f322d892  src/main.rs
+6a6ba70509eaadda3a0416bd50d3e5b68d6178efc51694ba4e143a5dcea10aa2  analyze_e8.py
+450da4746e77ab0b5bab778423cb1cce09e722e64ca07e5ce6cf3f62e0a011d2  run_on_benchmark-host.sh
+c20c0cb4a10b862c8933aa83d17dfd806623fdde488657ba84e34e5ee5b53193  GATE_REQUEST.md
+
+Server command:
+E8_AUGMENTED_FORMAL_REPS=12 ./run_on_benchmark-host.sh
+
+The server may apply rustfmt before the gate only if it copies the formatted
+source back and records the post-format hashes. The correctness run must pass
+and validate before formal timing. No unchecked point construction is accepted
+as a validation step: current points are checked on curve and in subgroup after
+lossless 48-byte x/y coordinate conversion, and the ordered g/h commitments
+remain linked to the same prime and opening inside the proof systems.

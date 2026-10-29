@@ -1,0 +1,25 @@
+[package]
+name = "test_utils"
+version = "0.2.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+bbs_plus = { default-features = false, path = "../bbs_plus" }
+vb_accumulator = { default-features = false, path = "../vb_accumulator" }
+ark-ff.workspace = true
+ark-ec.workspace = true
+ark-std.workspace = true
+ark-bls12-381.workspace = true
+ark-serialize.workspace = true
+blake2.workspace = true
+kvac = { default-features = false, path = "../kvac"}
+oblivious_transfer_protocols = { default-features = false, path = "../oblivious_transfer"}
+sha3.workspace = true
+
+[features]
+default = ["parallel"]
+std = ["ark-ff/std", "ark-ec/std", "ark-std/std", "ark-serialize/std", "bbs_plus/std", "vb_accumulator/std", "kvac/std", "oblivious_transfer_protocols/std"]
+parallel = ["std", "ark-ff/parallel", "ark-ec/parallel", "ark-std/parallel", "bbs_plus/parallel", "vb_accumulator/parallel", "kvac/parallel", "oblivious_transfer_protocols/parallel"]

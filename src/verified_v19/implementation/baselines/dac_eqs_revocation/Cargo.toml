@@ -1,0 +1,19 @@
+[package]
+name = "plan-a-dac-eqs-revocation-baseline"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[workspace]
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-ec = "0.4"
+ark-ff = "0.4"
+ark-serialize = "0.4"
+ark-std = "0.4"
+blake2 = "0.10"
+delegatable_credentials = { path = "../../../third_party/dock-crypto-source/delegatable_credentials" }
+schnorr_pok = { path = "../../../third_party/dock-crypto-source/schnorr_pok" }
+

@@ -1,0 +1,16 @@
+{
+  "source_url": "https://extgit.iaik.tugraz.at/krypto/hadeshash/-/raw/master/code/poseidonperm_x5_255_3.sage",
+  "source_sha256": "a1d6378253fd87a2b7dc5c40a870723462fb7f624487cd62acd96d6d49e33ea1",
+  "parameter_blake2s": "863c5abfe47e182cf7d3e8d251e992c66c285d685a280474dfa8fe1ad341e2e2",
+  "input": [
+    0,
+    1,
+    2
+  ],
+  "output_decimal": [
+    "18456658763349757341014058622209659766100673761449600566550821987295786346378",
+    "37068251774887509885063625701815026138353041152735229476479055620962268601796",
+    "26763157702141528937904191329664859174584798817251788852101947537759678822298"
+  ],
+  "method": "Python integer evaluation of author Sage round function; not an author-published literal KAT"
+}

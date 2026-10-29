@@ -1,0 +1,15 @@
+# SUPERSEDED: retained provenance only. Current shared-schema/DAC lifecycle
+# producer candidate awaits a post-rustfmt server freeze and must not use the
+# hashes below as a release gate.
+75d8c7ab7edce34a2cb1b18325706e601237ff62c3dc5fe04b4a2d92b530116a  Cargo.toml
+c7a88d5ea179c042f9111db95e03d9d0ec78d791eeb063df5336cf97c689970e  src/main.rs
+970ce13fd44396be85af2d551decdaa9758c31330b30d29a6ce84c6596dc464f  validate.py
+5580cfe5a92c794cdbc53d37d00def352af6ec4390f2958b767c6fbd75bca152  README.md
+4fe942d4525cc5c8ee368d227c93ba7c5773f3ee310abd1e209dd964ce92b6e8  RUN_REQUEST.md
+089479e67566f8ab230c788fc131cfd28cae2193e5c397fc8d06b49283af2843  ADAPTER_CALL_CONTRACT.md
+29cea68c35137683114a67d2b2551b6a677d41fc29ea4edd475edc57190577fb  MATCHED_DRIVER_HANDOFF.md
+
+# Source-only task package. No local compilation or execution was performed.
+# The sole benchmark-host runner must retain the resolved lock and all actual output.
+# Deterministic RNG is limited to reproducible manifest-only DAC commitments,
+# keys and accumulator parameters and is explicitly not deployable setup.

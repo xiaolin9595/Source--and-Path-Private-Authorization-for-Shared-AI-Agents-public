@@ -1,0 +1,103 @@
+[package]
+name = "benches"
+version = "0.4.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+ark-ff.workspace = true
+ark-ec.workspace = true
+ark-std.workspace = true
+ark-bls12-381.workspace = true
+serde.workspace = true
+serde_with.workspace = true
+blake2 = { version = "0.10", default-features = false }
+itertools.workspace = true
+zeroize.workspace = true
+rayon = {workspace = true, optional = true}
+bbs_plus = { default-features = false, path = "../bbs_plus" }
+schnorr_pok = { default-features = false, path = "../schnorr_pok" }
+vb_accumulator = { default-features = false, path = "../vb_accumulator" }
+coconut-crypto = { default-features = false, path = "../coconut" }
+oblivious_transfer_protocols = { default-features = false, path = "../oblivious_transfer" }
+dock_crypto_utils = { default-features = false, path = "../utils" }
+secret_sharing_and_dkg = { default-features = false, path = "../secret_sharing_and_dkg" }
+syra = { default-features = false, path = "../syra" }
+test_utils = { default-features = false, path = "../test_utils" }
+sha3.workspace = true
+
+[dev-dependencies]
+criterion = "0.4.0"
+ark-serialize = { version = "^0.4.1", default-features = false, features = [ "derive" ] }
+
+[[bench]]
+name = "schnorr"
+path = "benches/schnorr_protocol.rs"
+harness = false
+
+[[bench]]
+name = "bbs_plus_signature"
+path = "benches/bbs_plus_signature.rs"
+harness = false
+
+[[bench]]
+name = "ps_signature"
+path = "benches/ps_signature.rs"
+harness = false
+
+[[bench]]
+name = "bbs_plus_proof"
+path = "benches/bbs_plus_proof.rs"
+harness = false
+
+[[bench]]
+name = "ps_proof"
+path = "benches/ps_proof.rs"
+harness = false
+
+[[bench]]
+name = "positive_accumulator"
+path = "benches/positive_accumulator.rs"
+harness = false
+
+[[bench]]
+name = "universal_accumulator"
+path = "benches/universal_accumulator.rs"
+harness = false
+
+[[bench]]
+name = "accum_witness_updates"
+path = "benches/accum_witness_updates.rs"
+harness = false
+
+[[bench]]
+name = "bbs_signature"
+path = "benches/bbs_signature.rs"
+harness = false
+
+[[bench]]
+name = "bbs_proof"
+path = "benches/bbs_proof.rs"
+harness = false
+
+[[bench]]
+name = "kos_ote"
+path = "benches/kos_ote.rs"
+harness = false
+
+[[bench]]
+name = "dkls19_batch_mul_2p"
+path = "benches/dkls19_batch_mul_2p.rs"
+harness = false
+
+[[bench]]
+name = "syra"
+path = "benches/syra.rs"
+harness = false
+
+[features]
+default = [ "parallel" ]
+std = [ "ark-ff/std", "ark-ec/std", "ark-std/std", "schnorr_pok/std", "dock_crypto_utils/std", "serde/std", "oblivious_transfer_protocols/std", "secret_sharing_and_dkg/std", "bbs_plus/std", "vb_accumulator/std", "coconut-crypto/std", "syra/std"]
+parallel = [ "std", "ark-ff/parallel", "ark-ec/parallel", "rayon", "schnorr_pok/parallel", "dock_crypto_utils/parallel", "oblivious_transfer_protocols/parallel", "secret_sharing_and_dkg/parallel", "bbs_plus/parallel", "vb_accumulator/parallel", "coconut-crypto/parallel", "syra/parallel"]

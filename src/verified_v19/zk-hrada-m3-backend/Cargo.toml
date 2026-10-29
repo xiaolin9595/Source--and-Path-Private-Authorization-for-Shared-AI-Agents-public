@@ -1,0 +1,117 @@
+[package]
+name = "cpsnarks-set"
+version = "0.1.0"
+authors = ["Kobi Gurkan <kobigurk@gmail.com>"]
+edition = "2018"
+resolver = "2"
+
+[dependencies]
+accumulator = { git = "https://github.com/kobigurk/cpsnarks-set-accumulator" }
+quick-error = "1.2.3"
+rug = "1.7.0"
+ark-bls12-381 = { git = "https://github.com/arkworks-rs/curves" }
+ark-ed-on-bls12-381 = { git = "https://github.com/arkworks-rs/curves", features = ["r1cs"] }
+merlin = "2.0.0"
+rand = { version = "0.7" }
+ark-ff = { git = "https://github.com/arkworks-rs/algebra" }
+ark-ec = { git = "https://github.com/arkworks-rs/algebra" }
+ark-serialize = { git = "https://github.com/arkworks-rs/algebra" }
+ark-relations = { git = "https://github.com/arkworks-rs/snark" }
+ark-r1cs-std = { git = "https://github.com/arkworks-rs/r1cs-std" }
+ark-crypto-primitives = { git = "https://github.com/arkworks-rs/crypto-primitives", branch = "main", features = [ "r1cs" ] }
+legogro16 = { git = "https://github.com/kobigurk/legogro16" }
+curve25519-dalek = { version = "3", optional = true, features = ["serde", "simd_backend"] }
+bulletproofs = { git = "https://github.com/dalek-cryptography/bulletproofs", branch = "develop", optional = true, features = ["yoloproofs"] }
+digest = "0.8.1"
+blake2 = ">= 0.8.1"
+cfg-if = "0.1"
+csv = "1.1.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# On Apple Silicon, use the audited Homebrew GMP/MPFR/MPC installation because
+# the bundled GMP 6.2.1 fat-binary build is unstable. Linux experiment hosts
+# use the locked bundled sources so they do not depend on host development
+# headers. Both paths retain the same Cargo.lock dependency version.
+
+[target.'cfg(target_os = "macos")'.dependencies]
+gmp-mpfr-sys = { version = "1.4.3", features = ["use-system-libs"] }
+
+[target.'cfg(not(target_os = "macos"))'.dependencies]
+gmp-mpfr-sys = { version = "1.4.3" }
+
+[features]
+dalek = ["curve25519-dalek", "bulletproofs"]
+arkworks = []
+class = []
+default = ["arkworks"]
+
+[dev-dependencies]
+criterion = "0.3"
+
+[lib]
+bench = false
+
+[[bench]]
+name = "root"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "modeq"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "rsa"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "membership_prime"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "nonmembership_prime"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "membership_hash"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "membership_class"
+harness = false
+required-features = ["arkworks", "class"]
+
+[[bench]]
+name = "membership_bp"
+harness = false
+required-features = ["dalek"]
+
+[[bench]]
+name = "snark_range"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "membership_prime_60"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "membership_bp_60"
+harness = false
+required-features = ["dalek"]
+
+[[bench]]
+name = "nonmembership_hash"
+harness = false
+required-features = ["arkworks"]
+
+[[bench]]
+name = "nonmembership_bp"
+harness = false
+required-features = ["dalek"]

@@ -1,0 +1,14 @@
+E8 augmented CP source freeze for the fresh v11 locked check.
+
+Narrow delta from retained server v10:
+- import ark_ff_old::FpParameters so OldFr::Params::MODULUS resolves;
+- remove the independently reported unused ark_ff_current::Zero import.
+
+No cryptographic logic, relation, parameters, dependency lock, gate driver, or
+paper source changed. No local format, compile, test, or experiment was run.
+
+d484737032fb37f20c0646513f0c305927c02ee3e5fe9fcdbd787fe9bc8b2e78  Cargo.toml
+3c82016c4e8ec10d53723ece56bca008fa5eeb0eb5b84676107e7a9c33a207ff  Cargo.lock
+aaeb12a0766a4645961c34b800d1992bca065baa75a9abedd0c0ddf80a94e791  src/lib.rs
+85a4dafa866161447d8b2ef61c57702216215549bcef4e6cf842d3b1634e4a38  src/main.rs
+cc7a3df769d1b6dc86a556e1a4a16b69e3ed0b1f8a23b81b9b161237d37e8c7b  GATE_REQUEST.md

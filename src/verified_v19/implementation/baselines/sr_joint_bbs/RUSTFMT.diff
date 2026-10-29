@@ -1,0 +1,70 @@
+--- ${REMOTE_DATA}/pets2027/results/offline_compiler_capability_gate_v7_rustfmt/offline_compiler_capability_gate.before.rs	2026-10-24 02:00:06.417983654 +0800
++++ ${REMOTE_DATA}/pets2027/results/offline_compiler_capability_gate_v7_rustfmt/offline_compiler_capability_gate.after.rs	2026-10-24 02:00:06.446983560 +0800
+@@ -4,8 +4,7 @@
+ use ark_serialize::CanonicalSerialize;
+ use ark_snark::{CircuitSpecificSetupSNARK, SNARK};
+ use hrada_sr_full_f_bbs::{
+-    encode_complete_q, present, verify, FullFError, Issuer, PublicCredentialFields,
+-    RequestContext,
++    encode_complete_q, present, verify, FullFError, Issuer, PublicCredentialFields, RequestContext,
+ };
+ use plan_a_joint_circuit::{
+     contract::Grant,
+@@ -241,21 +240,15 @@
+     // the new/current T1 request. First verify it against the old credential's
+     // public fields under that request, then change only the expected terminal
+     // public field and require the exact mismatch error.
+-    let old_showing = present(
++    let old_showing = present(&mut rng, &prover, &old_credential, &old_showing_request)?;
++    let sr_old_credential_initial_terminal_accepted = verify(
+         &mut rng,
+-        &prover,
+-        &old_credential,
++        &verifier,
++        &old_public,
+         &old_showing_request,
+-    )?;
+-    let sr_old_credential_initial_terminal_accepted =
+-        verify(
+-            &mut rng,
+-            &verifier,
+-            &old_public,
+-            &old_showing_request,
+-            &old_showing,
+-        )
+-        .is_ok();
++        &old_showing,
++    )
++    .is_ok();
+     let old_against_new = verify(
+         &mut rng,
+         &verifier,
+@@ -274,21 +267,15 @@
+         new_input.not_before,
+         new_input.upper(),
+     )?;
+-    let new_showing = present(
++    let new_showing = present(&mut rng, &prover, &new_credential, &new_showing_request)?;
++    let sr_new_credential_after_compiler_ingest_accepted = verify(
+         &mut rng,
+-        &prover,
+-        &new_credential,
++        &verifier,
++        &t1_current_public,
+         &new_showing_request,
+-    )?;
+-    let sr_new_credential_after_compiler_ingest_accepted =
+-        verify(
+-            &mut rng,
+-            &verifier,
+-            &t1_current_public,
+-            &new_showing_request,
+-            &new_showing,
+-        )
+-        .is_ok();
++        &new_showing,
++    )
++    .is_ok();
+     assert!(sr_new_credential_after_compiler_ingest_accepted);
+ 
+     let gate_passed = snapshot_fields_equal

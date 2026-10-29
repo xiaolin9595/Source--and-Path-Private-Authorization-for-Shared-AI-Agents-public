@@ -1,0 +1,28 @@
+[package]
+name = "plan-a-b1-protocols"
+version = "0.1.0"
+edition = "2021"
+publish = false
+default-run = "rfc8693_jwt"
+
+[workspace]
+
+[dependencies]
+ed25519-dalek = "=2.1.1"
+ipld-core = "=0.4.3"
+jsonwebtoken = "=9.3.1"
+pq-ucan = { version = "=0.1.2", default-features = false, features = ["std", "ed25519"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[[bin]]
+name = "rfc8693_jwt"
+path = "src/bin/rfc8693_jwt.rs"
+
+[[bin]]
+name = "ucan_v1"
+path = "src/bin/ucan_v1.rs"
+
+[[bin]]
+name = "formal_trials"
+path = "src/bin/formal_trials.rs"

@@ -1,0 +1,13 @@
+target/
+results/
+raw_private/
+related_work_private/
+*.log
+*.stderr
+*.stdout
+*.pdf
+.DS_Store
+._*
+__pycache__/
+*.pyc
+

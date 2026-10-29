@@ -1,0 +1,44 @@
+[package]
+name = "oblivious_transfer_protocols"
+version = "0.12.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Oblivious Transfer (OT), Oblivious Transfer Extensions (OTE) and multiplication protocol using them"
+keywords = ["oblivious-transfer", "simplest-OT", "OT-multiplication"]
+
+[dependencies]
+ark-ff.workspace = true
+ark-ec.workspace = true
+ark-std.workspace = true
+ark-serialize.workspace = true
+digest.workspace = true
+serde = { workspace = true, optional = true }
+serde_with = { workspace = true, optional = true }
+cfg_eval.workspace = true
+zeroize.workspace = true
+cipher = { version = "0.4.4", default-features = false, features = ["alloc"] }
+rayon = {workspace = true, optional = true}
+aes = { version = "0.8.2", default-features = false }
+itertools.workspace = true
+byteorder = { version = "1.4", default-features = false }
+dock_crypto_utils = { version = "0.23.0", default-features = false, path = "../utils" }
+schnorr_pok = { version = "0.23.0", default-features = false, path = "../schnorr_pok" }
+
+[dev-dependencies]
+blake2.workspace = true
+ark-bls12-381.workspace = true
+serde_json = "1.0"
+rmp-serde = "1.0"
+test_utils = { path = "../test_utils" }
+sha3.workspace = true
+
+[build-dependencies]
+cc = "1.0.77"
+
+[features]
+default = [ "parallel", "serde"]
+std = [ "ark-ff/std", "ark-ec/std", "ark-std/std", "ark-serialize/std", "serde/std", "dock_crypto_utils/std", "schnorr_pok/std"]
+parallel = [ "std", "ark-ff/parallel", "ark-ec/parallel", "ark-std/parallel", "rayon", "dock_crypto_utils/parallel", "schnorr_pok/parallel"]
+serde = ["dep:serde", "serde_with", "dock_crypto_utils/serde", "schnorr_pok/serde"]

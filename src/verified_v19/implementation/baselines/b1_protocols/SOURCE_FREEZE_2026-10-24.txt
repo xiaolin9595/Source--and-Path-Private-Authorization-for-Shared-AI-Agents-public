@@ -1,0 +1,36 @@
+4a9c978f9fc669c4bf85563c1e2502d95f0e1568f71641a3a54f1a3d3ea1a926  implementation/baselines/b1_protocols/Cargo.toml
+d0e2317294bfa5f7a8ed5adb70785ea244d6f19ef9f4a8927047514eda73057f  implementation/baselines/b1_protocols/GATE_REQUEST.md
+555cbcb93e5258e3ff94070f6597a47f772d8a6f99e9de6be6ae5a61ce01efc2  implementation/baselines/b1_protocols/OFFLINE_BOOTSTRAP_REQUEST.md
+1a2eb71222ca0044660af3fccaafd1911d936d7b0dcde905d4298dff32b0c0ae  implementation/baselines/b1_protocols/README.md
+095d9766be01ec457af90fab3a95cc926683704b772eb06533470ccddbf9ea58  implementation/baselines/b1_protocols/SPEC_SOURCES.md
+3bcf2fd00b2023efb75d3c2f0e9bda758eb73becad7822b7425e326fc86a3f1a  implementation/baselines/b1_protocols/src/bin/rfc8693_jwt.rs
+241db927fc7e86a6c47d792fa6b02453519099b91af189b9508d729b89991f38  implementation/baselines/b1_protocols/src/bin/ucan_v1.rs
+f425ab7f34fc2a192cbdf72c85e57def0a47118d9ca1cbf177faf97a2e553892  implementation/baselines/b1_protocols/src/lib.rs
+795990485098f403ed80bdb84ecfd213ed53aae3c51a1b104fd12f05c0f3fc68  implementation/baselines/b1_protocols/src/service_adapter.rs
+247639de7de79264283d4f43d7d67a4be850b0be3bc689e9f6f19932eb40980a  implementation/baselines/b1_protocols/tools/prefetch_locked_crates.py
+d1ed22fc80ce2102b916d2bcddea441210ad4cff03bc09258e467e1e5ba021b8  implementation/baselines/b1_protocols/tools/prepare_offline_ipld.py
+98302336576a66d00d435338f63897698742ac3d9892b05a77d8ae6d0a214ad9  implementation/baselines/b1_protocols/src/bin/formal_trials.rs
+ad56f99a8d95850303637a4b22baebebc6fd07f08c832373f99871c21d00fb20  implementation/baselines/b1_protocols/tools/summarize_formal_trials.py
+05a249a06bad04826df272a0f68b107e8556d4deae5e339d596188ad1e3e167f  implementation/baselines/b1_protocols/FORMAL_GATE_REQUEST.md
+
+# Frozen after the retained v1 network failure and v2 offline missing-index
+# failure. No Cargo.lock exists yet, so this manifest is a source/task-package
+# freeze rather than passing dependency-resolution evidence. The two Rust bin
+# hashes include the server-only rustfmt changes retained with v2. The exact
+# ipld-core archive and remaining registry archives are verified on benchmark-host
+# before any --locked --offline gate may pass.
+# The official ipld-core archive is now retained locally for transport after
+# the server's repeated static.crates.io resets. Its registry checksum and
+# version are unchanged; build and dependency resolution remain server-only.
+# After v5 reached the next missing index entry, the official pq-ucan 0.1.2
+# archive and its publisher Cargo.lock/API dependency metadata were also
+# retained. The Cargo.lock is resolution guidance only, not the root gate lock.
+# The independent formal driver is source-frozen but must run only after both
+# existing functional binaries pass. It contains 6 configurations x 10 fresh
+# trials and remains a public disclosure-chain reference, not a same-privacy
+# comparator.
+090f624976d72f0b0bb71b86d58dc16c15e069193067cb3a3a09d655246cbbda  offline_resources/b1_crates/ipld-core-0.4.3.crate
+c4f26f4e23e6a928ec6dafd6be3839af162b48e6fdf1fc15af6718f514da014e  offline_resources/b1_crates/pq-ucan-0.1.2.crate
+ff0e238d153badb07b97fa9161ec838f3956097711a18015f28611e746ecc40c  offline_resources/b1_crates/pq-ucan-0.1.2.Cargo.lock
+21a304f95f84d169a6f31c4d0a30d784643aaa0bbc9c1e449a2c23e963ec4971  offline_resources/b1_crates/cid-0.11.3.crate
+3059224e569e39bf0a0437d8ac488bbe8f1db91c823aad8cd83ba0121785a0a0  offline_resources/b1_crates/TRANSFER_PROVENANCE.json

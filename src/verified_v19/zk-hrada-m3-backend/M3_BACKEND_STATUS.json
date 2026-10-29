@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "recordedAt": "2026-08-05T16:24:00+08:00",
+  "status": {
+    "minimalJointBackend": "GO",
+    "fullDelegationSystem": "NO_GO_CURRENT"
+  },
+  "source": {
+    "upstream": "https://github.com/kobigurk/cpsnarks-set",
+    "upstreamCommit": "f8c7db66b7519b91dcda16caee6cb84949e8911b",
+    "cargoLockSha256": "b93061f19e5dd6b99e1cc827d2431eb480a2f42fb247cdf65d5488256d46367d",
+    "adapterSha256": "e56c99b72ae984a53e5f2354d6482ab6ae47d61ceefd16b028213c4bab6e64b2",
+    "benchmarkSha256": "d94b03ebdfd83ddc626ef0cb10021c228482dce9e91ef3af5f9d9ed9e727bffd"
+  },
+  "lockedDependencies": {
+    "legogro16": "4df487bafaf542f0d07d2893aa646bbc4aac42a2",
+    "accumulator": "35b92942059d6fb5bd3427647e0495a7af3ca315",
+    "arkBls12_381": "666da1e3b22ad0f46418fb89d4e81eddfd7296c1",
+    "numBigint": "0.3.3",
+    "rustToolchain": "1.85-aarch64-apple-darwin"
+  },
+  "implementedBindings": [
+    "cp-rsa-membership-to-hidden-prime",
+    "hidden-policy-to-hash-to-prime",
+    "resource",
+    "action",
+    "epoch",
+    "agent-id",
+    "nonce",
+    "pedersen-bases",
+    "params-hash"
+  ],
+  "executedTests": {
+    "releaseSuite": {
+      "passed": 19,
+      "failed": 0,
+      "durationSeconds": 6.91
+    },
+    "jointCases": {
+      "positive": "PASS",
+      "primeSplice": "PASS_REJECTED",
+      "randomnessSplice": "PASS_REJECTED",
+      "requestSplice": "PASS_REJECTED",
+      "parameterSplice": "PASS_REJECTED"
+    },
+    "formalM3MinBenchmark": {
+      "status": "PASS",
+      "warmups": 10,
+      "measuredSamples": 30,
+      "stagesPerSample": 7,
+      "rejectedRows": 0,
+      "note": "Exact-match subprotocol benchmark only; not a full delegation-system comparison."
+    }
+  },
+  "remainingForFullSystem": [
+    "delegation-chain-monotonicity",
+    "hidden-registered-user-and-issuer-binding",
+    "range-and-time-interval-predicates",
+    "agent-proof-of-possession",
+    "latest-global-state-enforcement",
+    "persistent-reproducible-crs",
+    "formal-full-m3-performance-study"
+  ]
+}

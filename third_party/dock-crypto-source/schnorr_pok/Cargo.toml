@@ -1,0 +1,40 @@
+[package]
+name = "schnorr_pok"
+version = "0.23.0"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Schnorr, Okamoto, Chaum-Pedersen protocols for proof of knowledge, equality and inequality of one or more discrete logs. Working in elliptic curve and pairing groups"
+keywords = ["Schnorr", "proof-of-knowledge", "ZKPoK", "proof-of-equality", "proof-of-inequality"]
+
+[lib]
+doctest = false
+path = "src/lib.rs"
+
+[dependencies]
+ark-serialize.workspace = true
+ark-ff.workspace = true
+ark-ec.workspace = true
+ark-std.workspace = true
+rayon = {workspace = true, optional = true}
+digest.workspace = true
+dock_crypto_utils = { version = "0.23.0", default-features = false, path = "../utils" }
+serde = { workspace = true, optional = true }
+serde_with = { workspace = true, optional = true }
+zeroize.workspace = true
+cfg_eval.workspace = true
+
+[dev-dependencies]
+blake2.workspace = true
+ark-bls12-381.workspace = true
+serde_json = "1.0"
+rmp-serde = "1.0"
+rand_core = "0.6.4"
+
+[features]
+default = [ "parallel", "serde" ]
+std = [ "ark-ff/std", "ark-ec/std", "ark-std/std", "ark-serialize/std", "dock_crypto_utils/std", "serde/std"]
+print-trace = [ "ark-std/print-trace", "dock_crypto_utils/print-trace" ]
+parallel = [ "std", "ark-ff/parallel", "ark-ec/parallel", "ark-std/parallel", "rayon", "dock_crypto_utils/parallel" ]
+serde = ["dep:serde", "serde_with", "dock_crypto_utils/serde"]

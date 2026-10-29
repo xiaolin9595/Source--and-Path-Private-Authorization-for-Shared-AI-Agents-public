@@ -1,0 +1,32 @@
+[package]
+name = "plan-a-matched-joint-service"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-ed-on-bls12-381 = "0.4"
+ark-ff = "0.4"
+ark-groth16 = "0.4"
+ark-relations = "0.4"
+ark-serialize = "0.4"
+ark-snark = "0.4"
+hex = "0.4"
+plan-a-dac-fixed-wrapper = { path = "../dac_fixed_wrapper" }
+plan-a-joint-circuit = { path = "../.." }
+rand = "0.8"
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "1"
+
+[[bin]]
+name = "matched_joint_resident"
+path = "src/bin/matched_joint_resident.rs"
+
+[[bin]]
+name = "matched_joint_fixture"
+path = "src/bin/matched_joint_fixture.rs"
+

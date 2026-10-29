@@ -1,0 +1,26 @@
+[package]
+name = "hrada-sr-full-f-bbs"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+
+[workspace]
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-ed-on-bls12-381 = "0.4"
+ark-ff = "0.4"
+ark-serialize = "0.4"
+ark-std = "0.4"
+bbs_plus = { path = "../dock-crypto-source/bbs_plus" }
+blake2 = "0.10"
+legogroth16 = { path = "../dock-crypto-source/legogroth16" }
+proof_system = { path = "../dock-crypto-source/proof_system" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+hex = "0.4"
+
+[dev-dependencies]
+test_utils = { path = "../dock-crypto-source/test_utils" }

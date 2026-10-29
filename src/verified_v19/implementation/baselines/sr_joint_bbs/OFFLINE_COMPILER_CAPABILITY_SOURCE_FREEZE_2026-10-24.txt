@@ -1,0 +1,22 @@
+e3b4e7f24808a0cce1c4c708a5856f9f56ffa3713a18e2bea13536acfb1efa00  implementation/baselines/sr_joint_bbs/src/bin/offline_compiler_capability_gate.rs
+37d179714521b08b8ea211a1772353ae54670fdcf7f54223878530365f5b5b97  implementation/baselines/sr_joint_bbs/OFFLINE_COMPILER_CAPABILITY_GATE_REQUEST.md
+0b5992997d799b0c21e6f7d03f83508dfffa8c50b1c42e4fdbefb4f128e7eb2e  implementation/baselines/sr_joint_bbs/Cargo.toml
+0f29de4e01b47128145a25300eae8e3f40e5f39734f17fdc4e228c58dca3ac12  implementation/baselines/sr_joint_bbs/Cargo.lock
+980c005ccbbb528068df548a5cad20cd149b679224de418cda93bd967a9c36d4  implementation/baselines/sr_joint_bbs/src/lib.rs
+5fb169b49103f2ad66ca1c3b2b1999711cbd4f169b39e3cd15dfa497071a5946  implementation/baselines/sr_joint_bbs/src/fixtures.rs
+d2c035fd1d357df42d7657fdb5bb59d609361a0f49fdabdd8c085e430ddc2ce8  implementation/src/fixture.rs
+98b791096cfe3910d7101c129bada4ca4f25860347ee7f7cfb4afe095f6d3e44  implementation/src/joint.rs
+df7182d3366e88d6627d7ae1870cf1a22dbfbc19e3bd818af916338ba29499cd  implementation/src/plain.rs
+66e5a3089d865950044c53b626fe52b4d6f1f2bb74faed271db06e7329edc696  ${REPOSITORY_ROOT}/work/sr_comparison_2026_10_23/full_f_bbs/src/lib.rs
+
+# Read-only audit found only partial retained evidence. This is the unexecuted
+# source freeze for a separate correctness gate; it must not be presented as a
+# passing result until the sole benchmark-host runner retains locked build/run logs and
+# a passing RESULT.json. A server-only rustfmt change requires a new manifest.
+# This freeze supersedes the earlier dd49db... gate source: the rejection now
+# uses a fresh old-credential showing made for the child terminal's current T1
+# Q16 request, and verifies that showing positively under the old public fields
+# before requiring the exact PublicFieldsMismatch under the child fields.
+# The only post-freeze source change is `#![recursion_limit = "256"]`, required
+# by the retained v8 compiler diagnostic for the large serde_json::json! value;
+# it does not change the relation, assertions, or output keys.

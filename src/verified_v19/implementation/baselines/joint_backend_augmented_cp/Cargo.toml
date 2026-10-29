@@ -1,0 +1,48 @@
+[package]
+name = "joint-backend-augmented-cp"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "Apache-2.0 OR MIT"
+
+[dependencies]
+joint-backend-matched = { path = "../joint_backend_matched" }
+plan-a-joint-circuit = { path = "../.." }
+cpsnarks-set = { path = "../../../zk-hrada-m3-backend" }
+# These legacy Git dependencies intentionally use the same source identities
+# as the retained `cpsnarks-set` path crate. Cargo treats `git=URL` and
+# `git=URL?rev=...` as distinct crate identities even at the same commit,
+# which would make their field/group types incompatible. Exact revisions are
+# fixed by the checked Cargo.lock seeded from the retained backend-ablation
+# lock (accumulator 35b9294, curves 666da1e, algebra 8d09ec4); every server
+# command uses --locked and retains the lock/source manifest.
+accumulator = { git = "https://github.com/kobigurk/cpsnarks-set-accumulator" }
+
+# Current arkworks stack used by the Joint relation.
+ark-bls12-381-current = { package = "ark-bls12-381", version = "0.4" }
+ark-ec-current = { package = "ark-ec", version = "0.4" }
+ark-ed-on-bls12-381 = { version = "0.4" }
+ark-ff-current = { package = "ark-ff", version = "0.4" }
+ark-groth16-current = { package = "ark-groth16", version = "0.4" }
+ark-relations-current = { package = "ark-relations", version = "0.4" }
+ark-serialize-current = { package = "ark-serialize", version = "0.4" }
+ark-snark-current = { package = "ark-snark", version = "0.4" }
+ark-std-current = { package = "ark-std", version = "0.4" }
+legogroth16-current = { package = "legogroth16", path = "../../../third_party/dock-crypto-source/legogroth16" }
+
+# Legacy arkworks stack carried by the retained CP/RSA implementation. These
+# aliases expose affine field coordinates and legacy artifact serialization at
+# the explicitly checked cross-version bridge.
+ark-bls12-381-old = { package = "ark-bls12-381", git = "https://github.com/arkworks-rs/curves" }
+ark-ec-old = { package = "ark-ec", git = "https://github.com/arkworks-rs/algebra" }
+ark-ff-old = { package = "ark-ff", git = "https://github.com/arkworks-rs/algebra" }
+ark-serialize-old = { package = "ark-serialize", git = "https://github.com/arkworks-rs/algebra" }
+
+rand-current = { package = "rand", version = "0.8" }
+rug = "1.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+
+[workspace]
+

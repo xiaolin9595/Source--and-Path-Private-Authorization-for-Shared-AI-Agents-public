@@ -1,0 +1,9 @@
+B1 server-rustfmt delta freeze
+
+The only source change from SOURCE_FREEZE_2026-10-24.txt is rustfmt 1.95.0 formatting of src/bin/formal_trials.rs after the retained v16 fmt-check failure. No relation, predicate, measurement boundary, dependency, or protocol logic changed.
+
+before: 98302336576a66d00d435338f63897698742ac3d9892b05a77d8ae6d0a214ad9  src/bin/formal_trials.rs
+after:  826114d8e0f0325da7cfcbd02b64312d7004f41f76ba1df8a52bcadd6b63c65a  src/bin/formal_trials.rs
+lock:   ce5c8e511a42c0e615aebf3c8082aaeb832500e51469e9a2276d693c4743abf2  Cargo.lock
+
+The exact unified diff is retained in results/b1_protocols_rustfmt_v16/RUSTFMT.diff.

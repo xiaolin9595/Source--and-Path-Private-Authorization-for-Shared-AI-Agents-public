@@ -1,0 +1,10 @@
+Upstream: https://github.com/docknetwork/crypto/tree/224f195bb8babc2d0de5256135120e0aca9fbd19/delegatable_credentials
+Vendored source: third_party/dock-crypto-source
+Dock upstream revision: 224f195bb8babc2d0de5256135120e0aca9fbd19
+Historical local repository state (not a Dock revision): 730fa8780168645222a62b543dda4555deba294b
+delegatable_credentials tree-manifest SHA-256: b16377e0381f570bde1b5e880dd5949df6f1ff4ce3ed290c05d5700b63e32615
+License: Apache-2.0 (workspace package metadata)
+Scheme module: delegatable_credentials::msbm
+Paper: https://eprint.iacr.org/2022/680
+Baseline source-manifest SHA-256 (excludes this record): ab163a030f08ed372b875c5284c7c13df51a62ff02e2d2734c4e395f1b7ad77f
+

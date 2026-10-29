@@ -1,0 +1,19 @@
+E8 certified-state-map three-backend formal gate source freeze (v13)
+
+Pre-run source hashes:
+d484737032fb37f20c0646513f0c305927c02ee3e5fe9fcdbd787fe9bc8b2e78  Cargo.toml
+3c82016c4e8ec10d53723ece56bca008fa5eeb0eb5b84676107e7a9c33a207ff  Cargo.lock
+ed0f26865adc4a0c1bd528841e00beb4315f486ed7fe714e799f9c7296e66c29  src/lib.rs
+c33e91829b0da8eccf56e8d07181c023250701a56b96d5ed0ad38188c091c265  src/main.rs
+eae33381b64baf01ecec64d34e7d1a0cc8dd9bbf24e8c525822d2f36870b3d1e  analyze_e8.py
+450da4746e77ab0b5bab778423cb1cce09e722e64ca07e5ce6cf3f62e0a011d2  run_on_benchmark-host.sh
+32545aac9fbc5ae65bda2945c03b3dc4ca83b966ae1413c40055add65eddc755  GATE_REQUEST.md
+
+Server command:
+E8_AUGMENTED_FORMAL_REPS=12 ./run_on_benchmark-host.sh
+
+The server may apply rustfmt to src/main.rs before the gate only if it copies
+the formatted source back, records the post-format hash, and reruns the locked
+offline release check. No protocol or experiment change is permitted after
+the source manifest is written. Correctness validation must finish before the
+twelve formal repetitions start.

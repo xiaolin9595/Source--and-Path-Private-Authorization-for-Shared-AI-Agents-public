@@ -1,0 +1,54 @@
+[package]
+name = "plan-a-sr-joint-bbs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+plan-a-joint-circuit = { path = "../.." }
+hrada-sr-full-f-bbs = { path = "../../../third_party/hrada-sr-full-f-bbs" }
+hex = "0.4"
+base64 = "0.22"
+ark-bls12-381 = "0.4"
+ark-ed-on-bls12-381 = "0.4"
+ark-ff = "0.4"
+ark-groth16 = "0.4"
+ark-relations = "0.4"
+ark-serialize = "0.4"
+ark-snark = "0.4"
+ark-std = "0.4"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "1"
+
+[[bin]]
+name = "joint_lifecycle_artifacts"
+path = "src/bin/joint_lifecycle_artifacts.rs"
+
+[[bin]]
+name = "sr_http_agent"
+path = "src/bin/sr_http_agent.rs"
+
+[[bin]]
+name = "sr_http_verifier"
+path = "src/bin/sr_http_verifier.rs"
+
+[[bin]]
+name = "sr_http_setup"
+path = "src/bin/sr_http_setup.rs"
+
+[[bin]]
+name = "portfolio_sweep"
+path = "src/bin/portfolio_sweep.rs"
+
+[[bin]]
+name = "current_profile_paired"
+path = "src/bin/current_profile_paired.rs"
+
+[[bin]]
+name = "sr_current_http_agent"
+path = "src/bin/sr_current_http_agent.rs"
+
+[workspace]

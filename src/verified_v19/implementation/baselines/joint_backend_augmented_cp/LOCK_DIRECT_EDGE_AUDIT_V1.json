@@ -1,0 +1,17 @@
+{
+  "after_sha256": "9dd3b91a9d1391484fa35fcb7c03f50c7cc65aa58ce004259b0aca675f375d22",
+  "before_sha256": "3c82016c4e8ec10d53723ece56bca008fa5eeb0eb5b84676107e7a9c33a207ff",
+  "cargo_validation_required": "cargo check --release --locked --offline --all-targets",
+  "changed_line_count": 1,
+  "legacy_package": {
+    "exact_record_present": true,
+    "name": "ark-ec",
+    "source": "git+https://github.com/arkworks-rs/algebra#8d09ec4525c2f7697a3cd80dae88bdc84afaa6a2",
+    "version": "0.1.0"
+  },
+  "lock_path": "Cargo.lock",
+  "only_change": "root dependency list adds \"ark-ec 0.1.0\"",
+  "passed": true,
+  "schema": "plan-a-e8-cargo-lock-direct-edge-audit-v1",
+  "status": "applied"
+}

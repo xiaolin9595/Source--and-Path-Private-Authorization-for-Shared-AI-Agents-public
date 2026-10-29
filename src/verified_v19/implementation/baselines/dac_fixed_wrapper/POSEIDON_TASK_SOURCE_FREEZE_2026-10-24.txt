@@ -1,0 +1,24 @@
+f15cdc09dbe5e084af0e21368589e8866c069443f718973443fe57a3a2962a73  implementation/baselines/dac_fixed_wrapper/tools/prefetch_poseidon_reference.py
+a5b8e59ca1a03f58d0369ee3d85b430cebefd8db0e3a3f402a7745a1ff9520fc  implementation/baselines/dac_fixed_wrapper/tools/poseidon_reference_gate.py
+8cdbd7112aed81b0c7cfe96e21bec91f892fc5933c9b3425f98fcd012a18c89c  implementation/baselines/dac_fixed_wrapper/POSEIDON_GATE_REQUEST.md
+2ee5aa02b085324846d71f674f77273bbc8e71601e6d34e6b09a9ea46a87aafa  implementation/baselines/dac_fixed_wrapper/POSEIDON_PARAMETERS.md
+8ee5f80d3e1582ffff55dca1f817717faba84cdf1f7bf329b70a535bab18f336  implementation/baselines/dac_fixed_wrapper/src/fixed_policy.rs
+
+# Offline-resource task-package freeze only. The pinned authors' repository,
+# calculator digest, bundle digest and calculator output remain awaiting the
+# sole benchmark-host runner. This does not change the frozen B2 relation source and
+# does not establish a complete wrapper security level.
+# After retained v1 Git transport failures, the task uses pre-transferred
+# official HTTPS archive/raw resources for the same commit. Local download and
+# byte comparison are transport preparation only; the calculator remains
+# unexecuted until the sole benchmark-host runner gate.
+# Retained v2 proved no Python 2/PyPy2 runtime is installed. The next gate uses
+# an exact-hash-gated, saved print-only compatibility patch and records that the
+# official original bytes are not the executed program. All eleven divisions
+# in the pinned source are audited as explicit real division in both runtimes.
+# Retained v3 observed the actual recommendation RF=8/RP=55. The v4 gate
+# records that result and independently binds the frozen RF=8/RP=57 source;
+# the two extra partial rounds are not described as the official recommendation.
+e27359cc8bf5c38cd74776ab995b793a86fdeafe7c88aca7653041b9a1eaeac4  offline_resources/poseidon_hadeshash_9d80ec0473ad7cde5a12f3aac46439ad0da68c0a/hadeshash-9d80ec0473ad7cde5a12f3aac46439ad0da68c0a.tar.gz
+b850ecf8d403c3ac3fced726deff540574ec3ca713f1f19cad55beff4ea1d094  offline_resources/poseidon_hadeshash_9d80ec0473ad7cde5a12f3aac46439ad0da68c0a/calc_round_numbers.py
+a18e9a86531d62a3abdd16c900a6c1cc8a9b2aca1866777c54e94ce2100e6121  offline_resources/poseidon_hadeshash_9d80ec0473ad7cde5a12f3aac46439ad0da68c0a/TRANSFER_PROVENANCE.json

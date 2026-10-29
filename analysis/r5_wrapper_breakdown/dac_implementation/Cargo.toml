@@ -1,0 +1,32 @@
+[package]
+name = "plan-a-dac-fixed-wrapper"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+publish = false
+default-run = "plan-a-dac-fixed-wrapper"
+
+[workspace]
+
+[dependencies]
+ark-bls12-377 = { version = "0.4", features = ["r1cs"] }
+ark-bw6-761 = "0.4"
+ark-crypto-primitives = { version = "0.4", features = ["r1cs", "sponge"] }
+ark-ec = "0.4"
+ark-ff = "0.4"
+ark-groth16 = "0.4"
+ark-r1cs-std = "0.4"
+ark-relations = "0.4"
+ark-serialize = "0.4"
+ark-snark = "0.4"
+ark-std = "0.4"
+blake2 = "0.10"
+rand = "0.8"
+delegatable_credentials = { path = "../../../third_party/dock-crypto-source/delegatable_credentials" }
+schnorr_pok = { path = "../../../third_party/dock-crypto-source/schnorr_pok" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "1"
+vb_accumulator = { path = "../../../third_party/dock-crypto-source/vb_accumulator" }
+

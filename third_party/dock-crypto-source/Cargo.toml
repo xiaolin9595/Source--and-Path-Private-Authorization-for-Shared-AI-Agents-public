@@ -1,0 +1,67 @@
+[workspace]
+
+members = [
+    "utils",
+    "schnorr_pok",
+    "bbs_plus",
+    "vb_accumulator",
+    "proof_system",
+    "coconut",
+    "saver",
+    "compressed_sigma",
+    "benches",
+    "test_utils",
+    "delegatable_credentials",
+    "secret_sharing_and_dkg",
+    "legogroth16",
+    "oblivious_transfer",
+    "kvac",
+    "merlin",
+    "bulletproofs_plus_plus",
+    "smc_range_proof",
+    "short_group_sig",
+    "syra",
+    "verifiable_encryption",
+    "equality_across_groups"
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+authors = ["Dock.io"]
+license = "Apache-2.0"
+repository = "https://github.com/docknetwork/crypto"
+
+[workspace.dependencies]
+ark-ff = { version = "^0.4.1", default-features = false }
+ark-ec = { version = "^0.4.1", default-features = false }
+ark-std = { version = "^0.4.0", default-features = false}
+ark-poly = { version = "^0.4.1", default-features = false }
+ark-serialize = { version = "^0.4.1", default-features = false, features = [ "derive" ] }
+ark-relations = { version = "^0.4.0", default-features = false }
+ark-r1cs-std = { version = "^0.4.0", default-features = false }
+ark-groth16 = { version = "^0.4.0", default-features = false }
+rayon = { version = "1" }
+digest = { version = "0.10", default-features = false, features = ["alloc"] }
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_with = { version = "1.10.0", default-features = false, features = ["macros"] }
+zeroize = { version = "1.7.0", features = ["derive"] }
+blake2 = { version = "0.10", default-features = false }
+ark-bls12-381 = { version = "^0.4.0", default-features = false, features = [ "curve" ] }
+ark-secp256r1 = { version = "^0.4.0", default-features = false }
+itertools = "0.14.0"
+sha3 = { version = "0.10.6", default-features = false }
+cfg_eval = { version = "0.1"}
+
+[profile.release]
+lto = true
+
+[profile.bench]
+lto = true
+
+[profile.production]
+inherits = "release"
+# https://doc.rust-lang.org/rustc/linker-plugin-lto.html
+lto = "fat"
+# https://doc.rust-lang.org/rustc/codegen-options/index.html#codegen-units
+codegen-units = 1

@@ -1,0 +1,21 @@
+[package]
+name="legacy-backend-ablation"
+version="0.1.0"
+edition="2021"
+publish=false
+[dependencies]
+cpsnarks-set={path="../../../zk-hrada-m3-backend"}
+ark-bls12-381={git="https://github.com/arkworks-rs/curves"}
+ark-ff={git="https://github.com/arkworks-rs/algebra"}
+# Standard Groth16 immediately before the local Lego fork diverged. This
+# revision uses the same pre-0.2 arkworks types as cpsnarks-set/legogro16.
+ark-groth16={git="https://github.com/kobigurk/legogro16",rev="681c0f1312cebf96b9664884ec32347a47f489de"}
+ark-relations={git="https://github.com/arkworks-rs/snark"}
+ark-serialize={git="https://github.com/arkworks-rs/algebra"}
+accumulator={git="https://github.com/kobigurk/cpsnarks-set-accumulator"}
+legogro16={git="https://github.com/kobigurk/legogro16"}
+blake2=">=0.8.1"
+rand="0.7"
+rug="1.7"
+serde_json="1"
+[workspace]
