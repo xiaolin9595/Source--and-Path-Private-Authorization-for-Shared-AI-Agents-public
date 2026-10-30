@@ -1,0 +1,64 @@
+{
+  "bytes": {
+    "path_encoding": {
+      "target_json": 1191,
+      "two_path_object_json": 2412,
+      "unchanged_json": 1197
+    },
+    "path_raw": {
+      "target_direction_count": 16,
+      "target_directions_json_bytes": 91,
+      "target_sibling_bytes": 512,
+      "two_path_direction_count": 32,
+      "two_path_sibling_bytes": 1024,
+      "unchanged_direction_count": 16,
+      "unchanged_directions_json_bytes": 97,
+      "unchanged_sibling_bytes": 512
+    },
+    "serialized_public_state": 6084385
+  },
+  "correctness": {
+    "header_signature_verified": true,
+    "root_differs": true,
+    "stale_cas_rejected": true,
+    "target_path_verified": true,
+    "unchanged_holder_path_verified": true,
+    "unchanged_row_intact": true,
+    "updated_leaf_differs": true
+  },
+  "depth": 16,
+  "population": 65536,
+  "process": {
+    "dense_stderr": "",
+    "generator_stderr": "",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "signer_stderr": ""
+  },
+  "rss": {
+    "children_ru_maxrss_raw": 71360,
+    "self_ru_maxrss_raw": 68920,
+    "units": "KiB on Linux; bytes on macOS; whole-process maxima, not stage-specific"
+  },
+  "schema": "r6-full-reconstruction-trial-v2",
+  "scope": "component measurement; conditional prevalidated CAS; full root and dense holder reconstruction; no HTTP; no Groth16",
+  "seed": 2026103003,
+  "target": 15648,
+  "timing_ns": {
+    "complete_maintenance_stages_1_to_3": 8684709581,
+    "conditional_cas": 9858056,
+    "database_read": 106117330,
+    "fixture_signer_process": 5774195,
+    "full_refresh_header_verify_plus_holder": 8319657859,
+    "holder_dense_refresh_process_including_file_io_json_and_startup": 8313472447,
+    "holder_internal_read_parse_build_path": 8288659050,
+    "initial_population_outside_update": 17728951218,
+    "materializer_process_including_json_and_startup": 8544209858,
+    "receiver_header_verify_process_including_startup": 6185412,
+    "snapshot_construct_and_fixture_sign_total": 5882648
+  },
+  "unchanged_holder": 0,
+  "unrelated_ra_population": 0,
+  "unrelated_revocation_population": 0,
+  "valid": true
+}

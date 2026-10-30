@@ -1,0 +1,4 @@
+
+thread 'main' (2383605) panicked at src/bin/blind_update_e2_agent.rs:70:95:
+R4 checked blind bundle: CheckedError("a_query 0")
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

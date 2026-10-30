@@ -1,0 +1,94 @@
+{
+  "backend": "dac-bw6-761",
+  "wire_version": "plan-a-matched-jsonl-v1",
+  "canonical_manifest": {
+    "schema": "plan-a-paired-semantic-records-v2",
+    "profile": {"l_max": 2, "ra_depth": 3, "state_depth": 3, "grant_depth": 3, "revocation_depth": 4},
+    "deployment_id": 1145127682,
+    "logical_id_mapping_version": 1,
+    "policy_version": 3,
+    "schema_version": 4,
+    "logical_ids": {"owner": 11, "delegate_a": 22, "delegate_b": 44, "terminal": 33},
+    "entitlement": {
+      "owner": 11, "resource": 5928230546626032453, "action_mask_u16": 3,
+      "interval_lo": 0, "interval_hi": 100, "permit_expiry": 100,
+      "admission_id_u128_le_limbs": [44, 0], "registration_salt_u128_le_limbs": [1, 2],
+      "position": 2, "visibility": "private witness"
+    },
+    "state": {
+      "owner": 11, "state_expiry": 90, "state_position": 3,
+      "state_salt_u128_le_limbs": [3, 4], "visibility": "private witness"
+    },
+    "grants": [{
+      "id": "root-c", "issuer": 11, "subject": 33, "resource": 5928230546626032453,
+      "actions": 1, "lo": 20, "hi": 80, "not_before": 20, "expiry": 80,
+      "remaining_depth": 1, "serial": [20481, 24577], "parent": null,
+      "schema_version": 4, "policy_version": 3
+    }],
+    "request": {
+      "resource": 5928230546626032453, "one_hot_action_u16": 1,
+      "interval_lo": 40, "interval_hi": 60, "now": 50,
+      "nonce_u64": 72623859790382856, "terminal": 33,
+      "policy_version": 3, "schema_version": 4
+    },
+    "updates": [
+      {"tuple_version": 1, "state_epoch": 55, "revocation_epoch": 9, "issued_at": 1792700000, "active_root_grants": ["root-c"], "revoked_serials": []},
+      {"tuple_version": 2, "state_epoch": 56, "revocation_epoch": 9, "issued_at": 1792700001, "active_root_grants": ["root-c"], "revoked_serials": []},
+      {"tuple_version": 3, "state_epoch": 56, "revocation_epoch": 10, "issued_at": 1792700002, "active_root_grants": ["root-c"], "revoked_serials": []}
+    ]
+  },
+  "backend_profile": {"backend": "mir-dac-bls12-377-fixed-wrapper", "relation_version": 2, "l_max": 2, "ra_depth": 3, "state_depth": 3, "grant_depth": 3, "revocation_depth": 4, "lifecycle_update_indices": [0, 1, 2]},
+  "header_envelope": {
+    "header": {
+      "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "deployment_id": "00", "tuple_version": 2, "ra_root": "00", "state_root": "00",
+      "state_epoch": 56, "revocation_epoch": 9, "issued_at": 1792700001,
+      "mapping_version": 1, "header_digest": "00", "accumulator_value": "00"
+    },
+    "registry_signature": "00"
+  },
+  "expected": {
+    "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "backend": "dac-bw6-761", "deployment_id": 1145127682,
+    "logical_id_mapping_version": 1, "policy_version": 3, "schema_version": 4,
+    "profile": {"l_max": 2, "ra_depth": 3, "state_depth": 3, "grant_depth": 3, "revocation_depth": 4},
+    "update_index": 1,
+    "installed_header": {
+      "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "deployment_id": "00", "tuple_version": 2, "ra_root": "00", "state_root": "00",
+      "state_epoch": 56, "revocation_epoch": 9, "issued_at": 1792700001,
+      "mapping_version": 1, "header_digest": "00", "accumulator_value": "00"
+    },
+    "terminal": 33, "terminal_key": "00", "resource": 5928230546626032453,
+    "one_hot_action_u16": 1, "interval_lo": 40, "interval_hi": 60,
+    "nonce_u64": 72623859790382856, "trusted_now": 50,
+    "http": {"audience": "https://matched.service.example", "body_sha256": "0000000000000000000000000000000000000000000000000000000000000000", "method": "POST", "path": "/resource/read"},
+    "backend_profile": {"backend": "mir-dac-bls12-377-fixed-wrapper", "relation_version": 2, "l_max": 2, "ra_depth": 3, "state_depth": 3, "grant_depth": 3, "revocation_depth": 4, "lifecycle_update_indices": [0, 1, 2]}
+  },
+  "proof_envelope": {
+    "schema": "plan-a-dac-resident-proof-envelope-v1",
+    "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "update_index": 1, "relation_version": 2,
+    "statement": {
+      "deployment_id": "00", "tuple_version": 2, "ra_root": "00", "state_root": "00",
+      "state_epoch": 56, "revocation_epoch": 9, "issued_at": 1792700001, "mapping_version": 1,
+      "header_digest": "00", "canonical_request_lo": [0, 0], "canonical_request_hi": [0, 0],
+      "circuit_id": "00", "verifier_id": "00", "pep_id": "00", "nonce": "00", "context": "00",
+      "request_digest": "00", "terminal": 33, "terminal_key": "00", "resource": 5928230546626032453,
+      "one_hot_action": 1, "request_lo": 40, "request_hi": 60, "now": 50,
+      "policy_version": 3, "schema_version": 4, "accumulator_value": "00"
+    },
+    "proof": "00", "proof_blake2s": "0000000000000000000000000000000000000000000000000000000000000000",
+    "terminal_signature": "00"
+  },
+  "commands": [
+    {"command": "materialize-and-verify-header", "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000", "update_index": 1},
+    {"command": "verify-at-read"},
+    {"command": "commit", "ticket": "opaque-ticket"}
+  ],
+  "success_responses": {
+    "materialize-and-verify-header": {"valid": true, "header": "<same header object>"},
+    "verify-at-read": {"valid": true, "ticket": "opaque-ticket"},
+    "commit": {"valid": true}
+  }
+}

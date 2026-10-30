@@ -1,0 +1,19 @@
+{
+  "applies_to": [
+    "original Joint software code",
+    "original analysis/reproduction scripts"
+  ],
+  "copyright": "Copyright (c) 2026 The Joint authors",
+  "excludes": [
+    "third_party/**",
+    "vendored third-party subtrees",
+    "third-party-derived patches",
+    "public verifier inputs",
+    "paper/manuscript PDF and TeX prose",
+    "datasets and synthetic data",
+    "derived and raw measurements",
+    "paper-template assets"
+  ],
+  "rule": "More specific bundled license and notice files take precedence for third-party or derived material.",
+  "spdx_license_identifier": "MIT"
+}

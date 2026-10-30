@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "grid200 deterministic statistics",
+    "depth20_repeat50 exact",
+    "dac_matched exact",
+    "membership warm frozen fields",
+    "membership service exact",
+    "membership full request frozen fields",
+    "lifecycle180 exact"
+  ],
+  "identities": {
+    "dac_analysis_sha256": "82209f9188e24b505817b8dcb82aaa4cdeed0550a6186d5bf342454de3f04f8b",
+    "depth50_analysis_sha256": "73f1478a256e04c6e7c8da55a7a29f7753955869184c9048b042e5820e5b5351",
+    "full_request_results_sha256": "a987273bde00708484b6f0f650305390c6fd0583333c8ba99dcf0036ab3bb70d",
+    "grid_trials_sha256": "214e4e8df3a105ef4fa2990a00198466b1435b82042cb33ef3e68e2363b426bc",
+    "lifecycle_trials_sha256": "7072367e722af08efe7c5201ed7e450ce1abeb49332963c8ab2ba1eb69cec219",
+    "service_results_sha256": "c326f80a81ddf697c618f4f4ff6124efd0ef1205ddfc3a2164574874735bccbd",
+    "warm_analysis_sha256": "e3ea138ecf7ec83fbef756a4c30e5f5be0a6a5d0c4c8908c5e6261c04b1ae980"
+  },
+  "important_limitation": "grid200 deterministic raw statistics and frozen CI metadata validate, but CI endpoints are retained rather than regenerated because the original per-cell/per-metric RNG stream derivation is absent",
+  "schema": "historical-main-results-recompute-v1",
+  "status": "PASS"
+}

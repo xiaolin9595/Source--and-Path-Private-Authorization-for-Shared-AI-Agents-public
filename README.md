@@ -25,6 +25,20 @@ large generated results.
 See `RELEASE_STATUS.md`, `REPRODUCE.md`, and `PUBLIC_RELEASE_MANIFEST.md` before
 using the experimental snapshots.
 
+## Release generations
+
+The paths above remain the historical source-only generation at commit
+`6bc2c731d1bdd85fa7ecd86a2fcb35c74fdaa3cb`; their status text is retained as
+historical provenance. The add-only [`r3/`](r3/) subtree is the current artifact
+generation. It contains the R1--R6 implementations, E1--E3 compact observations,
+bounded historical result records, locked reproduction environments, and the
+verified Dockerfile. Start with [`r3/README.md`](r3/README.md) and
+[`r3/REPRODUCE.md`](r3/REPRODUCE.md).
+
+No historical `src/`, `experimental/`, `analysis/`, or `third_party/` path is
+replaced by the new subtree. See `RELEASE_GENERATIONS.md` for immutable
+generation identities and scope boundaries.
+
 ## Licensing
 
 The root MIT license applies only to original code and original analysis or

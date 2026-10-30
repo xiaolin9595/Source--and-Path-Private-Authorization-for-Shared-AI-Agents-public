@@ -1,0 +1,4 @@
+setup completed in 117821.220945 ms
+proof completed: {"active":1,"mutated_public_rejected":true,"peak_rss_kib":22775000,"proof_blake2s":"cc1743514494d423563a42de806f80b0d4e8c6ca97b0d8e37a4044584a2a4376","proof_bytes":288,"prove_ms":108294.756875,"verified":true,"verify_ms":21.342858999999997}
+proof completed: {"active":2,"mutated_public_rejected":true,"peak_rss_kib":22778028,"proof_blake2s":"410e1dadcf2f2f48a1a6c75e85caa1f85837d780d619c45c8bb400c9d67cd994","proof_bytes":288,"prove_ms":110406.927165,"verified":true,"verify_ms":21.208769999999998}
+proof completed: {"active":3,"mutated_public_rejected":true,"peak_rss_kib":22778028,"proof_blake2s":"c21427c2736fc0da6076a0aeefccbd6d01cd057c6cb098e91c450f8f7a176de6","proof_bytes":288,"prove_ms":110282.61757999999,"verified":true,"verify_ms":31.252858}

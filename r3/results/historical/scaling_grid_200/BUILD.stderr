@@ -1,0 +1,11 @@
+   Compiling plan-a-joint-circuit v0.1.0 (${REMOTE_DATA}/pets2027/plan_a_20261023/frozen/e2_formal_v1)
+warning: function `trial` is never used
+  --> src/bin/plan_a_proof_cli.rs:32:4
+   |
+32 | fn trial<const L:usize>(pk_path:&str,vk_path:&str,proof_path:&str,public_path:&str,active:usize,nonce:u64,ds:usize,dra:usize,drev:us...
+   |    ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `plan-a-joint-circuit` (bin "plan_a_proof_cli") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 5.98s

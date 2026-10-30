@@ -1,0 +1,60 @@
+{
+  "schema": "plan-a-secondary-schedule-v1",
+  "nonces": [
+    5001,
+    5002,
+    5003,
+    5004,
+    5005,
+    5006,
+    5007,
+    5008,
+    5009,
+    5010
+  ],
+  "order": [
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ]
+  ],
+  "pairs": 10,
+  "fresh_service_process_and_db_per_backend": true,
+  "fresh_cryptographic_setup": false
+}

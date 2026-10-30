@@ -1,0 +1,7 @@
+e99287c23762c8a24240160bef1a1c08d994ff7d42eea6cc0b91118b20a68bb3  ark-r1cs-std/Cargo.toml
+70ec919cb341f791e62cdc2cdca084e357cd928605e684408ea1f159cba33eb9  ark-r1cs-std/Cargo.lock
+7ea03e2ffe76c0c5f03ed155bac83885a1fdb3a1c742b6c2f0c85a3f60d46680  ark-r1cs-std/src/lib.rs
+542af11e0cbb37e53bc5693bacdd0a791937b6837ed5a5b4281353cf0aac49ea  ark-r1cs-std/src/synthesis_patch.rs
+d81e2207b0420a41f55c6966b3148f3d322a690bea28ec7b5d0f4fa7f35eb443  ark-r1cs-std/src/fields/fp/mod.rs
+89673ee7888a82f5a945d8f76106dd673b58a3c8cdc647f057d97254b9e621d5  ark-r1cs-std/src/groups/curves/short_weierstrass/mod.rs
+54ff59f5708d8a380812a33ceb86441d59d69165968538d704f1f596747cfc45  ark-r1cs-std/src/groups/curves/twisted_edwards/mod.rs

@@ -1,0 +1,100 @@
+{
+  "backend": "joint-bls12-381",
+  "commands": {
+    "commit": {
+      "canonical_manifest": "<SemanticManifest object>",
+      "command": "commit",
+      "envelope": {
+        "proof": "00",
+        "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "terminal_signature": "00",
+        "update_index": 1
+      },
+      "expected": "<same Expected object as verify-at-read, with freshly read trusted_now>",
+      "ticket": "opaque-ticket"
+    },
+    "materialize-and-verify-header": {
+      "backend_profile": {
+        "circuit_id": "plan-a-matched-joint-l2-v1",
+        "vk_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "canonical_manifest": "<SemanticManifest object>",
+      "command": "materialize-and-verify-header",
+      "header_envelope": {
+        "header": {
+          "issued_at": 1792700001,
+          "ra_root": "00",
+          "revocation_epoch": 9,
+          "revocation_root": "00",
+          "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "state_epoch": 56,
+          "state_root": "00",
+          "tuple_version": 2
+        },
+        "registry_signature": "00"
+      },
+      "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "update_index": 1
+    },
+    "verify-at-read": {
+      "canonical_manifest": "<SemanticManifest object>",
+      "command": "verify-at-read",
+      "envelope": {
+        "proof": "00",
+        "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "terminal_signature": "00",
+        "update_index": 1
+      },
+      "expected": {
+        "backend": "joint-bls12-381",
+        "backend_profile": {
+          "circuit_id": "plan-a-matched-joint-l2-v1",
+          "vk_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "deployment_id": 1145131778,
+        "http": {
+          "audience": "https://matched.service.example",
+          "body_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "method": "POST",
+          "path": "/resource/read"
+        },
+        "installed_header": {
+          "issued_at": 1792700001,
+          "ra_root": "00",
+          "revocation_epoch": 9,
+          "revocation_root": "00",
+          "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+          "state_epoch": 56,
+          "state_root": "00",
+          "tuple_version": 2
+        },
+        "interval_hi": 60,
+        "interval_lo": 40,
+        "logical_id_mapping_version": 1,
+        "nonce_u64": 72623859790382856,
+        "one_hot_action_u16": 1,
+        "policy_version": 3,
+        "profile": {
+          "grant_depth": 3,
+          "l_max": 2,
+          "ra_depth": 3,
+          "revocation_depth": 4,
+          "state_depth": 3
+        },
+        "resource": 5928230546626032453,
+        "schema_version": 4,
+        "semantic_input_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "terminal": 33,
+        "terminal_key": "00",
+        "trusted_now": 50,
+        "update_index": 1
+      }
+    }
+  },
+  "success_responses": {
+    "commit": {"valid": true},
+    "materialize-and-verify-header": {"header": "<same header object>", "valid": true},
+    "verify-at-read": {"ticket": "opaque-ticket", "valid": true}
+  },
+  "wire_version": "plan-a-matched-jsonl-v1"
+}

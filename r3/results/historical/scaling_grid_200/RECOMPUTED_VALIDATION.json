@@ -1,0 +1,20 @@
+{
+  "all_exit_zero_and_verified": true,
+  "cells": 20,
+  "ci_endpoint_recomputation": "NOT_CLAIMED_ORIGINAL_RNG_STREAM_DERIVATION_NOT_RETAINED",
+  "deterministic_statistics_match": true,
+  "frozen_ci_metadata": {
+    "base_seed": 20261023,
+    "method": "percentile bootstrap of median",
+    "resamples": 10000
+  },
+  "input_sha256": {
+    "E2_CELL_SUMMARY_CI.json": "37dc461f64acbcfaa50326e7e1d3a26865ac60a0bf287db227b59948ea8137e3",
+    "SUMMARY.json": "7316d5cdd79220d6ede95b3a0baa1503e36c30537a13c372500c4be0d70f1d90",
+    "TRIALS.jsonl": "214e4e8df3a105ef4fa2990a00198466b1435b82042cb33ef3e68e2363b426bc"
+  },
+  "schema": "historical-grid200-validation-v1",
+  "status": "PASS",
+  "trials": 200,
+  "trials_per_cell": 10
+}

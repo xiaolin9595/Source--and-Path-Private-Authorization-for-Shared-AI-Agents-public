@@ -1,0 +1,1 @@
+checked startup failed: a_query 0

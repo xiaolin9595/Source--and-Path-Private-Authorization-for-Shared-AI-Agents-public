@@ -1,0 +1,25 @@
+{
+  "schema": "e3-aggregate-figure-verification-v1",
+  "status": "PASS",
+  "environment": {
+    "isolation": "new Python venv without system-site-packages",
+    "python": "3.9.6",
+    "numpy": "1.26.4",
+    "matplotlib": "3.9.4",
+    "requirements": "requirements-e3-figure.txt"
+  },
+  "input": {
+    "path": "results/e3/aggregate/fixed_cohort_summary.csv",
+    "rows": 80,
+    "sha256": "f0419124342cf3723db19c101a17ada96b15b7257d8dbbdd1f4870ee71ff9c6f"
+  },
+  "output": {
+    "path": "results/e3/figures/e3_intersection_curves.pdf",
+    "panels": 4,
+    "layout": "2x2: role-profile/manager-bucket by arms A/B; department median+IQR and global-pool median",
+    "sha256": "fea45aa7c7df89b6951c43272fae196e14986b14db74ce60434d664814e129fe",
+    "byte_identical_to_v21": true
+  },
+  "observed_clean_venv_install_and_render_seconds": 70.37,
+  "portability_note": "Exact bytes were verified in the documented macOS/Python environment. Other platforms may preserve values and layout but vary PDF font/backend metadata; compare plotted aggregate values when byte hashes differ."
+}

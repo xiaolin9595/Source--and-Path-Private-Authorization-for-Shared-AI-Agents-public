@@ -1,0 +1,1 @@
+{"bytes":{"pk":53924784,"vk":1496},"canonical_exact":true,"embedded_vk_equal":true,"event":"ordinary_load","file_read_ns":25910661,"full_load_ns":83073839504,"pk_decode_ns":83041109770,"prepare_vk_ns":3458438,"relation":"randomized-dummy-joint","vk_decode_ns":3348002}

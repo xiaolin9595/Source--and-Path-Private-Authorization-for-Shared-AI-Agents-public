@@ -1,0 +1,133 @@
+{
+  "schema": "anonymous-release-verification-v2",
+  "toolchain": {
+    "cargo": "1.89.0 (c24e10642 2025-06-23)",
+    "host": "aarch64-apple-darwin",
+    "rustc": "1.89.0 (29483883e 2025-08-04)"
+  },
+  "checks": [
+    {
+      "name": "e1_analysis_recompute",
+      "command": "python3 scripts/recompute_existing.py",
+      "result": "BYTE_IDENTICAL",
+      "sha256": "1b9a2845025c1c938693f5be8415a21f6f351dc046d2a4890b1deaef39585773"
+    },
+    {
+      "name": "r1_full_library_gate",
+      "command": "cargo test --locked --offline --manifest-path sources/r1_randomized_dummy/Cargo.toml --lib",
+      "result": "PASS",
+      "tests": "15 passed, 0 failed"
+    },
+    {
+      "name": "r3_blind_update_gate",
+      "command": "cargo test --locked --offline --manifest-path sources/r3_blind_update/Cargo.toml --test blind_update",
+      "result": "PASS",
+      "tests": "4 passed, 0 failed"
+    },
+    {
+      "name": "r4_checked_crs_gate",
+      "command": "cargo test --offline --manifest-path sources/r4_checked_crs/Cargo.toml --test r4_checked",
+      "result": "PASS",
+      "tests": "4 passed, 0 failed"
+    },
+    {
+      "name": "packaged_crypto_smoke",
+      "command": "scripts/smoke.sh",
+      "result": "SMOKE_PASS",
+      "tests": "3 targeted cryptographic/negative gates passed",
+      "observed_wall_seconds_clean_target": 116.40
+    },
+    {
+      "name": "r2_analysis_recompute",
+      "command": "python3 scripts/recompute_existing.py",
+      "result": "BYTE_IDENTICAL",
+      "sha256": "28ccaa81e7c1c8e5482fd44b56d717470829b4a6001a054be2c9962fa15caea2"
+    },
+    {
+      "name": "r3_e2_analysis_recompute",
+      "command": "python3 scripts/recompute_existing.py",
+      "result": "BYTE_IDENTICAL",
+      "sha256": "a7e8f0e0bc050db5c6bd2a8ff547911117da3a1c5fbe695da7d3689af009e5ad"
+    },
+    {
+      "name": "r4_included_timing_recompute",
+      "command": "python3 scripts/recompute_existing.py",
+      "result": "BYTE_IDENTICAL_RECORDED_DIGESTS_ONLY",
+      "sha256": "b77aa2f8740ac0b1868fce479d259d9e24c49ec8ba0fcf14b5d6af27b63c42ef",
+      "full_bundle_analyzer_sha256": "323ccc1c67df60ef6d993700cb61fc4aa45a87cece9187190c30225f4c3ef8d5",
+      "detail": "All ten compact cells, shapes, order, verified flags, recorded bundle identities, observations, signed paired differences, and summaries checked. Omitted bundle bytes were not rehashed."
+    },
+    {
+      "name": "unified_recompute",
+      "command": "python3 scripts/recompute_existing.py",
+      "result": "UNIFIED_RECOMPUTE_PASS",
+      "detail": "E1, R2, R3/E2, R4, R6, and bounded historical results validated; grid CI endpoints retained from hashed frozen source, not regenerated"
+    },
+    {
+      "name": "analysis_unit_tests",
+      "command": "python3 results/{e1,r2,r3_e2}/analysis/test_*.py",
+      "result": "PASS",
+      "tests": "E1 8/8; R2 13/13; R3/E2 5/5; R4 frozen analyzer 8/8; R4 included-timing recomputer 4/4"
+    },
+    {
+      "name": "full_driver_interfaces",
+      "command": "scripts/run_full.sh {e1|r2|e2} --help",
+      "result": "PASS",
+      "tests": "all three real driver CLIs loaded"
+    },
+    {
+      "name": "r2_complete_control_flow",
+      "command": "scripts/run_full.sh r2-complete NEW_OUTPUT --control-test",
+      "result": "PASS",
+      "tests": "fresh setup; 16 E1 key identities checked; 9 gates; 3 measurement rows; Agent/receiver verification",
+      "observed_wall_seconds_clean_target": 102.60,
+      "evidence": "VERIFICATION_R2_CONTROL.json"
+    },
+    {
+      "name": "e3_aggregate_figure_regeneration",
+      "command": "python3 sources/e3_analysis/render_e3_figure.py results/e3/aggregate/fixed_cohort_summary.csv --output NEW_OUTPUT",
+      "result": "BYTE_IDENTICAL",
+      "observed_wall_seconds_warm_environment": 1.72,
+      "observed_wall_seconds_clean_venv_install_and_render": 70.37,
+      "sha256": "fea45aa7c7df89b6951c43272fae196e14986b14db74ce60434d664814e129fe"
+    },
+    {
+      "name": "r4_service_dependency_closure",
+      "command": "cargo check --locked --offline --manifest-path sources/r4_service/Cargo.toml --bin r4_checked_service_core --bin blind_update_e2_agent",
+      "result": "PASS"
+    },
+    {
+      "name": "r4_level3_relation_drivers",
+      "command": "cargo check --locked --offline --manifest-path sources/r4_service/Cargo.toml --bin r4_checked_blind --bin r4_checked_joint",
+      "result": "PASS",
+      "detail": "Both fresh-bundle relation drivers compile against the packaged checked-CRS fork; generated target files were excluded from the candidate."
+    },
+    {
+      "name": "r6_component_analysis",
+      "command": "python3 scripts/recompute_r6.py",
+      "result": "BYTE_IDENTICAL",
+      "sha256": "5f180c1fd0efe36a2a2934905b788b93917e136e8670452dd35aaa06bd499514",
+      "tests": "10 compact observations; five seeds each at depths 16 and 20"
+    },
+    {
+      "name": "r6_packaged_adapter_small_depth",
+      "command": "cargo test --locked --manifest-path sources/r6_tree_maintenance/adapter/Cargo.toml",
+      "result": "PASS",
+      "tests": "3 passed, 0 failed",
+      "detail": "dense/sparse root equivalence, replacement/path verification, and unambiguous one/two-path byte accounting"
+    },
+    {
+      "name": "historical_compact_recompute",
+      "command": "python3 scripts/recompute_historical.py",
+      "result": "PASS",
+      "tests": "grid200, depth20-repeat50, matched DAC, three membership boundaries, lifecycle180",
+      "detail": "Grid validates raw point statistics and shape; original CI RNG stream derivation was not found, so frozen endpoint recomputation is not claimed."
+    },
+    {
+      "name": "container_runtime",
+      "command": "docker build; docker run recompute; docker run smoke; docker run E3 render",
+      "result": "PASS",
+      "detail": "Built from FILELIST context 2f6b4d99...c8411f. Three-gate smoke, unified recompute, E3 PDF/SVG generation, and fresh R6 depth3 packaged trial passed. Local image ID and external archive identity are recorded in CONTAINER_VERIFICATION.json; no registry publication is claimed. The post-test Dockerfile edit pins the same effective base digest and is not described as a rebuild."
+    }
+  ]
+}

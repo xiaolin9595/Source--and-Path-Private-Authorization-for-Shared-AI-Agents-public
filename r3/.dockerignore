@@ -1,0 +1,9 @@
+**/target
+.venv*
+runs
+*.sqlite
+*.pk
+*.vk
+*.bin
+._*
+.DS_Store

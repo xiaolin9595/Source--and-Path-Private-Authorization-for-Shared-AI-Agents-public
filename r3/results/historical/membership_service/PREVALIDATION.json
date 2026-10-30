@@ -1,0 +1,122 @@
+[
+  {
+    "pair": 0,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 0,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 1,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 1,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 2,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 2,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 3,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 3,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 4,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 4,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 5,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 5,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 6,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 6,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 7,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 7,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 8,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 8,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 9,
+    "backend": "inline",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  },
+  {
+    "pair": 9,
+    "backend": "lego",
+    "status": 200,
+    "proof_reverified_by_frozen_service": true
+  }
+]

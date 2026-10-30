@@ -1,0 +1,50 @@
+{
+  "schema": "pets2027-r2-paper-metrics-v1",
+  "integrity": {
+    "calibration_rows": 600,
+    "formal_rows": 4500,
+    "calibration_sessions": 2,
+    "formal_sessions": 4,
+    "all_proofs_and_signatures_verified": true,
+    "fixed_frame_bytes": 2567,
+    "nonempty_real_stderr_files": 0,
+    "analysis_sha256": "28ccaa81e7c1c8e5482fd44b56d717470829b4a6001a054be2c9962fa15caea2",
+    "reproduced_analysis_sha256": "28ccaa81e7c1c8e5482fd44b56d717470829b4a6001a054be2c9962fa15caea2",
+    "analysis_byte_identical": true
+  },
+  "calibration": {
+    "per_length_n": 200,
+    "nearest_rank_p99_ready_ms": {"1": 3124.069196, "2": 3023.278826, "3": 3104.031788},
+    "tpad_ms": 3250.0,
+    "calibration_digest_sha256": "ea828c4aea697cd617ef0d6fc1d3cd0e7d1be05903c955dcf94efdc03dced219"
+  },
+  "primary_pooled_padded": {
+    "screen_pass": true,
+    "length_classifier": {"correct": 480, "total": 1500, "accuracy": 0.32, "threshold": 0.45},
+    "per_length": {
+      "1": {"n": 1000, "primary_median_ms": 3250.2321025, "actual_wait_mean_ms": 432.915550001, "overflow_count": 1, "overflow_rate": 0.001},
+      "2": {"n": 1000, "primary_median_ms": 3250.231252, "actual_wait_mean_ms": 443.189668432, "overflow_count": 3, "overflow_rate": 0.003},
+      "3": {"n": 1000, "primary_median_ms": 3250.230768, "actual_wait_mean_ms": 450.033789383, "overflow_count": 1, "overflow_rate": 0.001}
+    },
+    "pairwise_absolute_median_difference_ms": {"1-2": 0.0008505, "1-3": 0.0013345, "2-3": 0.000484},
+    "pairwise_absolute_median_difference_bootstrap95_ms": {"1-2": [0.000159, 0.011353], "1-3": [0.0001665, 0.0110955], "2-3": [0.000147, 0.01215]},
+    "actual_wait_mean_bootstrap95_ms": {"1": [415.453770659, 451.751291082], "2": [424.41986539, 462.618726646], "3": [420.268901841, 479.10574545]},
+    "overall_actual_wait_mean_ms": 442.046335939,
+    "overflow": {"count": 5, "total": 3000, "rate": 0.001666666667}
+  },
+  "unpadded_control": {
+    "length_classifier": {"correct": 283, "total": 750, "accuracy": 0.37733333333333335},
+    "primary_median_ms": {"1": 2787.384141, "2": 2777.003119, "3": 2776.578889}
+  },
+  "aa_diagnostic": {
+    "overall_classifier": {"correct": 723, "total": 1500, "accuracy": 0.482},
+    "per_length_classifier": {
+      "1": {"correct": 261, "total": 500, "accuracy": 0.522},
+      "2": {"correct": 230, "total": 500, "accuracy": 0.46},
+      "3": {"correct": 232, "total": 500, "accuracy": 0.464}
+    },
+    "paired_pA_minus_pB_median_ms": {"1": 0.001912, "2": 0.001461, "3": 0.001137, "overall": 0.0015295},
+    "paired_pA_minus_pB_mean_ms": {"1": -6.485904482, "2": -6.502013402, "3": -6.501463346, "overall": -6.49646041}
+  },
+  "interpretation_limit": "Empirical pass for the frozen loopback workload only; not a constant-time or universal side-channel claim."
+}

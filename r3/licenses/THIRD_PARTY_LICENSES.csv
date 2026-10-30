@@ -1,0 +1,120 @@
+name,version,source_kind,spdx_or_declared_license,upstream_repository
+ahash,0.8.12,registry,MIT OR Apache-2.0,https://github.com/tkaitchuck/ahash
+ark-bls12-381,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/curves
+ark-crypto-primitives,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/crypto-primitives
+ark-ec,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-ed-on-bls12-381,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/curves
+ark-ff,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-ff-asm,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-ff-macros,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-groth16,0.4.0,bundled-path,MIT/Apache-2.0,https://github.com/arkworks-rs/groth16
+ark-groth16,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/groth16
+ark-poly,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-r1cs-std,0.4.0,bundled-path,MIT/Apache-2.0,https://github.com/arkworks-rs/r1cs-std
+ark-relations,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/snark
+ark-serialize,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-serialize-derive,0.4.2,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/algebra
+ark-snark,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/snark
+ark-std,0.4.0,registry,MIT/Apache-2.0,https://github.com/arkworks-rs/std
+autocfg,1.5.1,registry,Apache-2.0 OR MIT,https://github.com/cuviper/autocfg
+base64,0.22.1,registry,MIT OR Apache-2.0,https://github.com/marshallpierce/rust-base64
+bit-set,0.11.1,registry,Apache-2.0 OR MIT,https://github.com/contain-rs/bit-vec
+bit-vec,0.10.1,registry,Apache-2.0 OR MIT,https://github.com/contain-rs/bit-vec
+bitflags,2.13.2,registry,MIT OR Apache-2.0,https://github.com/bitflags/bitflags
+blake2,0.10.6,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/hashes
+block-buffer,0.10.4,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/utils
+bls12_381,0.7.1,bundled-path,MIT/Apache-2.0,https://github.com/zkcrypto/bls12_381
+borsh,1.8.1,registry,MIT OR Apache-2.0,https://github.com/near/borsh-rs
+borsh-derive,1.8.1,registry,Apache-2.0,https://github.com/near/borsh-rs
+bytes,1.12.1,registry,MIT,https://github.com/tokio-rs/bytes
+cfg-if,1.0.5,registry,MIT OR Apache-2.0,https://github.com/rust-lang/cfg-if
+cfg_aliases,0.2.2,registry,MIT,https://github.com/katharostech/cfg_aliases
+chacha20,0.10.2,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/stream-ciphers
+core_detect,1.0.0,registry,MIT/Apache-2.0,https://github.com/thomcc/core_detect
+cpufeatures,0.2.17,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/utils
+cpufeatures,0.3.1,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/utils
+crossbeam-deque,0.8.8,registry,MIT OR Apache-2.0,https://github.com/crossbeam-rs/crossbeam
+crossbeam-epoch,0.9.21,registry,MIT OR Apache-2.0,https://github.com/crossbeam-rs/crossbeam
+crossbeam-utils,0.8.23,registry,MIT OR Apache-2.0,https://github.com/crossbeam-rs/crossbeam
+crypto-common,0.1.7,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/traits
+derivative,2.2.0,registry,MIT/Apache-2.0,https://github.com/mcarton/rust-derivative
+digest,0.10.7,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/traits
+either,1.19.0,registry,MIT OR Apache-2.0,https://github.com/rayon-rs/either
+equivalent,1.0.3,registry,Apache-2.0 OR MIT,https://github.com/indexmap-rs/equivalent
+errno,0.3.14,registry,MIT OR Apache-2.0,https://github.com/lambda-fairy/rust-errno
+fastrand,2.5.0,registry,Apache-2.0 OR MIT,https://github.com/smol-rs/fastrand
+ff,0.12.1,bundled-path,MIT/Apache-2.0,https://github.com/zkcrypto/ff
+fnv,1.0.7,registry,Apache-2.0 / MIT,https://github.com/servo/rust-fnv
+generic-array,0.14.7,registry,MIT,https://github.com/fizyk20/generic-array.git
+getrandom,0.2.17,registry,MIT OR Apache-2.0,https://github.com/rust-random/getrandom
+getrandom,0.4.3,registry,MIT OR Apache-2.0,https://github.com/rust-random/getrandom
+group,0.12.1,bundled-path,MIT/Apache-2.0,https://github.com/zkcrypto/group
+hashbrown,0.13.2,registry,MIT OR Apache-2.0,https://github.com/rust-lang/hashbrown
+hashbrown,0.17.1,registry,MIT OR Apache-2.0,https://github.com/rust-lang/hashbrown
+hex,0.4.3,registry,MIT OR Apache-2.0,https://github.com/KokaKiwi/rust-hex
+indexmap,2.14.2,registry,Apache-2.0 OR MIT,https://github.com/indexmap-rs/indexmap
+itertools,0.10.5,registry,MIT/Apache-2.0,https://github.com/rust-itertools/itertools
+itoa,1.0.18,registry,MIT OR Apache-2.0,https://github.com/dtolnay/itoa
+libc,0.2.191,registry,MIT OR Apache-2.0,https://github.com/rust-lang/libc
+linux-raw-sys,0.12.1,registry,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,https://github.com/sunfishcode/linux-raw-sys
+memchr,2.8.3,registry,Unlicense OR MIT,https://github.com/BurntSushi/memchr
+num-bigint,0.4.8,registry,MIT OR Apache-2.0,https://github.com/rust-num/num-bigint
+num-integer,0.1.47,registry,MIT OR Apache-2.0,https://github.com/rust-num/num-integer
+num-traits,0.2.19,registry,MIT OR Apache-2.0,https://github.com/rust-num/num-traits
+once_cell,1.21.4,registry,MIT OR Apache-2.0,https://github.com/matklad/once_cell
+paste,1.0.15,registry,MIT OR Apache-2.0,https://github.com/dtolnay/paste
+pin-project-lite,0.2.17,registry,Apache-2.0 OR MIT,https://github.com/taiki-e/pin-project-lite
+ppv-lite86,0.2.21,registry,MIT OR Apache-2.0,https://github.com/cryptocorrosion/cryptocorrosion
+proc-macro-crate,3.5.0,registry,MIT OR Apache-2.0,https://github.com/bkchr/proc-macro-crate
+proc-macro2,1.0.107,registry,MIT OR Apache-2.0,https://github.com/dtolnay/proc-macro2
+proptest,1.12.0,registry,MIT OR Apache-2.0,https://github.com/proptest-rs/proptest
+quick-error,1.2.3,registry,MIT/Apache-2.0,http://github.com/tailhook/quick-error
+quote,1.0.47,registry,MIT OR Apache-2.0,https://github.com/dtolnay/quote
+r-efi,6.0.0,registry,MIT OR Apache-2.0 OR LGPL-2.1-or-later,https://github.com/r-efi/r-efi
+rand,0.10.3,registry,MIT OR Apache-2.0,https://github.com/rust-random/rand
+rand,0.8.8,registry,MIT OR Apache-2.0,https://github.com/rust-random/rand
+rand_chacha,0.3.1,registry,MIT OR Apache-2.0,https://github.com/rust-random/rand
+rand_core,0.10.1,registry,MIT OR Apache-2.0,https://github.com/rust-random/rand_core
+rand_core,0.6.4,registry,MIT OR Apache-2.0,https://github.com/rust-random/rand
+rand_xorshift,0.5.0,registry,MIT OR Apache-2.0,https://github.com/rust-random/rngs
+rayon,1.12.0,registry,MIT OR Apache-2.0,https://github.com/rayon-rs/rayon
+rayon-core,1.13.0,registry,MIT OR Apache-2.0,https://github.com/rayon-rs/rayon
+regex-syntax,0.8.11,registry,MIT OR Apache-2.0,https://github.com/rust-lang/regex
+rustc_version,0.4.1,registry,MIT OR Apache-2.0,https://github.com/djc/rustc-version-rs
+rustix,1.1.5,registry,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,https://github.com/bytecodealliance/rustix
+rusty-fork,0.3.1,registry,MIT/Apache-2.0,https://github.com/altsysrq/rusty-fork
+semver,1.0.28,registry,MIT OR Apache-2.0,https://github.com/dtolnay/semver
+serde,1.0.229,registry,MIT OR Apache-2.0,https://github.com/serde-rs/serde
+serde_core,1.0.229,registry,MIT OR Apache-2.0,https://github.com/serde-rs/serde
+serde_derive,1.0.229,registry,MIT OR Apache-2.0,https://github.com/serde-rs/serde
+serde_json,1.0.154,registry,MIT OR Apache-2.0,https://github.com/serde-rs/json
+sha2,0.10.9,registry,MIT OR Apache-2.0,https://github.com/RustCrypto/hashes
+subtle,2.6.1,registry,BSD-3-Clause,https://github.com/dalek-cryptography/subtle
+syn,1.0.109,registry,MIT OR Apache-2.0,https://github.com/dtolnay/syn
+syn,2.0.119,registry,MIT OR Apache-2.0,https://github.com/dtolnay/syn
+syn,3.0.9,registry,MIT OR Apache-2.0,https://github.com/dtolnay/syn
+tempfile,3.27.0,registry,MIT OR Apache-2.0,https://github.com/Stebalien/tempfile
+thiserror,1.0.69,registry,MIT OR Apache-2.0,https://github.com/dtolnay/thiserror
+thiserror-impl,1.0.69,registry,MIT OR Apache-2.0,https://github.com/dtolnay/thiserror
+toml_datetime,1.1.2+spec-1.1.0,registry,MIT OR Apache-2.0,https://github.com/toml-rs/toml
+toml_edit,0.25.17+spec-1.1.0,registry,MIT OR Apache-2.0,https://github.com/toml-rs/toml
+toml_parser,1.1.5+spec-1.1.0,registry,MIT OR Apache-2.0,https://github.com/toml-rs/toml
+tracing,0.1.44,registry,MIT,https://github.com/tokio-rs/tracing
+tracing-attributes,0.1.31,registry,MIT,https://github.com/tokio-rs/tracing
+tracing-core,0.1.36,registry,MIT,https://github.com/tokio-rs/tracing
+tracing-subscriber,0.2.25,registry,MIT,https://github.com/tokio-rs/tracing
+typenum,1.20.1,registry,MIT OR Apache-2.0,https://github.com/paholg/typenum
+unarray,0.1.4,registry,MIT OR Apache-2.0,https://github.com/cameron1024/unarray
+unicode-ident,1.0.27,registry,(MIT OR Apache-2.0) AND Unicode-3.0,https://github.com/dtolnay/unicode-ident
+valuable,0.1.1,registry,MIT,https://github.com/tokio-rs/valuable
+version_check,0.9.5,registry,MIT/Apache-2.0,https://github.com/SergioBenitez/version_check
+wait-timeout,0.2.1,registry,MIT/Apache-2.0,https://github.com/alexcrichton/wait-timeout
+wasi,0.11.1+wasi-snapshot-preview1,registry,Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT,https://github.com/bytecodealliance/wasi
+windows-link,0.2.1,registry,MIT OR Apache-2.0,https://github.com/microsoft/windows-rs
+windows-sys,0.61.2,registry,MIT OR Apache-2.0,https://github.com/microsoft/windows-rs
+winnow,1.0.4,registry,MIT,https://github.com/winnow-rs/winnow
+zerocopy,0.8.63,registry,BSD-2-Clause OR Apache-2.0 OR MIT,https://github.com/google/zerocopy
+zerocopy-derive,0.8.63,registry,BSD-2-Clause OR Apache-2.0 OR MIT,https://github.com/google/zerocopy
+zeroize,1.9.1,registry,Apache-2.0 OR MIT,https://github.com/RustCrypto/utils
+zeroize_derive,1.5.0,registry,Apache-2.0 OR MIT,https://github.com/RustCrypto/utils
+zmij,1.0.23,registry,MIT,https://github.com/dtolnay/zmij

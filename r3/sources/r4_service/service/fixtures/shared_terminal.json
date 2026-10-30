@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "protocol_version": "plan-a-http-v1",
+  "audience": "https://service.example",
+  "terminal_agent_pk": "agent_pk_shared_001",
+  "users": [
+    {"user_id": "synthetic_user_001", "resource": "files", "action_onehot": 1},
+    {"user_id": "synthetic_user_002", "resource": "files", "action_onehot": 1},
+    {"user_id": "synthetic_user_003", "resource": "files", "action_onehot": 1}
+  ]
+}

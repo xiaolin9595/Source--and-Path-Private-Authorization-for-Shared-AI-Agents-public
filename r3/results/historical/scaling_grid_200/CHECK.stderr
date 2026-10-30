@@ -1,0 +1,28 @@
+   Compiling libc v0.2.191
+    Checking getrandom v0.2.17
+    Checking rand_core v0.6.4
+    Checking rand_chacha v0.3.1
+    Checking rand v0.8.8
+    Checking ark-std v0.4.0
+    Checking ark-serialize v0.4.2
+    Checking ark-ff v0.4.2
+    Checking ark-poly v0.4.2
+    Checking ark-relations v0.4.0
+    Checking ark-snark v0.4.0
+    Checking ark-ec v0.4.2
+    Checking ark-r1cs-std v0.4.0
+    Checking ark-bls12-381 v0.4.0
+    Checking ark-crypto-primitives v0.4.0
+    Checking ark-ed-on-bls12-381 v0.4.0
+    Checking ark-groth16 v0.4.0
+    Checking plan-a-joint-circuit v0.1.0 (${REMOTE_DATA}/pets2027/plan_a_20261023/frozen/e2_formal_v1)
+warning: function `trial` is never used
+  --> src/bin/plan_a_proof_cli.rs:32:4
+   |
+32 | fn trial<const L:usize>(pk_path:&str,vk_path:&str,proof_path:&str,public_path:&str,active:usize,nonce:u64,ds:usize,dra:usize,drev:us...
+   |    ^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `plan-a-joint-circuit` (bin "plan_a_proof_cli") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.22s

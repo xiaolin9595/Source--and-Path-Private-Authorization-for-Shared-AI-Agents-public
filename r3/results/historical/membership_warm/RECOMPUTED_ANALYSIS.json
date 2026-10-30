@@ -1,0 +1,26 @@
+{
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 996971778085,
+  "g2_old_vs_new": "not_comparable",
+  "median_paired_ratio": 0.8978942027382244,
+  "paired_bootstrap_95_percentile_interval": [
+    0.8162304439979957,
+    0.947773364995532
+  ],
+  "pairs": 10,
+  "ratio": "native_inline_prove_ms / lego_total_prove_ms",
+  "raw_paired_ratios": [
+    0.9067210255962264,
+    0.9888257043948375,
+    0.898729517722409,
+    0.7574745393797395,
+    0.8648280105726627,
+    0.9225831175190733,
+    0.8970588877540399,
+    1.151840641199404,
+    0.8020682530550396,
+    0.8162304439979957
+  ],
+  "raw_sha256": "98fc8b759c0a29b7d7567f9f0bf850fa596e6931dbb3b894b709854a73b4e917",
+  "schema": "plan-a-e8-native-paired-analysis-v1"
+}

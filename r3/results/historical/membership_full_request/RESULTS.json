@@ -1,0 +1,3261 @@
+{
+  "all_20_status_200": true,
+  "all_external_contracts_equal": true,
+  "all_producer_component_sums": true,
+  "all_selected_db_effects_equal": true,
+  "all_service_component_sums": true,
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 3904970790,
+  "median_paired_ratio_inline_over_lego": 0.913068847093333,
+  "paired_bootstrap_95_percentile_interval": [
+    0.8894878624114584,
+    0.9384676194409196
+  ],
+  "pairs": [
+    {
+      "difference_inline_minus_lego_ns": -366905843,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 595
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2793413164,
+        "http_after_producer_ns": 31886114,
+        "producer_check": {
+          "actual_sum_ns": 2718668246,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2718668246,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2761527050,
+        "producer_received_perf_counter_ns": 2167363632405486,
+        "producer_timing": {
+          "artifact_finalize_ns": 6696132,
+          "artifact_serialize_ns": 10154,
+          "fixture_canonical_ns": 495852,
+          "internal_component_sum_ns": 2718668246,
+          "parse_ns": 3759,
+          "proof_generate_encode_ns": 2710193432,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 1268917,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "1c676b13f1b60cfadd1c6d7cd1e8e8a4cb879089dbfda660e6950d283d9b3b19",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 52792248,
+        "service_ready_client_wall_ns": 109207405,
+        "service_timing": {
+          "accept_ns": 29793632,
+          "component_sum_ns": 29793632,
+          "components": {
+            "proof_verify_ns": 21029999,
+            "schema_canonical_snapshot_ns": 1286690,
+            "sqlite_commit_ns": 681862,
+            "terminal_verify_ns": 6795081
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167360870878436,
+        "t_end_perf_counter_ns": 2167363664291600
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3160319007,
+        "http_after_producer_ns": 43854838,
+        "producer_check": {
+          "actual_sum_ns": 3116198124,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3116198124,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3116464169,
+        "producer_received_perf_counter_ns": 2167367400327195,
+        "producer_timing": {
+          "artifact_serialize_ns": 9321,
+          "component_sum_ns": 3116198124,
+          "fixture_canonical_ns": 62088058,
+          "internal_total_ns": 3116198124,
+          "parse_ns": 4433,
+          "proof_encode_ns": 3051987280,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 2109032,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "ef387a2989eff15362d9958ffbb329c7a450dcea8b0a18d47afd76e768ed8a80",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 50371844,
+        "service_ready_client_wall_ns": 101869935,
+        "service_timing": {
+          "accept_ns": 42648723,
+          "component_sum_ns": 42648723,
+          "components": {
+            "proof_verify_ns": 36666517,
+            "schema_canonical_snapshot_ns": 565142,
+            "sqlite_commit_ns": 414254,
+            "terminal_verify_ns": 5002810
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167364283863026,
+        "t_end_perf_counter_ns": 2167367444182033
+      },
+      "nonce": 6001,
+      "order": [
+        "inline",
+        "lego"
+      ],
+      "pair": 0,
+      "ratio_inline_over_lego": 0.8839022762615686,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -160178662,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 595
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2847321683,
+        "http_after_producer_ns": 30482983,
+        "producer_check": {
+          "actual_sum_ns": 2759043025,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2759043025,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2816838700,
+        "producer_received_perf_counter_ns": 2167374500834246,
+        "producer_timing": {
+          "artifact_finalize_ns": 6699822,
+          "artifact_serialize_ns": 11090,
+          "fixture_canonical_ns": 671220,
+          "internal_component_sum_ns": 2759043025,
+          "parse_ns": 3821,
+          "proof_generate_encode_ns": 2749404410,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 2252662,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "8164c589b34e61e1fcf50c23423f11253543ed4ec0aa1716483447e5074d95fe",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 51658234,
+        "service_ready_client_wall_ns": 94953528,
+        "service_timing": {
+          "accept_ns": 28664855,
+          "component_sum_ns": 28664855,
+          "components": {
+            "proof_verify_ns": 19303840,
+            "schema_canonical_snapshot_ns": 1299450,
+            "sqlite_commit_ns": 658009,
+            "terminal_verify_ns": 7403556
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167371683995546,
+        "t_end_perf_counter_ns": 2167374531317229
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3007500345,
+        "http_after_producer_ns": 44023416,
+        "producer_check": {
+          "actual_sum_ns": 2963190091,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2963190091,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2963476929,
+        "producer_received_perf_counter_ns": 2167371028638214,
+        "producer_timing": {
+          "artifact_serialize_ns": 11582,
+          "component_sum_ns": 2963190091,
+          "fixture_canonical_ns": 47542778,
+          "internal_total_ns": 2963190091,
+          "parse_ns": 2562,
+          "proof_encode_ns": 2913035005,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 2598164,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "0c575dc96f745fe676551646e358e4cc3a8bfb7f9e5a2473593be848b5dec34e",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 49809339,
+        "service_ready_client_wall_ns": 104558952,
+        "service_timing": {
+          "accept_ns": 42685562,
+          "component_sum_ns": 42685562,
+          "components": {
+            "proof_verify_ns": 36545720,
+            "schema_canonical_snapshot_ns": 690970,
+            "sqlite_commit_ns": 505587,
+            "terminal_verify_ns": 4943285
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167368065161285,
+        "t_end_perf_counter_ns": 2167371072661630
+      },
+      "nonce": 6002,
+      "order": [
+        "lego",
+        "inline"
+      ],
+      "pair": 1,
+      "ratio_inline_over_lego": 0.9467402681212328,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -329349882,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcw",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2809511326,
+        "http_after_producer_ns": 25740919,
+        "producer_check": {
+          "actual_sum_ns": 2740558163,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2740558163,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2783770407,
+        "producer_received_perf_counter_ns": 2167377929149310,
+        "producer_timing": {
+          "artifact_finalize_ns": 8733081,
+          "artifact_serialize_ns": 17523,
+          "fixture_canonical_ns": 494621,
+          "internal_component_sum_ns": 2740558163,
+          "parse_ns": 4600,
+          "proof_generate_encode_ns": 2730324341,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 983997,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "f752fc50c9aab1f293daf03196ebe20c610deb09e9a127789d5e6ab4aed4f435",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcw",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 41731836,
+        "service_ready_client_wall_ns": 97497371,
+        "service_timing": {
+          "accept_ns": 24595190,
+          "component_sum_ns": 24595190,
+          "components": {
+            "proof_verify_ns": 17242148,
+            "schema_canonical_snapshot_ns": 649273,
+            "sqlite_commit_ns": 505131,
+            "terminal_verify_ns": 6198638
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167375145378903,
+        "t_end_perf_counter_ns": 2167377954890229
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXcw",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3138861208,
+        "http_after_producer_ns": 38154998,
+        "producer_check": {
+          "actual_sum_ns": 3100332392,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3100332392,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3100706210,
+        "producer_received_perf_counter_ns": 2167381663155031,
+        "producer_timing": {
+          "artifact_serialize_ns": 16742,
+          "component_sum_ns": 3100332392,
+          "fixture_canonical_ns": 65042208,
+          "internal_total_ns": 3100332392,
+          "parse_ns": 4212,
+          "proof_encode_ns": 3032933999,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 2335231,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "557419406e29ce0f921bdf344774038c891465127bf77f157244f681e05e4569",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXcw",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 39214396,
+        "service_ready_client_wall_ns": 91680348,
+        "service_timing": {
+          "accept_ns": 36769422,
+          "component_sum_ns": 36769422,
+          "components": {
+            "proof_verify_ns": 29761942,
+            "schema_canonical_snapshot_ns": 656595,
+            "sqlite_commit_ns": 632850,
+            "terminal_verify_ns": 5718035
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167378562448821,
+        "t_end_perf_counter_ns": 2167381701310029
+      },
+      "nonce": 6003,
+      "order": [
+        "inline",
+        "lego"
+      ],
+      "pair": 2,
+      "ratio_inline_over_lego": 0.8950734485613484,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -396741975,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 595
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdA",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2755151550,
+        "http_after_producer_ns": 30473996,
+        "producer_check": {
+          "actual_sum_ns": 2682925523,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2682925523,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2724677554,
+        "producer_received_perf_counter_ns": 2167388802398959,
+        "producer_timing": {
+          "artifact_finalize_ns": 6649818,
+          "artifact_serialize_ns": 9968,
+          "fixture_canonical_ns": 497245,
+          "internal_component_sum_ns": 2682925523,
+          "parse_ns": 2688,
+          "proof_generate_encode_ns": 2672747641,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 3018163,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "31998b237e1362129a5443cc432d276311a98ee81c043f3853a4d9fed51f0b01",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdA",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 41804914,
+        "service_ready_client_wall_ns": 89466366,
+        "service_timing": {
+          "accept_ns": 28801378,
+          "component_sum_ns": 28801378,
+          "components": {
+            "proof_verify_ns": 18916748,
+            "schema_canonical_snapshot_ns": 1255845,
+            "sqlite_commit_ns": 612590,
+            "terminal_verify_ns": 8016195
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167386077721405,
+        "t_end_perf_counter_ns": 2167388832872955
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdA",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3151893525,
+        "http_after_producer_ns": 35721736,
+        "producer_check": {
+          "actual_sum_ns": 3115917632,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3115917632,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3116171789,
+        "producer_received_perf_counter_ns": 2167385435105314,
+        "producer_timing": {
+          "artifact_serialize_ns": 12695,
+          "component_sum_ns": 3115917632,
+          "fixture_canonical_ns": 63442171,
+          "internal_total_ns": 3115917632,
+          "parse_ns": 2297,
+          "proof_encode_ns": 3051324159,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 1136310,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "5c5fb63baba56dd0071584d9cbd0affd09f07b7f9606153a700686f48973d8b4",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdA",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 46354127,
+        "service_ready_client_wall_ns": 100895986,
+        "service_timing": {
+          "accept_ns": 34437434,
+          "component_sum_ns": 34437434,
+          "components": {
+            "proof_verify_ns": 29271785,
+            "schema_canonical_snapshot_ns": 689498,
+            "sqlite_commit_ns": 572055,
+            "terminal_verify_ns": 3904096
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167382318933525,
+        "t_end_perf_counter_ns": 2167385470827050
+      },
+      "nonce": 6004,
+      "order": [
+        "lego",
+        "inline"
+      ],
+      "pair": 3,
+      "ratio_inline_over_lego": 0.8741258320266386,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -263126213,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 595
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2778587853,
+        "http_after_producer_ns": 33976416,
+        "producer_check": {
+          "actual_sum_ns": 2691727100,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2691727100,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2744611437,
+        "producer_received_perf_counter_ns": 2167392182582326,
+        "producer_timing": {
+          "artifact_finalize_ns": 6647125,
+          "artifact_serialize_ns": 12093,
+          "fixture_canonical_ns": 642356,
+          "internal_component_sum_ns": 2691727100,
+          "parse_ns": 3031,
+          "proof_generate_encode_ns": 2683279283,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 1143212,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "66d912075069f95ef886bc0f7732837c5d19a5bf99645b602e09183e91ffc284",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 47481790,
+        "service_ready_client_wall_ns": 89298975,
+        "service_timing": {
+          "accept_ns": 31664435,
+          "component_sum_ns": 31664435,
+          "components": {
+            "proof_verify_ns": 20948636,
+            "schema_canonical_snapshot_ns": 1696993,
+            "sqlite_commit_ns": 617233,
+            "terminal_verify_ns": 8401573
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167389437970889,
+        "t_end_perf_counter_ns": 2167392216558742
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3041714066,
+        "http_after_producer_ns": 36682054,
+        "producer_check": {
+          "actual_sum_ns": 3004757701,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3004757701,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3005032012,
+        "producer_received_perf_counter_ns": 2167395841199832,
+        "producer_timing": {
+          "artifact_serialize_ns": 10672,
+          "component_sum_ns": 3004757701,
+          "fixture_canonical_ns": 49620257,
+          "internal_total_ns": 3004757701,
+          "parse_ns": 1957,
+          "proof_encode_ns": 2951180701,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 3944114,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "1f046ef66c6b2148b74d95d5bd5fea480dc55226f59891d69020d15b0f535194",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 46904521,
+        "service_ready_client_wall_ns": 101846529,
+        "service_timing": {
+          "accept_ns": 35414737,
+          "component_sum_ns": 35414737,
+          "components": {
+            "proof_verify_ns": 28332943,
+            "schema_canonical_snapshot_ns": 646466,
+            "sqlite_commit_ns": 551172,
+            "terminal_verify_ns": 5884156
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167392836167820,
+        "t_end_perf_counter_ns": 2167395877881886
+      },
+      "nonce": 6005,
+      "order": [
+        "inline",
+        "lego"
+      ],
+      "pair": 4,
+      "ratio_inline_over_lego": 0.9134940999414769,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -178481159,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2919812757,
+        "http_after_producer_ns": 28858030,
+        "producer_check": {
+          "actual_sum_ns": 2840387191,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2840387191,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2890954727,
+        "producer_received_perf_counter_ns": 2167403085240100,
+        "producer_timing": {
+          "artifact_finalize_ns": 8724930,
+          "artifact_serialize_ns": 13106,
+          "fixture_canonical_ns": 495453,
+          "internal_component_sum_ns": 2840387191,
+          "parse_ns": 3535,
+          "proof_generate_encode_ns": 2829811298,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 1338869,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "db0ff252ca8745e89c0aa5100ba1aa11bbbf6861854b095cc516d8eaa575a4fb",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 47819759,
+        "service_ready_client_wall_ns": 94900921,
+        "service_timing": {
+          "accept_ns": 27674609,
+          "component_sum_ns": 27674609,
+          "components": {
+            "proof_verify_ns": 18475831,
+            "schema_canonical_snapshot_ns": 649081,
+            "sqlite_commit_ns": 612121,
+            "terminal_verify_ns": 7937576
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167400194285373,
+        "t_end_perf_counter_ns": 2167403114098130
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3098293916,
+        "http_after_producer_ns": 41163118,
+        "producer_check": {
+          "actual_sum_ns": 3056867752,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3056867752,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3057130798,
+        "producer_received_perf_counter_ns": 2167399542276567,
+        "producer_timing": {
+          "artifact_serialize_ns": 11666,
+          "component_sum_ns": 3056867752,
+          "fixture_canonical_ns": 51774338,
+          "internal_total_ns": 3056867752,
+          "parse_ns": 4395,
+          "proof_encode_ns": 3001331371,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 3745982,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "b5f995a38cdf6d5e6ca0b4650cbcf5bb798b5a1c34f4d8de17a1dc2edbea2537",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 43264869,
+        "service_ready_client_wall_ns": 87470266,
+        "service_timing": {
+          "accept_ns": 39874614,
+          "component_sum_ns": 39874614,
+          "components": {
+            "proof_verify_ns": 32590777,
+            "schema_canonical_snapshot_ns": 654401,
+            "sqlite_commit_ns": 512434,
+            "terminal_verify_ns": 6117002
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167396485145769,
+        "t_end_perf_counter_ns": 2167399583439685
+      },
+      "nonce": 6006,
+      "order": [
+        "lego",
+        "inline"
+      ],
+      "pair": 5,
+      "ratio_inline_over_lego": 0.9423937289879764,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -272134558,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdw",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2843086995,
+        "http_after_producer_ns": 33110929,
+        "producer_check": {
+          "actual_sum_ns": 2756712413,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2756712413,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2809976066,
+        "producer_received_perf_counter_ns": 2167406540734801,
+        "producer_timing": {
+          "artifact_finalize_ns": 8743877,
+          "artifact_serialize_ns": 14889,
+          "fixture_canonical_ns": 650170,
+          "internal_component_sum_ns": 2756712413,
+          "parse_ns": 3051,
+          "proof_generate_encode_ns": 2745467722,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 1832704,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "57686a82117609d10b8b929b88ac1e6ea637d2d0098197272a3301ae1a00c1f2",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdw",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 48085712,
+        "service_ready_client_wall_ns": 100309903,
+        "service_timing": {
+          "accept_ns": 31546789,
+          "component_sum_ns": 31546789,
+          "components": {
+            "proof_verify_ns": 20666486,
+            "schema_canonical_snapshot_ns": 658723,
+            "sqlite_commit_ns": 552907,
+            "terminal_verify_ns": 9668673
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167403730758735,
+        "t_end_perf_counter_ns": 2167406573845730
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXdw",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3115221553,
+        "http_after_producer_ns": 39446298,
+        "producer_check": {
+          "actual_sum_ns": 3075494384,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3075494384,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3075775255,
+        "producer_received_perf_counter_ns": 2167410273999720,
+        "producer_timing": {
+          "artifact_serialize_ns": 14823,
+          "component_sum_ns": 3075494384,
+          "fixture_canonical_ns": 56434943,
+          "internal_total_ns": 3075494384,
+          "parse_ns": 4287,
+          "proof_encode_ns": 3017622142,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 1418189,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "df335f3100a3e19b78c6ec42f6254b3578d6811b952fc44b3ad03319aca4cc5e",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXdw",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 53818094,
+        "service_ready_client_wall_ns": 108088757,
+        "service_timing": {
+          "accept_ns": 38099398,
+          "component_sum_ns": 38099398,
+          "components": {
+            "proof_verify_ns": 32529450,
+            "schema_canonical_snapshot_ns": 911219,
+            "sqlite_commit_ns": 742403,
+            "terminal_verify_ns": 3916326
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167407198224465,
+        "t_end_perf_counter_ns": 2167410313446018
+      },
+      "nonce": 6007,
+      "order": [
+        "inline",
+        "lego"
+      ],
+      "pair": 6,
+      "ratio_inline_over_lego": 0.9126435942451891,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -206728431,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 595
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeA",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2951432270,
+        "http_after_producer_ns": 30398748,
+        "producer_check": {
+          "actual_sum_ns": 2867095512,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2867095512,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2921033522,
+        "producer_received_perf_counter_ns": 2167417631779717,
+        "producer_timing": {
+          "artifact_finalize_ns": 8728187,
+          "artifact_serialize_ns": 12882,
+          "fixture_canonical_ns": 644383,
+          "internal_component_sum_ns": 2867095512,
+          "parse_ns": 2850,
+          "proof_generate_encode_ns": 2854930901,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 2776309,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "d8364be9d2804a84470c3ee22051f7223088e1b433a5af40e328eec1148d2bd8",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeA",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 46751349,
+        "service_ready_client_wall_ns": 100325319,
+        "service_timing": {
+          "accept_ns": 28780868,
+          "component_sum_ns": 28780868,
+          "components": {
+            "proof_verify_ns": 17826956,
+            "schema_canonical_snapshot_ns": 1739748,
+            "sqlite_commit_ns": 614268,
+            "terminal_verify_ns": 8599896
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167414710746195,
+        "t_end_perf_counter_ns": 2167417662178465
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeA",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3158160701,
+        "http_after_producer_ns": 39724504,
+        "producer_check": {
+          "actual_sum_ns": 3118139200,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3118139200,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3118436197,
+        "producer_received_perf_counter_ns": 2167414054953870,
+        "producer_timing": {
+          "artifact_serialize_ns": 12786,
+          "component_sum_ns": 3118139200,
+          "fixture_canonical_ns": 64108191,
+          "internal_total_ns": 3118139200,
+          "parse_ns": 3501,
+          "proof_encode_ns": 3052569685,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 1445037,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "2b862d528803cee2d2c05a60c8269144b358c78563cc33c5962e7d2d3368f619",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeA",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 49944100,
+        "service_ready_client_wall_ns": 106650935,
+        "service_timing": {
+          "accept_ns": 38547830,
+          "component_sum_ns": 38547830,
+          "components": {
+            "proof_verify_ns": 32416329,
+            "schema_canonical_snapshot_ns": 649238,
+            "sqlite_commit_ns": 531804,
+            "terminal_verify_ns": 4950459
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167410936517673,
+        "t_end_perf_counter_ns": 2167414094678374
+      },
+      "nonce": 6008,
+      "order": [
+        "lego",
+        "inline"
+      ],
+      "pair": 7,
+      "ratio_inline_over_lego": 0.9345415098938628,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -191967742,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2869530448,
+        "http_after_producer_ns": 28218275,
+        "producer_check": {
+          "actual_sum_ns": 2785578155,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2785578155,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2841312173,
+        "producer_received_perf_counter_ns": 2167421117072834,
+        "producer_timing": {
+          "artifact_finalize_ns": 6685676,
+          "artifact_serialize_ns": 13394,
+          "fixture_canonical_ns": 645387,
+          "internal_component_sum_ns": 2785578155,
+          "parse_ns": 4592,
+          "proof_generate_encode_ns": 2776681689,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 1547417,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "f8d9514bec3515304a5a048bcf22ec13f5f2464a655a957c94adb2b22e565de6",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 44870801,
+        "service_ready_client_wall_ns": 97204853,
+        "service_timing": {
+          "accept_ns": 26850378,
+          "component_sum_ns": 26850378,
+          "components": {
+            "proof_verify_ns": 17483368,
+            "schema_canonical_snapshot_ns": 812637,
+            "sqlite_commit_ns": 627483,
+            "terminal_verify_ns": 7926890
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167418275760661,
+        "t_end_perf_counter_ns": 2167421145291109
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeQ",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3061498190,
+        "http_after_producer_ns": 38675065,
+        "producer_check": {
+          "actual_sum_ns": 3022558955,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3022558955,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3022823125,
+        "producer_received_perf_counter_ns": 2167424773128184,
+        "producer_timing": {
+          "artifact_serialize_ns": 13566,
+          "component_sum_ns": 3022558955,
+          "fixture_canonical_ns": 57304684,
+          "internal_total_ns": 3022558955,
+          "parse_ns": 2806,
+          "proof_encode_ns": 2961324632,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 3913267,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "e8a759e94ee6b79fb63e73bf649e5d1c5ba4768b8d6e10a28720dc9d29d33ea4",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeQ",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 43976899,
+        "service_ready_client_wall_ns": 88447619,
+        "service_timing": {
+          "accept_ns": 37448022,
+          "component_sum_ns": 37448022,
+          "components": {
+            "proof_verify_ns": 31758474,
+            "schema_canonical_snapshot_ns": 696665,
+            "sqlite_commit_ns": 495524,
+            "terminal_verify_ns": 4497359
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167421750305059,
+        "t_end_perf_counter_ns": 2167424811803249
+      },
+      "nonce": 6009,
+      "order": [
+        "inline",
+        "lego"
+      ],
+      "pair": 8,
+      "ratio_inline_over_lego": 0.9372961438856836,
+      "selected_db_effects_equal": true
+    },
+    {
+      "difference_inline_minus_lego_ns": -329330105,
+      "external_contract_equal": true,
+      "inline": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1088,
+          "body": 7,
+          "proof": 192,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 2749081954,
+        "http_after_producer_ns": 29893228,
+        "producer_check": {
+          "actual_sum_ns": 2675677853,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_generate_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_finalize_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 2675677853,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 2719188726,
+        "producer_received_perf_counter_ns": 2167431841118654,
+        "producer_timing": {
+          "artifact_finalize_ns": 6638235,
+          "artifact_serialize_ns": 11738,
+          "fixture_canonical_ns": 494864,
+          "internal_component_sum_ns": 2675677853,
+          "parse_ns": 16941,
+          "proof_generate_encode_ns": 2667760564,
+          "serialization_observer_metadata_excluded": true,
+          "terminal_frame_sign_ns": 755511,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "3df6877f20447815fb4fbffa6d17f93cd21705fb4a97c16acb4abecfb43aa666",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 47176268,
+        "service_ready_client_wall_ns": 91544788,
+        "service_timing": {
+          "accept_ns": 28337383,
+          "component_sum_ns": 28337383,
+          "components": {
+            "proof_verify_ns": 18938723,
+            "schema_canonical_snapshot_ns": 841158,
+            "sqlite_commit_ns": 697370,
+            "terminal_verify_ns": 7860132
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167429121929928,
+        "t_end_perf_counter_ns": 2167431871011882
+      },
+      "lego": {
+        "body_b64": "cGF5bG9hZA==",
+        "bytes": {
+          "authorization_header": 1768,
+          "body": 7,
+          "proof": 702,
+          "response_wire": 594
+        },
+        "external": {
+          "action_onehot": 1,
+          "audience": "https://service.example",
+          "circuit_id": "plan-a-joint-v1:3:20:20:32:3:poseidon-v2:codec-v1",
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "expires_at": 180,
+          "nonce": "AAAAAAAAAAAAAAAAAAAXeg",
+          "protocol_version": "plan-a-http-v1",
+          "request_time": 150,
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc",
+          "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+          "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+        },
+        "full_client_cycle_ns": 3078412059,
+        "http_after_producer_ns": 39228097,
+        "producer_check": {
+          "actual_sum_ns": 3038870640,
+          "keys": [
+            "parse_ns",
+            "fixture_canonical_ns",
+            "proof_encode_ns",
+            "terminal_frame_sign_ns",
+            "artifact_serialize_ns"
+          ],
+          "reported_sum_ns": 3038870640,
+          "sum_matches": true
+        },
+        "producer_client_roundtrip_ns": 3039183962,
+        "producer_received_perf_counter_ns": 2167428474564509,
+        "producer_timing": {
+          "artifact_serialize_ns": 14674,
+          "component_sum_ns": 3038870640,
+          "fixture_canonical_ns": 54522407,
+          "internal_total_ns": 3038870640,
+          "parse_ns": 4332,
+          "proof_encode_ns": 2981869775,
+          "sum_matches": true,
+          "terminal_frame_sign_ns": 2459452,
+          "write_flush_in_client_roundtrip_only": true
+        },
+        "response": {
+          "ok": true,
+          "payload": "synthetic-file-payload-v1",
+          "request_digest": "a9d859ed71032c45090b19754411dff4701425f9cd232fd54f73ab5a2c71c33b",
+          "resource": "fr:00000000000000000000000000000000000000000000000000000000000002bc"
+        },
+        "selected_db_effects": {
+          "admissions": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "max_expiry": 310,
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "owner_public_key": "BPaprH0DVpEumrWyezETTxV5zPWGZ8ojqVnS5Ey0ViQ=",
+              "position": 2,
+              "registration_salt": "000000000000000000000000000000000000000000000000000000000000005b"
+            }
+          ],
+          "headers": [
+            {
+              "installed_at": 150,
+              "issued_at": 90,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "retired_at": null,
+              "revocation_epoch": 9,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_epoch": 55,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+              "tuple_version": 1
+            }
+          ],
+          "nonce_commits": [
+            {
+              "audience": "https://service.example",
+              "committed_at": 150,
+              "nonce": "AAAAAAAAAAAAAAAAAAAXeg",
+              "terminal_agent_pk": "JHTCC3Nwy+Q35C43VNwOuN4cwr3PVc75fYX/QMSUQ+A="
+            }
+          ],
+          "owner_states": [
+            {
+              "active": 1,
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "2e9fe904172a74db4a7548cb746bed78381134fd2479361ffe6a4880c73078c2",
+              "owner_commitment": "190e1cd75650bf830dafa7fa353970df67cbe80c2b4dbfd536a0f54f864b270f",
+              "position": 2,
+              "state_epoch": 55,
+              "state_version": 0,
+              "updated_at": 150
+            }
+          ],
+          "ra_leaves": [
+            {
+              "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+              "leaf": "63843d6d99318cf91a843b02ced72584f159728d337f4cdb6c42411de401485d",
+              "position": 0,
+              "updated_at": 150
+            }
+          ],
+          "revoked_serials": [],
+          "transition_receipts": [
+            {
+              "committed_at": 150,
+              "ra_count": 1,
+              "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+              "revocation_count": 0,
+              "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+              "snapshot_digest": "73b2b1728e8d3c61e3c4bd20b096d8789fcd2edeb2a8b520e326b3347198e2f6",
+              "state_count": 1,
+              "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7"
+            }
+          ]
+        },
+        "service_process_to_provisioned_ns": 53225893,
+        "service_ready_client_wall_ns": 107360912,
+        "service_timing": {
+          "accept_ns": 37678282,
+          "component_sum_ns": 37678282,
+          "components": {
+            "proof_verify_ns": 31151845,
+            "schema_canonical_snapshot_ns": 853028,
+            "sqlite_commit_ns": 649806,
+            "terminal_verify_ns": 5023603
+          },
+          "sum_matches": true,
+          "t0_boundary": "after full HTTP body read, before authorization JSON/schema validation",
+          "t_end_boundary": "after atomic commit, before response serialization"
+        },
+        "snapshot": {
+          "deployment_id": "0000000000000000000000000000000000000000000000000000000000000009",
+          "issued_at": 90,
+          "ra_root": "08bb44fe81042e0aeb3c31455a85a639fc8e7e629116e1a3c7a8cd39d141cbeb",
+          "revocation_epoch": 9,
+          "revocation_root": "2ffc967c6e7ce92d49a09bb4b1a7518e00dea9ebf413e336d925dae48e7d7907",
+          "state_epoch": 55,
+          "state_root": "2a607da01af746cd2fc08bf6b1ecccc3b4e9dc9d30993ea219b90f10309c2ae7",
+          "tuple_version": 1
+        },
+        "status": 200,
+        "t0_perf_counter_ns": 2167425435380547,
+        "t_end_perf_counter_ns": 2167428513792606
+      },
+      "nonce": 6010,
+      "order": [
+        "lego",
+        "inline"
+      ],
+      "pair": 9,
+      "ratio_inline_over_lego": 0.8930194857971742,
+      "selected_db_effects_equal": true
+    }
+  ],
+  "prevalidation": [
+    {
+      "backend": "inline",
+      "producer_check": {
+        "actual_sum_ns": 2808022524,
+        "keys": [
+          "parse_ns",
+          "fixture_canonical_ns",
+          "proof_generate_encode_ns",
+          "terminal_frame_sign_ns",
+          "artifact_finalize_ns",
+          "artifact_serialize_ns"
+        ],
+        "reported_sum_ns": 2808022524,
+        "sum_matches": true
+      },
+      "service_component_sum_matches": true,
+      "service_process_to_provisioned_ns": 48600229,
+      "service_ready_client_wall_ns": 104255373,
+      "service_status": 200
+    },
+    {
+      "backend": "lego",
+      "producer_check": {
+        "actual_sum_ns": 3160078741,
+        "keys": [
+          "parse_ns",
+          "fixture_canonical_ns",
+          "proof_encode_ns",
+          "terminal_frame_sign_ns",
+          "artifact_serialize_ns"
+        ],
+        "reported_sum_ns": 3160078741,
+        "sum_matches": true
+      },
+      "service_component_sum_matches": true,
+      "service_process_to_provisioned_ns": 47410226,
+      "service_ready_client_wall_ns": 97883276,
+      "service_status": 200
+    }
+  ],
+  "producer_startup": {
+    "inline_client_wall_ns": 71890388924,
+    "inline_ready": {
+      "pk_load_ms": 71885.066152,
+      "process_mode": "resident",
+      "ready": true
+    },
+    "lego_client_wall_ns": 71595541734,
+    "lego_ready": {
+      "key_load_ns": 71593359660,
+      "process_mode": "resident-direct-lego",
+      "ready": true,
+      "verifier_id": "04085e94547773438bbff41ee07b7117a567a07a174876edf112db838bbc477d"
+    }
+  },
+  "schedule": {
+    "fresh_provisioned_service_and_db_per_request": true,
+    "nonces": [
+      6001,
+      6002,
+      6003,
+      6004,
+      6005,
+      6006,
+      6007,
+      6008,
+      6009,
+      6010
+    ],
+    "order": [
+      [
+        "inline",
+        "lego"
+      ],
+      [
+        "lego",
+        "inline"
+      ],
+      [
+        "inline",
+        "lego"
+      ],
+      [
+        "lego",
+        "inline"
+      ],
+      [
+        "inline",
+        "lego"
+      ],
+      [
+        "lego",
+        "inline"
+      ],
+      [
+        "inline",
+        "lego"
+      ],
+      [
+        "lego",
+        "inline"
+      ],
+      [
+        "inline",
+        "lego"
+      ],
+      [
+        "lego",
+        "inline"
+      ]
+    ],
+    "resident_producers_ready_before_t0": true
+  },
+  "schema": "plan-a-tertiary-full-client-cycle-formal-v1"
+}

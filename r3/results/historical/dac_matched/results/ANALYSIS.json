@@ -1,0 +1,335 @@
+{
+  "schema": "r13_main_matched_formal_attempt02_analysis_v1",
+  "seed": 2026102704,
+  "bootstrap_replicates": 10000,
+  "backend_rows": 20,
+  "pairs": 10,
+  "all_exit_zero": true,
+  "all_60_standard_verify": true,
+  "all_60_changed_public_rejected": true,
+  "all_60_proofs_unique_within_backend_fingerprint_scheme": true,
+  "all_20_fresh_keys_unique_within_backend": true,
+  "lengths": [
+    {
+      "length": 1,
+      "joint_prove_ms": {
+        "n": 10,
+        "median": 2697.5029489999997,
+        "bootstrap_95_ci": [
+          2635.7192429999996,
+          3081.321425
+        ]
+      },
+      "dac_prove_ms": {
+        "n": 10,
+        "median": 107967.6636615,
+        "bootstrap_95_ci": [
+          106190.52516650001,
+          108944.3781555
+        ]
+      },
+      "prove_difference_ms": {
+        "n": 10,
+        "median": 105319.8006985,
+        "bootstrap_95_ci": [
+          103519.890194,
+          106046.208474
+        ]
+      },
+      "prove_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 39.76249070899104,
+        "bootstrap_95_ci": [
+          35.29355234954107,
+          41.21414908072737
+        ]
+      },
+      "joint_verify_ms": {
+        "n": 10,
+        "median": 5.346444,
+        "bootstrap_95_ci": [
+          5.281101,
+          5.3751169999999995
+        ]
+      },
+      "dac_verify_ms": {
+        "n": 10,
+        "median": 21.3788535,
+        "bootstrap_95_ci": [
+          21.262135,
+          25.785336
+        ]
+      },
+      "verify_difference_ms": {
+        "n": 10,
+        "median": 16.058012499999997,
+        "bootstrap_95_ci": [
+          15.887018000000001,
+          20.491033
+        ]
+      },
+      "verify_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 4.012153387460467,
+        "bootstrap_95_ci": [
+          3.975818254856707,
+          4.881098753278566
+        ]
+      }
+    },
+    {
+      "length": 2,
+      "joint_prove_ms": {
+        "n": 10,
+        "median": 3117.912681,
+        "bootstrap_95_ci": [
+          2773.701445,
+          3197.8912655
+        ]
+      },
+      "dac_prove_ms": {
+        "n": 10,
+        "median": 109452.78048449999,
+        "bootstrap_95_ci": [
+          108405.48035249999,
+          110492.52983
+        ]
+      },
+      "prove_difference_ms": {
+        "n": 10,
+        "median": 106449.25843300001,
+        "bootstrap_95_ci": [
+          105333.414174,
+          107688.853618
+        ]
+      },
+      "prove_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 34.84809943623672,
+        "bootstrap_95_ci": [
+          33.794783307188844,
+          39.52676546411793
+        ]
+      },
+      "joint_verify_ms": {
+        "n": 10,
+        "median": 5.3602685,
+        "bootstrap_95_ci": [
+          5.32439,
+          6.6070075
+        ]
+      },
+      "dac_verify_ms": {
+        "n": 10,
+        "median": 21.3288985,
+        "bootstrap_95_ci": [
+          21.208769999999998,
+          22.913936
+        ]
+      },
+      "verify_difference_ms": {
+        "n": 10,
+        "median": 15.962605500000002,
+        "bootstrap_95_ci": [
+          14.6113161125,
+          17.555605
+        ]
+      },
+      "verify_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 3.9855000455242964,
+        "bootstrap_95_ci": [
+          3.34253917785267,
+          4.26503661960801
+        ]
+      }
+    },
+    {
+      "length": 3,
+      "joint_prove_ms": {
+        "n": 10,
+        "median": 2795.0029164999996,
+        "bootstrap_95_ci": [
+          2776.7957184999996,
+          3012.3743355
+        ]
+      },
+      "dac_prove_ms": {
+        "n": 10,
+        "median": 109598.110709,
+        "bootstrap_95_ci": [
+          108210.234459,
+          110332.7994475
+        ]
+      },
+      "prove_difference_ms": {
+        "n": 10,
+        "median": 106622.78640350001,
+        "bootstrap_95_ci": [
+          105442.170997,
+          107649.5664885
+        ]
+      },
+      "prove_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 38.84226583526832,
+        "bootstrap_95_ci": [
+          36.16983325594053,
+          39.554307150696175
+        ]
+      },
+      "joint_verify_ms": {
+        "n": 10,
+        "median": 5.3460114999999995,
+        "bootstrap_95_ci": [
+          5.247099,
+          6.2473675
+        ]
+      },
+      "dac_verify_ms": {
+        "n": 10,
+        "median": 21.37229,
+        "bootstrap_95_ci": [
+          21.1550675,
+          26.049601
+        ]
+      },
+      "verify_difference_ms": {
+        "n": 10,
+        "median": 16.031259,
+        "bootstrap_95_ci": [
+          14.9819635,
+          20.7410475
+        ]
+      },
+      "verify_direct_ratio_dac_over_joint": {
+        "n": 10,
+        "median": 4.045594977658368,
+        "bootstrap_95_ci": [
+          3.482875169764716,
+          4.940071571598432
+        ]
+      }
+    }
+  ],
+  "backend_level": {
+    "joint_setup_ms": {
+      "n": 10,
+      "median": 3019.8443745,
+      "bootstrap_95_ci": [
+        2958.7542449999996,
+        3436.840757
+      ]
+    },
+    "dac_setup_ms": {
+      "n": 10,
+      "median": 116011.394102,
+      "bootstrap_95_ci": [
+        114137.072505,
+        118677.3119965
+      ]
+    },
+    "setup_difference_ms": {
+      "n": 10,
+      "median": 112850.326137,
+      "bootstrap_95_ci": [
+        111212.064354,
+        115068.524142
+      ]
+    },
+    "setup_direct_ratio_dac_over_joint": {
+      "n": 10,
+      "median": 37.77048277734043,
+      "bootstrap_95_ci": [
+        34.494646053112376,
+        38.686172060768
+      ]
+    },
+    "joint_wall_s": {
+      "n": 10,
+      "median": 12.24836820922792,
+      "bootstrap_95_ci": [
+        11.69906490156427,
+        12.645958535838872
+      ]
+    },
+    "dac_wall_s": {
+      "n": 10,
+      "median": 445.6115496356506,
+      "bootstrap_95_ci": [
+        442.57460416760296,
+        450.1579304053448
+      ]
+    },
+    "wall_difference_s": {
+      "n": 10,
+      "median": 433.8547188981902,
+      "bootstrap_95_ci": [
+        430.1506104033906,
+        438.8589458023198
+      ]
+    },
+    "wall_direct_ratio_dac_over_joint": {
+      "n": 10,
+      "median": 36.46458683913206,
+      "bootstrap_95_ci": [
+        35.34301561963207,
+        37.892684822229306
+      ]
+    },
+    "joint_pk_bytes": {
+      "n": 10,
+      "median": 51976464.0,
+      "bootstrap_95_ci": [
+        51976464.0,
+        51976464.0
+      ]
+    },
+    "dac_pk_bytes": {
+      "n": 10,
+      "median": 655414032.0,
+      "bootstrap_95_ci": [
+        655414032.0,
+        655414032.0
+      ]
+    },
+    "joint_proof_bytes": {
+      "n": 10,
+      "median": 192.0,
+      "bootstrap_95_ci": [
+        192.0,
+        192.0
+      ]
+    },
+    "dac_proof_bytes": {
+      "n": 10,
+      "median": 288.0,
+      "bootstrap_95_ci": [
+        288.0,
+        288.0
+      ]
+    },
+    "dac_peak_rss_kib": {
+      "n": 10,
+      "median": 22759492.0,
+      "bootstrap_95_ci": [
+        22733260.0,
+        22769152.0
+      ]
+    }
+  },
+  "joint_process_peak_rss_kib": null,
+  "joint_process_peak_rss_limitation": "not captured by the frozen runner; no rerun performed",
+  "dac_process_peak_rss_kib": {
+    "n": 10,
+    "median": 22759492.0,
+    "bootstrap_95_ci": [
+      22733260.0,
+      22769152.0
+    ]
+  },
+  "timer_boundaries": {
+    "joint": "fixture/projection construction precedes timer; setup_ms is Groth16 circuit_specific_setup only; prove_ms and standard verify_ms are separate; outer wall includes fixture construction, setup, three prove/verify operations, serialization and runner overhead",
+    "dac": "fixture/native credential/accumulator construction precedes pilot_start and setup timer; setup_ms is Groth16 setup only; prove_ms and standard verify_ms are separate; total_after_fixture_ms and outer wall exclude/include runner overhead respectively; key serialization is separately reported"
+  }
+}

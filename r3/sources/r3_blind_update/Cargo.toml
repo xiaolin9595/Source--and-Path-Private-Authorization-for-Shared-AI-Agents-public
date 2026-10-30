@@ -1,0 +1,67 @@
+[package]
+name = "plan-a-joint-circuit"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-crypto-primitives = { version = "0.4", features = ["r1cs", "sponge"] }
+ark-ec = "0.4"
+ark-ed-on-bls12-381 = { version = "0.4", features = ["r1cs"] }
+ark-ff = "0.4"
+ark-groth16 = "0.4"
+ark-r1cs-std = { version = "0.4", features = ["synthesis-patch"] }
+ark-relations = "0.4"
+ark-serialize = "0.4"
+ark-snark = "0.4"
+ark-std = "0.4"
+blake2 = "0.10"
+base64 = "0.22"
+hex = "0.4"
+rand = "0.8"
+rand_chacha = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "1"
+bls12_381_ct = { package = "bls12_381", path = "../third_party/bls12_381-0.7.1", default-features = false, features = ["groups", "alloc"] }
+ff_ct = { package = "ff", path = "../third_party/ff-0.12.1", default-features = false }
+group_ct = { package = "group", path = "../third_party/group-0.12.1", default-features = false }
+
+ark-poly = "0.4"
+rayon = "1"
+
+[patch.crates-io]
+ark-r1cs-std = { path = "../synthesis_patch/ark-r1cs-std" }
+bls12_381 = { path = "../third_party/bls12_381-0.7.1" }
+ff = { path = "../third_party/ff-0.12.1" }
+group = { path = "../third_party/group-0.12.1" }
+pairing = { path = "../third_party/pairing-0.22.0" }
+
+[dev-dependencies]
+proptest = "1"
+
+[[bin]]
+name = "plan_a_measure"
+path = "src/bin/plan_a_measure.rs"
+
+[[bin]]
+name = "plan_a_proof_cli"
+path = "src/bin/plan_a_proof_cli.rs"
+
+[[bin]]
+name = "plan_a_service_core"
+path = "src/bin/plan_a_service_core.rs"
+
+[[bin]]
+name = "plan_a_agent_cli"
+path = "src/bin/plan_a_agent_cli.rs"
+
+[[bin]]
+name = "plan_a_mutation_cli"
+path = "src/bin/plan_a_mutation_cli.rs"
+
+[[bin]]
+name = "plan_a_population_cli"
+path = "src/bin/plan_a_population_cli.rs"

@@ -1,0 +1,361 @@
+{
+  "inference": "five deterministic synthetic workloads; median and min-max only; no bootstrap CI",
+  "populations": {
+    "1048576": {
+      "bytes": {
+        "serialized_public_state": {
+          "max": 98504257.0,
+          "median": 98504257.0,
+          "min": 98504257.0
+        },
+        "target_direction_count": {
+          "max": 20.0,
+          "median": 20.0,
+          "min": 20.0
+        },
+        "target_directions_json_bytes": {
+          "max": 111.0,
+          "median": 110.0,
+          "min": 108.0
+        },
+        "target_path_json": {
+          "max": 1479.0,
+          "median": 1478.0,
+          "min": 1476.0
+        },
+        "target_raw_sibling_bytes": {
+          "max": 640.0,
+          "median": 640.0,
+          "min": 640.0
+        },
+        "two_path_direction_count": {
+          "max": 40.0,
+          "median": 40.0,
+          "min": 40.0
+        },
+        "two_path_object_json": {
+          "max": 2992.0,
+          "median": 2991.0,
+          "min": 2989.0
+        },
+        "two_path_raw_sibling_bytes": {
+          "max": 1280.0,
+          "median": 1280.0,
+          "min": 1280.0
+        },
+        "unchanged_direction_count": {
+          "max": 20.0,
+          "median": 20.0,
+          "min": 20.0
+        },
+        "unchanged_directions_json_bytes": {
+          "max": 121.0,
+          "median": 121.0,
+          "min": 121.0
+        },
+        "unchanged_path_json": {
+          "max": 1489.0,
+          "median": 1489.0,
+          "min": 1489.0
+        },
+        "unchanged_raw_sibling_bytes": {
+          "max": 640.0,
+          "median": 640.0,
+          "min": 640.0
+        }
+      },
+      "depth": 20,
+      "observations": [
+        {
+          "complete_maintenance_ns": 125443081275,
+          "reciprocal_sequential_rate_per_second": 0.007971742959723468,
+          "seed": 2026103001
+        },
+        {
+          "complete_maintenance_ns": 127719095616,
+          "reciprocal_sequential_rate_per_second": 0.0078296827516427,
+          "seed": 2026103002
+        },
+        {
+          "complete_maintenance_ns": 123939213492,
+          "reciprocal_sequential_rate_per_second": 0.008068471404851603,
+          "seed": 2026103003
+        },
+        {
+          "complete_maintenance_ns": 131595965150,
+          "reciprocal_sequential_rate_per_second": 0.007599017180049156,
+          "seed": 2026103004
+        },
+        {
+          "complete_maintenance_ns": 126098617069,
+          "reciprocal_sequential_rate_per_second": 0.007930301086908901,
+          "seed": 2026103005
+        }
+      ],
+      "reciprocal_sequential_latency_rate_per_second": {
+        "max": 0.008068471404851603,
+        "median": 0.007930301086908901,
+        "min": 0.007599017180049156
+      },
+      "rss": {
+        "children_ru_maxrss_kib": {
+          "max": 1116868.0,
+          "median": 1116720.0,
+          "min": 1116404.0
+        },
+        "scope": "whole-process peak only; not attributable to stages",
+        "self_ru_maxrss_kib": {
+          "max": 652664.0,
+          "median": 652288.0,
+          "min": 652132.0
+        },
+        "units": "KiB (resource.ru_maxrss on verified Linux platform)"
+      },
+      "seeds": [
+        2026103001,
+        2026103002,
+        2026103003,
+        2026103004,
+        2026103005
+      ],
+      "timing_ns": {
+        "complete_maintenance_stages_1_to_3": {
+          "max": 131595965150.0,
+          "median": 126098617069.0,
+          "min": 123939213492.0
+        },
+        "conditional_cas": {
+          "max": 51433101.0,
+          "median": 14150108.0,
+          "min": 9254269.0
+        },
+        "database_read": {
+          "max": 1693366306.0,
+          "median": 1514142807.0,
+          "min": 1221904088.0
+        },
+        "fixture_signer_process": {
+          "max": 7795033.0,
+          "median": 6910455.0,
+          "min": 5956806.0
+        },
+        "full_refresh_header_verify_plus_holder": {
+          "max": 124013152649.0,
+          "median": 122938299743.0,
+          "min": 117753948205.0
+        },
+        "holder_dense_refresh_process_including_file_io_json_and_startup": {
+          "max": 124007730290.0,
+          "median": 122931543574.0,
+          "min": 117748463519.0
+        },
+        "holder_internal_read_parse_build_path": {
+          "max": 123778877360.0,
+          "median": 122543820479.0,
+          "min": 117519180769.0
+        },
+        "initial_population_outside_update": {
+          "max": 264637075044.0,
+          "median": 259815063343.0,
+          "min": 248961837548.0
+        },
+        "materializer_process_including_json_and_startup": {
+          "max": 129792954423.0,
+          "median": 124467227213.0,
+          "min": 122531788862.0
+        },
+        "receiver_header_verify_process_including_startup": {
+          "max": 8061067.0,
+          "median": 6756169.0,
+          "min": 5422359.0
+        },
+        "snapshot_construct_and_fixture_sign_total": {
+          "max": 7925668.0,
+          "median": 6990889.0,
+          "min": 6019024.0
+        }
+      },
+      "trial_count": 5
+    },
+    "65536": {
+      "bytes": {
+        "serialized_public_state": {
+          "max": 6084385.0,
+          "median": 6084385.0,
+          "min": 6084385.0
+        },
+        "target_direction_count": {
+          "max": 16.0,
+          "median": 16.0,
+          "min": 16.0
+        },
+        "target_directions_json_bytes": {
+          "max": 91.0,
+          "median": 88.0,
+          "min": 86.0
+        },
+        "target_path_json": {
+          "max": 1191.0,
+          "median": 1188.0,
+          "min": 1186.0
+        },
+        "target_raw_sibling_bytes": {
+          "max": 512.0,
+          "median": 512.0,
+          "min": 512.0
+        },
+        "two_path_direction_count": {
+          "max": 32.0,
+          "median": 32.0,
+          "min": 32.0
+        },
+        "two_path_object_json": {
+          "max": 2412.0,
+          "median": 2409.0,
+          "min": 2407.0
+        },
+        "two_path_raw_sibling_bytes": {
+          "max": 1024.0,
+          "median": 1024.0,
+          "min": 1024.0
+        },
+        "unchanged_direction_count": {
+          "max": 16.0,
+          "median": 16.0,
+          "min": 16.0
+        },
+        "unchanged_directions_json_bytes": {
+          "max": 97.0,
+          "median": 97.0,
+          "min": 97.0
+        },
+        "unchanged_path_json": {
+          "max": 1197.0,
+          "median": 1197.0,
+          "min": 1197.0
+        },
+        "unchanged_raw_sibling_bytes": {
+          "max": 512.0,
+          "median": 512.0,
+          "min": 512.0
+        }
+      },
+      "depth": 16,
+      "observations": [
+        {
+          "complete_maintenance_ns": 7127842883,
+          "reciprocal_sequential_rate_per_second": 0.1402948993706095,
+          "seed": 2026103001
+        },
+        {
+          "complete_maintenance_ns": 7210517533,
+          "reciprocal_sequential_rate_per_second": 0.13868630031386125,
+          "seed": 2026103002
+        },
+        {
+          "complete_maintenance_ns": 8684709581,
+          "reciprocal_sequential_rate_per_second": 0.11514489813081984,
+          "seed": 2026103003
+        },
+        {
+          "complete_maintenance_ns": 8691280571,
+          "reciprocal_sequential_rate_per_second": 0.11505784352845282,
+          "seed": 2026103004
+        },
+        {
+          "complete_maintenance_ns": 7215289710,
+          "reciprocal_sequential_rate_per_second": 0.1385945734949567,
+          "seed": 2026103005
+        }
+      ],
+      "reciprocal_sequential_latency_rate_per_second": {
+        "max": 0.1402948993706095,
+        "median": 0.1385945734949567,
+        "min": 0.11505784352845282
+      },
+      "rss": {
+        "children_ru_maxrss_kib": {
+          "max": 72320.0,
+          "median": 71680.0,
+          "min": 71360.0
+        },
+        "scope": "whole-process peak only; not attributable to stages",
+        "self_ru_maxrss_kib": {
+          "max": 70392.0,
+          "median": 69320.0,
+          "min": 68920.0
+        },
+        "units": "KiB (resource.ru_maxrss on verified Linux platform)"
+      },
+      "seeds": [
+        2026103001,
+        2026103002,
+        2026103003,
+        2026103004,
+        2026103005
+      ],
+      "timing_ns": {
+        "complete_maintenance_stages_1_to_3": {
+          "max": 8691280571.0,
+          "median": 7215289710.0,
+          "min": 7127842883.0
+        },
+        "conditional_cas": {
+          "max": 9858056.0,
+          "median": 8862886.0,
+          "min": 8037213.0
+        },
+        "database_read": {
+          "max": 110945557.0,
+          "median": 77399520.0,
+          "min": 70256401.0
+        },
+        "fixture_signer_process": {
+          "max": 5957926.0,
+          "median": 5373649.0,
+          "min": 3527827.0
+        },
+        "full_refresh_header_verify_plus_holder": {
+          "max": 8319657859.0,
+          "median": 8190236820.0,
+          "min": 6539930201.0
+        },
+        "holder_dense_refresh_process_including_file_io_json_and_startup": {
+          "max": 8313472447.0,
+          "median": 8184130799.0,
+          "min": 6534414658.0
+        },
+        "holder_internal_read_parse_build_path": {
+          "max": 8288659050.0,
+          "median": 8157597929.0,
+          "min": 6507383280.0
+        },
+        "initial_population_outside_update": {
+          "max": 17728951218.0,
+          "median": 16307048776.0,
+          "min": 15598534882.0
+        },
+        "materializer_process_including_json_and_startup": {
+          "max": 8581735160.0,
+          "median": 7105287464.0,
+          "min": 7029444410.0
+        },
+        "receiver_header_verify_process_including_startup": {
+          "max": 6185412.0,
+          "median": 6059332.0,
+          "min": 5515543.0
+        },
+        "snapshot_construct_and_fixture_sign_total": {
+          "max": 6061430.0,
+          "median": 5427477.0,
+          "min": 3564484.0
+        }
+      },
+      "trial_count": 5
+    }
+  },
+  "rate_definition": "per trial: 1 / complete_maintenance_seconds; then median/min/max over five trial rates; not 1/mean latency",
+  "schema": "r6-full-reconstruction-analysis-v1",
+  "timing_rule": "each named timer summarized independently; nested timers are not summed",
+  "valid": true
+}

@@ -1,0 +1,44 @@
+{
+  "arff_attributes_in_file_order": [
+    "RESOURCE",
+    "MGR_ID",
+    "ROLE_ROLLUP_1",
+    "ROLE_ROLLUP_2",
+    "ROLE_DEPTNAME",
+    "ROLE_TITLE",
+    "ROLE_FAMILY_DESC",
+    "ROLE_FAMILY",
+    "ROLE_CODE",
+    "target"
+  ],
+  "arff_duplicate_rows_beyond_first": 0,
+  "arff_only_multiplicity": 0,
+  "arff_rows": 32769,
+  "arff_sha256": "4f33c09f3612b5de1294ca664eec7fd1bb56a94b05d0352219794a37e4acc8cc",
+  "arff_unique_rows": 32769,
+  "canonical_columns": [
+    "ACTION",
+    "RESOURCE",
+    "MGR_ID",
+    "ROLE_ROLLUP_1",
+    "ROLE_ROLLUP_2",
+    "ROLE_DEPTNAME",
+    "ROLE_TITLE",
+    "ROLE_FAMILY_DESC",
+    "ROLE_FAMILY",
+    "ROLE_CODE"
+  ],
+  "canonical_multiset_sha256_arff": "96f7430fde9b9a8690dd0f2c97686faed5aafabb6a47d6754b20b21b6dd8f7ba",
+  "canonical_multiset_sha256_csv": "96f7430fde9b9a8690dd0f2c97686faed5aafabb6a47d6754b20b21b6dd8f7ba",
+  "canonical_record_multisets_equal": true,
+  "csv_duplicate_rows_beyond_first": 0,
+  "csv_only_multiplicity": 0,
+  "csv_rows": 32769,
+  "csv_sha256": "3728631068926a60b2e812f1b63614e89a95c8b654a84f8ddb56fcd18fbfe47a",
+  "csv_unique_rows": 32769,
+  "normalization": "parse every value as numeric, require integral, serialize base-10 integer; preserve duplicate multiplicity",
+  "schema": "pets2027-e3-format-equivalence-v1",
+  "target_mapping": {
+    "ARFF target": "CSV ACTION"
+  }
+}

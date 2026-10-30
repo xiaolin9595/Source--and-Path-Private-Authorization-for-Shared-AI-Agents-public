@@ -1,0 +1,9 @@
+
+running 4 tests
+test b2_query_is_independently_bound_to_b1 ... ok
+test honest_two_witnesses_and_deterministic_zero_tau ... ok
+test material_strict_decoding_and_callback_gate ... ok
+test every_consumed_family_and_shape_is_bound ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+

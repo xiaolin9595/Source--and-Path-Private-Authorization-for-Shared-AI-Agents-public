@@ -1,0 +1,8 @@
+ Static hostname: experiment-node
+       Icon name: computer-server
+         Chassis: server
+      Machine ID: 8d09a651440d42e592b2af70cf849e0b
+         Boot ID: 29707d92827245ce9a33ebd4553244ca
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 6.8.0-138-generic
+    Architecture: x86-64

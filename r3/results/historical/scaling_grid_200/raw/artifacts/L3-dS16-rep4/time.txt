@@ -1,0 +1,23 @@
+	Command being timed: "env PLAN_A_SKIP_PK_LOAD=1 ${REMOTE_DATA}/pets2027/plan_a_20261023/frozen/e2_formal_v1/target/release/plan_a_proof_cli trial ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/raw/artifacts/L3-dS16-rep4/pk.bin ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/raw/artifacts/L3-dS16-rep4/vk.bin ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/raw/artifacts/L3-dS16-rep4/proof.bin ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/raw/artifacts/L3-dS16-rep4/public.bin 3 3 100048 16 20 32 L3-dS16-rep4"
+	User time (seconds): 30.06
+	System time (seconds): 0.42
+	Percent of CPU this job got: 430%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 725432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 220923
+	Voluntary context switches: 1632
+	Involuntary context switches: 378
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 100640
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

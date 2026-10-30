@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Control-test compatibility only. Formal Linux runs must use util-linux
+# taskset so the frozen CPU-affinity policy is actually enforced.
+if [[ $(uname -s) == Linux ]]; then
+  exec /usr/bin/taskset "$@"
+fi
+[[ ${1:-} == -c && $# -ge 3 ]] || { echo "usage: taskset -c CPU-LIST COMMAND..." >&2; exit 2; }
+shift 2
+exec "$@"

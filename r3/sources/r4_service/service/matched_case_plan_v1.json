@@ -1,0 +1,22 @@
+{
+  "cases": {
+    "expired": {"chain": "c", "nonce_offset": 103, "update_index": 2},
+    "negative_body": {"chain": "c", "nonce_offset": 100, "update_index": 0},
+    "negative_proof": {"chain": "c", "nonce_offset": 101, "update_index": 0},
+    "negative_terminal": {"chain": "c", "nonce_offset": 102, "update_index": 0},
+    "old_ticket": {"chain": "c", "nonce_offset": 104, "update_index": 0},
+    "removed_a": {"chain": "a", "nonce_offset": 105, "update_index": 0},
+    "revoked_b": {"chain": "b", "nonce_offset": 106, "update_index": 1},
+    "t0_a": {"chain": "a", "nonce_offset": 0, "update_index": 0},
+    "t0_b": {"chain": "b", "nonce_offset": 1, "update_index": 0},
+    "t0_c": {"chain": "c", "nonce_offset": 2, "update_index": 0},
+    "t1_b": {"chain": "b", "nonce_offset": 3, "update_index": 1},
+    "t1_c": {"chain": "c", "nonce_offset": 4, "update_index": 1},
+    "t2_c": {"chain": "c", "nonce_offset": 5, "update_index": 2}
+  },
+  "clock_policy": {
+    "expired_case": "set fixture clock to interval_hi + 1, require 403, then restore manifest.request.now and require the same unused case to return 200",
+    "scope": "test-only injected clock; no production wall-clock rollback claim"
+  },
+  "version": "plan-a-matched-case-plan-v1"
+}

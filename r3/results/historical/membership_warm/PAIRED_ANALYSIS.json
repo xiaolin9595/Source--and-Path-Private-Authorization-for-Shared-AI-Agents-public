@@ -1,0 +1,119 @@
+{
+  "all_correctness_checks_passed": true,
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 996971778085,
+  "execution_order": [
+    [
+      "native_inline",
+      "poseidon_state_split_legogroth16"
+    ],
+    [
+      "poseidon_state_split_legogroth16",
+      "native_inline"
+    ],
+    [
+      "native_inline",
+      "poseidon_state_split_legogroth16"
+    ],
+    [
+      "poseidon_state_split_legogroth16",
+      "native_inline"
+    ],
+    [
+      "native_inline",
+      "poseidon_state_split_legogroth16"
+    ],
+    [
+      "poseidon_state_split_legogroth16",
+      "native_inline"
+    ],
+    [
+      "native_inline",
+      "poseidon_state_split_legogroth16"
+    ],
+    [
+      "poseidon_state_split_legogroth16",
+      "native_inline"
+    ],
+    [
+      "native_inline",
+      "poseidon_state_split_legogroth16"
+    ],
+    [
+      "poseidon_state_split_legogroth16",
+      "native_inline"
+    ]
+  ],
+  "g2_old_vs_new": "not_comparable",
+  "inline_prove_ms": {
+    "max": 3393.138284,
+    "median": 2719.016396,
+    "min": 2639.8878569999997,
+    "raw": [
+      2708.004024,
+      3007.961403,
+      2730.028768,
+      2668.099941,
+      2694.054397,
+      3371.931771,
+      2686.0776720000003,
+      3393.138284,
+      2757.374535,
+      2639.8878569999997
+    ]
+  },
+  "lego_total_prove_ms": {
+    "max": 3654.8812860000003,
+    "median": 3078.5431135,
+    "min": 2945.840043,
+    "raw": [
+      2986.590084,
+      3041.953086,
+      3037.653392,
+      3522.362538,
+      3115.133141,
+      3654.8812860000003,
+      2994.315879,
+      2945.840043,
+      3437.83029,
+      3234.243315
+    ]
+  },
+  "median_paired_ratio": 0.8978942027382244,
+  "paired_bootstrap_95_percentile_interval": [
+    0.8162304439979957,
+    0.947773364995532
+  ],
+  "paired_inline_minus_lego_ms": {
+    "median": -307.93141549999996,
+    "raw": [
+      -278.5860600000001,
+      -33.991683000000194,
+      -307.62462400000004,
+      -854.2625969999999,
+      -421.0787439999999,
+      -282.94951500000025,
+      -308.2382069999999,
+      447.29824099999996,
+      -680.455755,
+      -594.3554580000005
+    ]
+  },
+  "pairs": 10,
+  "ratio": "native_inline_prove_ms / lego_total_prove_ms",
+  "raw_paired_ratios": [
+    0.9067210255962264,
+    0.9888257043948375,
+    0.898729517722409,
+    0.7574745393797395,
+    0.8648280105726627,
+    0.9225831175190733,
+    0.8970588877540399,
+    1.151840641199404,
+    0.8020682530550396,
+    0.8162304439979957
+  ],
+  "raw_sha256": "98fc8b759c0a29b7d7567f9f0bf850fa596e6931dbb3b894b709854a73b4e917",
+  "schema": "plan-a-e8-native-paired-analysis-v1",
+  "scope": "native E8 same-relation engine/backend comparison; not legacy G2 and not service latency"
+}

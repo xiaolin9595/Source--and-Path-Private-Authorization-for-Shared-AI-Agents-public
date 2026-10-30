@@ -1,0 +1,1617 @@
+{
+  "schema": "plan-a-e4-real-lifecycle-v1",
+  "host": "experiment-node",
+  "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+  "cpu_set": "0-9",
+  "rayon_threads": 10,
+  "omp_threads": 1,
+  "setup": {
+    "reused": true,
+    "key_cache": "${REMOTE_DATA}/pets2027/results/e4_real_lifecycle_single_v4",
+    "pk_sha256": "bdee71f10646cff58c21ecde22af577474b64721866cc285a2d1b261ee3b231b",
+    "vk_sha256": "14da27986e817e7f6ea931c170ca1ba16500fe3c47d511dee1ea0d99126815bf"
+  },
+  "setup_wall_ms": 0.0,
+  "bootstrap_wall_ms": 0.0,
+  "build_ms": 88.094831,
+  "holder_shape": {
+    "l_max": 3,
+    "actual_enabled_grants": 2
+  },
+  "runner": {
+    "path": "${REMOTE_DATA}/pets2027/gap_runtime_56_e4_v1/source/runner_scripts/run_e4_real_lifecycle.py",
+    "sha256": "f46d35809126551c46533929e01b154dbcee7575e7768eb251b8238f77181dc7"
+  },
+  "source_manifest": [
+    {
+      "path": "Cargo.toml",
+      "bytes": 1088,
+      "sha256": "1a80c5aa8fb79b5c6173877b774a69b9fd982d7c6d5fa429d9c5694fda562abc"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 27851,
+      "sha256": "8744d18eca82703691fa5b24f24f51b219a72304cc4ec6a25d47d916fd1a7c1e"
+    },
+    {
+      "path": "service/service.py",
+      "bytes": 33067,
+      "sha256": "604c5d3671f821d0e8b44467344706777da338aaef25f55c03a21290b00ccb24"
+    },
+    {
+      "path": "src/bin/plan_a_agent_cli.rs",
+      "bytes": 48680,
+      "sha256": "d07a49f30977d2e2f12474ff2dd3cef9c6b959089d8e069d5e5620b59eec7b58"
+    },
+    {
+      "path": "src/bin/plan_a_measure.rs",
+      "bytes": 149,
+      "sha256": "4ee76c3934e5dfb70db39f994e290d8ce1b8232cdd60d1139eca0f164dffeeac"
+    },
+    {
+      "path": "src/bin/plan_a_mutation_cli.rs",
+      "bytes": 11487,
+      "sha256": "1d52ee963d536481ce56c06a5c1ab325e6eb68ebefa918f6e96519e34840057c"
+    },
+    {
+      "path": "src/bin/plan_a_population_cli.rs",
+      "bytes": 7840,
+      "sha256": "88ca9f4bbc7ea7b7e8c2a52cfe1f1e70bac1433ca55a19cf6ffef5b8ece3633b"
+    },
+    {
+      "path": "src/bin/plan_a_proof_cli.rs",
+      "bytes": 23301,
+      "sha256": "292b944dd419909d07726fb3447a86923a4227faf939a96f07b5d3350b0ea317"
+    },
+    {
+      "path": "src/bin/plan_a_service_core.rs",
+      "bytes": 22103,
+      "sha256": "07129c6b73bedfb83a0c6df377f0e383e11e1c871ce4aebb08d803ca2a43a9c8"
+    },
+    {
+      "path": "src/contract.rs",
+      "bytes": 3186,
+      "sha256": "6c42ec2f5a2b8d3bb050031f0e6f63270d4f351309f73dbc51c78d70ce96c2a6"
+    },
+    {
+      "path": "src/fixture.rs",
+      "bytes": 17288,
+      "sha256": "7320b412d114c40c3ec8f45761a87b6b8dc17b73fc96cc945b00ad46d59cb530"
+    },
+    {
+      "path": "src/indexed_revocation.rs",
+      "bytes": 12254,
+      "sha256": "455b543c8accdf4b3d76c48b70130f06ea64d2153e3984f7d73c7a22404f8a5c"
+    },
+    {
+      "path": "src/joint.rs",
+      "bytes": 17396,
+      "sha256": "98b791096cfe3910d7101c129bada4ca4f25860347ee7f7cfb4afe095f6d3e44"
+    },
+    {
+      "path": "src/lib.rs",
+      "bytes": 300,
+      "sha256": "8825106d80fa6dce43390ea11c0a1e6e6f3344117c86d0633ce4bafade14d287"
+    },
+    {
+      "path": "src/merkle.rs",
+      "bytes": 4436,
+      "sha256": "a9a9ba498f2a72923cc52d137c57c9072b7c02aae05e91cba7f61f7c09e4dfdf"
+    },
+    {
+      "path": "src/plain.rs",
+      "bytes": 11146,
+      "sha256": "df7182d3366e88d6627d7ae1870cf1a22dbfbc19e3bd818af916338ba29499cd"
+    },
+    {
+      "path": "src/poseidon.rs",
+      "bytes": 4574,
+      "sha256": "b6588a87db737ea15f931da5b572eccf2802e6ae723a32ca91831f73ca899d8d"
+    },
+    {
+      "path": "src/signature.rs",
+      "bytes": 13089,
+      "sha256": "935b4d57996bf0f39abe9c9a936f098f3110ae7d5d0f3ed4b89b6d65784cc46f"
+    },
+    {
+      "path": "src/state_registry.rs",
+      "bytes": 7436,
+      "sha256": "7a226c2bc707d3ba58e0709f02bd6bab80ad1cc7c6f7cdb33f18cf6c995d26f0"
+    }
+  ],
+  "grid": {
+    "population_n": [
+      16,
+      128,
+      1024
+    ],
+    "update_count_per_registry": [
+      1,
+      8
+    ],
+    "delta_seconds": [
+      0,
+      5,
+      15
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "schedule": {
+    "method": "deterministic shuffled base (N,seed) blocks and shuffled (updates,Delta) cells within each block",
+    "schedule_seed": 20261024,
+    "cell_order": [
+      {
+        "trial_order_index": 0,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 1,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 2,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 3,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 4,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 5,
+        "base_schedule_index": 0,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 6,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 7,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 8,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 9,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 10,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 11,
+        "base_schedule_index": 1,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 12,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 13,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 14,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 15,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 16,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 17,
+        "base_schedule_index": 2,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 18,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 19,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 20,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 21,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 22,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 23,
+        "base_schedule_index": 3,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 24,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 25,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 26,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 27,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 28,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 29,
+        "base_schedule_index": 4,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 30,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 31,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 32,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 33,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 34,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 35,
+        "base_schedule_index": 5,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 36,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 37,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 38,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 39,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 40,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 41,
+        "base_schedule_index": 6,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 42,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 43,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 44,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 45,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 46,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 47,
+        "base_schedule_index": 7,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 48,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 49,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 50,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 51,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 52,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 53,
+        "base_schedule_index": 8,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 54,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 55,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 56,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 57,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 58,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 59,
+        "base_schedule_index": 9,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 5
+      },
+      {
+        "trial_order_index": 60,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 61,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 62,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 63,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 64,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 65,
+        "base_schedule_index": 10,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 66,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 67,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 68,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 69,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 70,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 71,
+        "base_schedule_index": 11,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 72,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 73,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 74,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 75,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 76,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 77,
+        "base_schedule_index": 12,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 78,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 79,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 80,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 81,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 82,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 83,
+        "base_schedule_index": 13,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 84,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 85,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 86,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 87,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 88,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 89,
+        "base_schedule_index": 14,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 90,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 91,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 92,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 93,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 94,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 95,
+        "base_schedule_index": 15,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 96,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 97,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 98,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 99,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 100,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 101,
+        "base_schedule_index": 16,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 102,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 103,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 104,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 105,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 106,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 107,
+        "base_schedule_index": 17,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 108,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 109,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 110,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 111,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 112,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 113,
+        "base_schedule_index": 18,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 114,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 115,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 116,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 117,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 118,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 119,
+        "base_schedule_index": 19,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 8
+      },
+      {
+        "trial_order_index": 120,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 121,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 122,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 123,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 124,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 125,
+        "base_schedule_index": 20,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 2
+      },
+      {
+        "trial_order_index": 126,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 127,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 128,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 129,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 130,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 131,
+        "base_schedule_index": 21,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 132,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 133,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 134,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 135,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 136,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 137,
+        "base_schedule_index": 22,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 7
+      },
+      {
+        "trial_order_index": 138,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 139,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 140,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 141,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 142,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 143,
+        "base_schedule_index": 23,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 144,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 145,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 146,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 147,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 148,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 149,
+        "base_schedule_index": 24,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 1
+      },
+      {
+        "trial_order_index": 150,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 151,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 152,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 153,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 154,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 155,
+        "base_schedule_index": 25,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 10
+      },
+      {
+        "trial_order_index": 156,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 157,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 158,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 159,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 160,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 161,
+        "base_schedule_index": 26,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 3
+      },
+      {
+        "trial_order_index": 162,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 163,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 164,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 165,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 166,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 167,
+        "base_schedule_index": 27,
+        "population_n": 1024,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 4
+      },
+      {
+        "trial_order_index": 168,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 169,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 170,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 171,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 172,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 173,
+        "base_schedule_index": 28,
+        "population_n": 16,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 6
+      },
+      {
+        "trial_order_index": 174,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 175,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 0,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 176,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 177,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 15,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 178,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 1,
+        "delta_seconds": 5,
+        "seed": 9
+      },
+      {
+        "trial_order_index": 179,
+        "base_schedule_index": 29,
+        "population_n": 128,
+        "update_count_per_registry": 8,
+        "delta_seconds": 5,
+        "seed": 9
+      }
+    ]
+  },
+  "seed_semantics": "seed changes every background owner key, registration salt, state opening, RA admission, and revocation capability/serial, hence public roots; holder profile, PK/VK, and occupied positions remain fixed",
+  "resident_holder_ready": {
+    "holder_model": "explicit-deterministic-signed-synthetic-profile-v1",
+    "pk_load_ms": 67904.983436,
+    "process_mode": "resident-holder-refresh",
+    "ready": true
+  },
+  "measurement_boundaries": {
+    "leaf_download": "HTTP loopback bytes and wall time; not production network",
+    "holder_rebuild": "local full public-tree reconstruction plus path/nonmembership refresh; excludes proof; build_tree is dense over fixed dS/dRA capacity, so this is capacity cost rather than N-only sparse-tree complexity",
+    "holder_profile_descriptor": "trusted deployment/version/index/state selector bytes; excludes complete grant/key material",
+    "holder_complete_support": "canonical serialized owner/terminal keys, entitlement and state opening, exact grant messages/signatures, and private grant path for the explicitly supported synthetic holder profile",
+    "holder_private_index": "canonical bytes for RA/state/grant positions inside that private descriptor",
+    "public_reconstructed_paths": "canonical bytes of RA/state paths and indexed-revocation nonmembership witnesses rebuilt from the downloaded public version; excludes the private grant path",
+    "pk": "Groth16 proving key bytes reported separately from holder private support",
+    "verify": "one-shot public verification core subprocess",
+    "total_mutations": "three background registries times update_count, plus one target-holder state update"
+  },
+  "cells": 180,
+  "all_fresh_valid": true,
+  "failures": []
+}

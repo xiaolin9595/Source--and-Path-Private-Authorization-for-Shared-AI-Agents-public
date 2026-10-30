@@ -1,0 +1,64 @@
+{
+  "bytes": {
+    "path_encoding": {
+      "target_json": 1476,
+      "two_path_object_json": 2989,
+      "unchanged_json": 1489
+    },
+    "path_raw": {
+      "target_direction_count": 20,
+      "target_directions_json_bytes": 108,
+      "target_sibling_bytes": 640,
+      "two_path_direction_count": 40,
+      "two_path_sibling_bytes": 1280,
+      "unchanged_direction_count": 20,
+      "unchanged_directions_json_bytes": 121,
+      "unchanged_sibling_bytes": 640
+    },
+    "serialized_public_state": 98504257
+  },
+  "correctness": {
+    "header_signature_verified": true,
+    "root_differs": true,
+    "stale_cas_rejected": true,
+    "target_path_verified": true,
+    "unchanged_holder_path_verified": true,
+    "unchanged_row_intact": true,
+    "updated_leaf_differs": true
+  },
+  "depth": 20,
+  "population": 1048576,
+  "process": {
+    "dense_stderr": "",
+    "generator_stderr": "",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "signer_stderr": ""
+  },
+  "rss": {
+    "children_ru_maxrss_raw": 1116852,
+    "self_ru_maxrss_raw": 652288,
+    "units": "KiB on Linux; bytes on macOS; whole-process maxima, not stage-specific"
+  },
+  "schema": "r6-full-reconstruction-trial-v2",
+  "scope": "component measurement; conditional prevalidated CAS; full root and dense holder reconstruction; no HTTP; no Groth16",
+  "seed": 2026103002,
+  "target": 512823,
+  "timing_ns": {
+    "complete_maintenance_stages_1_to_3": 127719095616,
+    "conditional_cas": 14150108,
+    "database_read": 1644240770,
+    "fixture_signer_process": 7795033,
+    "full_refresh_header_verify_plus_holder": 122969471562,
+    "holder_dense_refresh_process_including_file_io_json_and_startup": 122961997270,
+    "holder_internal_read_parse_build_path": 122742674249,
+    "initial_population_outside_update": 262481572812,
+    "materializer_process_including_json_and_startup": 125910153316,
+    "receiver_header_verify_process_including_startup": 7474292,
+    "snapshot_construct_and_fixture_sign_total": 7925668
+  },
+  "unchanged_holder": 0,
+  "unrelated_ra_population": 0,
+  "unrelated_revocation_population": 0,
+  "valid": true
+}

@@ -1,0 +1,58 @@
+{
+  "nonces": [
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010
+  ],
+  "order": [
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ],
+    [
+      "inline",
+      "lego"
+    ],
+    [
+      "lego",
+      "inline"
+    ]
+  ],
+  "fresh_provisioned_service_and_db_per_request": true,
+  "resident_producers_ready_before_t0": true
+}

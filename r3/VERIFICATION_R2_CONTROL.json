@@ -1,0 +1,13 @@
+{
+  "config_sha256": "c738d027df88637199546e2f0e467812dfac59db3052deebbc4c50e121dda7ca",
+  "e1_key_identities_checked": 16,
+  "fresh_setup": true,
+  "gate_manifest_sha256": "10f580e5fe571e5afed0b887dfe6137d7a0ebbb02152fcabf5f36bf4fb3a37b5",
+  "gate_rows": 9,
+  "measurement_rows": 3,
+  "pk_sha256": "9dbd7511de63d3bf9e8cebfaf9842fc115ce4f7d3c4aaadd8cbb19d17481618d",
+  "schema": "r2-control-test-v1",
+  "source_manifest_sha256": "7e810269ae7ac6431ef3e877d46c9d9ac9e089b94d35c28f61f7583dce48a6d3",
+  "status": "PASS",
+  "vk_sha256": "73e848e905d8483ffa82bf38bf2c6eb6794780aaf57ac62df40b9dc0cd4f37f2"
+}

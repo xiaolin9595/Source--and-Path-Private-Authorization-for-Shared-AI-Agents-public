@@ -1,0 +1,177 @@
+{
+  "method": "resident-cached-key-preparation-not-part-of-service-timing",
+  "inline_ready": {
+    "pk_load_ms": 70530.651662,
+    "process_mode": "resident",
+    "ready": true
+  },
+  "inline_ready_wall_ns": 70533916461,
+  "lego_ready": {
+    "process_mode": "resident-jsonl",
+    "ready": true,
+    "verifier_id": "04085e94547773438bbff41ee07b7117a567a07a174876edf112db838bbc477d"
+  },
+  "lego_ready_wall_ns": 72401591529,
+  "pairs": [
+    {
+      "pair": 0,
+      "nonce": 5001,
+      "inline_resident_roundtrip_ns": 2536404463,
+      "lego_resident_roundtrip_ns": 2781329029,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2483.974237
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2483.974237
+      }
+    },
+    {
+      "pair": 1,
+      "nonce": 5002,
+      "inline_resident_roundtrip_ns": 2424355240,
+      "lego_resident_roundtrip_ns": 2691729769,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2370.182386
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2370.182386
+      }
+    },
+    {
+      "pair": 2,
+      "nonce": 5003,
+      "inline_resident_roundtrip_ns": 2375244482,
+      "lego_resident_roundtrip_ns": 2881976493,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2322.180333
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2322.180333
+      }
+    },
+    {
+      "pair": 3,
+      "nonce": 5004,
+      "inline_resident_roundtrip_ns": 2766140023,
+      "lego_resident_roundtrip_ns": 2826356559,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2703.977076
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2703.977076
+      }
+    },
+    {
+      "pair": 4,
+      "nonce": 5005,
+      "inline_resident_roundtrip_ns": 2771022469,
+      "lego_resident_roundtrip_ns": 2923781367,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2704.056208
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2704.056208
+      }
+    },
+    {
+      "pair": 5,
+      "nonce": 5006,
+      "inline_resident_roundtrip_ns": 2703773488,
+      "lego_resident_roundtrip_ns": 2892783779,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2654.474433
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2654.474433
+      }
+    },
+    {
+      "pair": 6,
+      "nonce": 5007,
+      "inline_resident_roundtrip_ns": 2704753566,
+      "lego_resident_roundtrip_ns": 2709512715,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2645.441191
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2645.441191
+      }
+    },
+    {
+      "pair": 7,
+      "nonce": 5008,
+      "inline_resident_roundtrip_ns": 2376573271,
+      "lego_resident_roundtrip_ns": 2615971698,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2325.88767
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2325.88767
+      }
+    },
+    {
+      "pair": 8,
+      "nonce": 5009,
+      "inline_resident_roundtrip_ns": 2419648765,
+      "lego_resident_roundtrip_ns": 2696556939,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2370.3260880000003
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2370.3260880000003
+      }
+    },
+    {
+      "pair": 9,
+      "nonce": 5010,
+      "inline_resident_roundtrip_ns": 2659398045,
+      "lego_resident_roundtrip_ns": 3095027601,
+      "inline_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2606.014566
+      },
+      "lego_reported": {
+        "pk_load_ms": null,
+        "process_mode": "cold-one-shot; production keeps PK loaded",
+        "prove_with_loaded_pk_ms": 2606.014566
+      }
+    }
+  ]
+}

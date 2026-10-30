@@ -1,0 +1,621 @@
+{
+  "checks": [
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 0
+    },
+    {
+      "pass": true,
+      "same_crs_enabled_lengths": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 1
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 2
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 3
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 4
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 5
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 6
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 7
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 8
+    },
+    {
+      "cross_presentation_splice_rejected": true,
+      "inline_public_mutations_rejected": 23,
+      "linked_core_public_mutations_rejected": 23,
+      "linked_root_mutation_rejected": true,
+      "repetition": 9
+    }
+  ],
+  "fresh_setup_repetitions": 10,
+  "not_in_scope": [
+    "CP/RSA backend",
+    "certified-state-map augmented three-backend relation",
+    "production setup ceremony",
+    "publication-grade conclusion before retained review"
+  ],
+  "paired_ratio_point_estimate": {
+    "interpretation": "values above 1 mean inline is slower; values below 1 mean inline is faster",
+    "statistic": "median",
+    "unit": "x",
+    "value": 0.8978942027382244
+  },
+  "ratio_definition": "within-pair native_inline warm in-memory prove_ms / poseidon_state_split_legogroth16 warm in-memory total prove_ms; no setup, load, serialization, service, or verification time is included",
+  "samples": [
+    {
+      "execution_order": [
+        "native_inline",
+        "poseidon_state_split_legogroth16"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2708.004024,
+        "setup_ms": 2738.829086,
+        "verify_ms": 4.611635000000001,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.9067210255962264,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 2986.590084,
+        "setup_ms_total": 2823.389733,
+        "verify_ms_total": 13.499188
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 0
+    },
+    {
+      "execution_order": [
+        "poseidon_state_split_legogroth16",
+        "native_inline"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 3007.961403,
+        "setup_ms": 3076.7561539999997,
+        "verify_ms": 4.167806,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.9888257043948375,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3041.953086,
+        "setup_ms_total": 2968.966363,
+        "verify_ms_total": 11.488797
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 1
+    },
+    {
+      "execution_order": [
+        "native_inline",
+        "poseidon_state_split_legogroth16"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2730.028768,
+        "setup_ms": 2783.8857030000004,
+        "verify_ms": 4.631692,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.898729517722409,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3037.653392,
+        "setup_ms_total": 2870.735808,
+        "verify_ms_total": 18.562862
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 2
+    },
+    {
+      "execution_order": [
+        "poseidon_state_split_legogroth16",
+        "native_inline"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2668.099941,
+        "setup_ms": 3342.285984,
+        "verify_ms": 4.727942,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.7574745393797395,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3522.362538,
+        "setup_ms_total": 3386.25763,
+        "verify_ms_total": 13.349419
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 3
+    },
+    {
+      "execution_order": [
+        "native_inline",
+        "poseidon_state_split_legogroth16"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2694.054397,
+        "setup_ms": 2907.9907350000003,
+        "verify_ms": 7.780949,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.8648280105726627,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3115.133141,
+        "setup_ms_total": 2865.416609,
+        "verify_ms_total": 14.799095999999999
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 4
+    },
+    {
+      "execution_order": [
+        "poseidon_state_split_legogroth16",
+        "native_inline"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 3371.931771,
+        "setup_ms": 3347.1856359999997,
+        "verify_ms": 4.504171,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.9225831175190733,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3654.8812860000003,
+        "setup_ms_total": 3257.877783,
+        "verify_ms_total": 11.713395
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 5
+    },
+    {
+      "execution_order": [
+        "native_inline",
+        "poseidon_state_split_legogroth16"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2686.0776720000003,
+        "setup_ms": 2754.613404,
+        "verify_ms": 4.616865000000001,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.8970588877540399,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 2994.315879,
+        "setup_ms_total": 2847.724521,
+        "verify_ms_total": 13.256383
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 6
+    },
+    {
+      "execution_order": [
+        "poseidon_state_split_legogroth16",
+        "native_inline"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 3393.138284,
+        "setup_ms": 2777.968907,
+        "verify_ms": 4.915736000000001,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 1.151840641199404,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 2945.840043,
+        "setup_ms_total": 3375.830015,
+        "verify_ms_total": 11.998767
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 7
+    },
+    {
+      "execution_order": [
+        "native_inline",
+        "poseidon_state_split_legogroth16"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2757.374535,
+        "setup_ms": 3256.7019090000003,
+        "verify_ms": 4.654312,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.8020682530550396,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3437.83029,
+        "setup_ms_total": 3127.851654,
+        "verify_ms_total": 17.097362
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 8
+    },
+    {
+      "execution_order": [
+        "poseidon_state_split_legogroth16",
+        "native_inline"
+      ],
+      "inline": {
+        "pk_bytes": 51976464,
+        "proof_bytes": 192,
+        "prove_ms": 2639.8878569999997,
+        "setup_ms": 2894.3629180000003,
+        "verify_ms": 4.460019,
+        "vk_bytes": 1496
+      },
+      "paired_inline_over_linked_prove_ratio": 0.8162304439979957,
+      "poseidon_state_split_legogroth16": {
+        "core_pk_bytes": 49654644,
+        "core_vk_bytes": 2244,
+        "membership_pk_bytes": 3234084,
+        "membership_vk_bytes": 1188,
+        "proof_bundle_bytes": 672,
+        "prove_ms_total": 3234.243315,
+        "setup_ms_total": 3690.147669,
+        "verify_ms_total": 12.659462999999999
+      },
+      "relation_metrics": {
+        "linked_core": {
+          "a_nnz": 803526,
+          "b_nnz": 1409364,
+          "c_nnz": 186291,
+          "constraints": 170029,
+          "instances": 24,
+          "witnesses": 154436
+        },
+        "linked_state_membership": {
+          "a_nnz": 91107,
+          "b_nnz": 170943,
+          "c_nnz": 10350,
+          "constraints": 10548,
+          "instances": 2,
+          "witnesses": 10191
+        },
+        "native_inline": {
+          "a_nnz": 893384,
+          "b_nnz": 1579443,
+          "c_nnz": 196011,
+          "constraints": 179708,
+          "instances": 24,
+          "witnesses": 164114
+        }
+      },
+      "repetition": 9
+    }
+  ],
+  "schema": "plan-a-e8-current-joint-two-backend-v1",
+  "scope": "native 23-field Joint reference versus full logical Joint split into core and Poseidon state membership, linked on hidden (state_leaf,position) with current-stack LegoGroth16",
+  "status": "success"
+}

@@ -1,0 +1,759 @@
+{
+  "descriptive_only": true,
+  "relations": {
+    "blind": {
+      "completed_bundles": 5,
+      "fresh_pk_vk_material": true,
+      "observations": [
+        {
+          "index": 1,
+          "material_sha256": "f5c572aa31f1738c0f4b9b55b0871b6f10d3f62ceed6ceb19f59f33a5d0edc17",
+          "metrics": {
+            "checked_b_cross_ns": 1287014272,
+            "checked_binding_ns": 16709506,
+            "checked_checker_total_ns": 38978496718,
+            "checked_direct_query_ns": 148060120,
+            "checked_equation_ns": 4985125915,
+            "checked_external_wrapper_ns": 5306039,
+            "checked_full_load_ns": 38987983879,
+            "checked_internal_unallocated_ns": 234344,
+            "checked_material_decode_ns": 4273809005,
+            "checked_peak_rss_kib": 55628,
+            "checked_pk_decode_ns": 5036692085,
+            "checked_powers_ns": 5715264742,
+            "checked_reconstruction_ns": 17467344777,
+            "checked_relation_ns": 45896672,
+            "checked_structural_ns": 29665416004,
+            "checked_total_unallocated_ns": 5540383,
+            "checked_vk_decode_ns": 2345280,
+            "ordinary_full_load_ns": 3748305963,
+            "ordinary_peak_rss_kib": 14080,
+            "paired_extra_checked_ns": 35239677916,
+            "power_construction_ns": 13550277013,
+            "prove_ns": 185121082,
+            "serialization_write_ns": 17903964,
+            "setup_ns": 13836069986,
+            "setup_peak_rss_kib": 47500,
+            "setup_process_wall_ns": 13860000000,
+            "verify_ns": 2212866
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "8be5eb33d36c840d73edd7361d44b11b83c177f8677ff07db31e8dcc3f295e8a",
+          "serialized_bytes": {
+            "material": 2359456,
+            "pk": 2846544,
+            "vk": 1064
+          },
+          "vk_sha256": "cc62aa199bf013887ddf5ae65fcdf51af0e23f0390937f2e1cb8ff2763d1c4ec"
+        },
+        {
+          "index": 2,
+          "material_sha256": "7b2667297e71190e3c2c144ffb0b54fd99cc2a5938469b3c69e0b4b3eff61e6a",
+          "metrics": {
+            "checked_b_cross_ns": 1254265395,
+            "checked_binding_ns": 16991759,
+            "checked_checker_total_ns": 37284645149,
+            "checked_direct_query_ns": 146660791,
+            "checked_equation_ns": 4972087093,
+            "checked_external_wrapper_ns": 5241033,
+            "checked_full_load_ns": 37294108221,
+            "checked_internal_unallocated_ns": 220858,
+            "checked_material_decode_ns": 3905521667,
+            "checked_peak_rss_kib": 56060,
+            "checked_pk_decode_ns": 4634845507,
+            "checked_powers_ns": 5426862704,
+            "checked_reconstruction_ns": 16879564692,
+            "checked_relation_ns": 45847497,
+            "checked_structural_ns": 28742279931,
+            "checked_total_unallocated_ns": 5461891,
+            "checked_vk_decode_ns": 1777186,
+            "ordinary_full_load_ns": 3894782044,
+            "ordinary_peak_rss_kib": 14080,
+            "paired_extra_checked_ns": 33399326177,
+            "power_construction_ns": 12963074443,
+            "prove_ns": 187019485,
+            "serialization_write_ns": 11840682,
+            "setup_ns": 13134649595,
+            "setup_peak_rss_kib": 47956,
+            "setup_process_wall_ns": 13150000000,
+            "verify_ns": 2156720
+          },
+          "order": "ordinary,checked",
+          "pk_sha256": "fea11f086afc0ea7bd2ce99ceec74e93f976d3214282d842dd7c6f98c3c6a62b",
+          "serialized_bytes": {
+            "material": 2359456,
+            "pk": 2846544,
+            "vk": 1064
+          },
+          "vk_sha256": "2f00deb1c8f62798a447b888e15ed67099344ddc029aef9685df4795bd397656"
+        },
+        {
+          "index": 3,
+          "material_sha256": "aca1f74f8ec3d7a6bccc57040481dbcc5300d30fb256cf9df9bc20b358d8e42d",
+          "metrics": {
+            "checked_b_cross_ns": 1270398495,
+            "checked_binding_ns": 16838990,
+            "checked_checker_total_ns": 38662313060,
+            "checked_direct_query_ns": 192397632,
+            "checked_equation_ns": 4923672649,
+            "checked_external_wrapper_ns": 5289187,
+            "checked_full_load_ns": 38670659114,
+            "checked_internal_unallocated_ns": 227142,
+            "checked_material_decode_ns": 4769836177,
+            "checked_peak_rss_kib": 55680,
+            "checked_pk_decode_ns": 4132165994,
+            "checked_powers_ns": 5473540669,
+            "checked_reconstruction_ns": 17821545629,
+            "checked_relation_ns": 59366112,
+            "checked_structural_ns": 29757760176,
+            "checked_total_unallocated_ns": 5516329,
+            "checked_vk_decode_ns": 2323571,
+            "ordinary_full_load_ns": 3841075372,
+            "ordinary_peak_rss_kib": 13760,
+            "paired_extra_checked_ns": 34829583742,
+            "power_construction_ns": 13108714435,
+            "prove_ns": 185828801,
+            "serialization_write_ns": 14738024,
+            "setup_ns": 13277229381,
+            "setup_peak_rss_kib": 47888,
+            "setup_process_wall_ns": 13300000000,
+            "verify_ns": 2216654
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "6680296b6fefdf10638f7bd8a2efff81622e8cfae9ca6e5d89ce383df38e9756",
+          "serialized_bytes": {
+            "material": 2359456,
+            "pk": 2846544,
+            "vk": 1064
+          },
+          "vk_sha256": "1036287b1646b0227047fbdd41223b282ba9afe44eedf6de565cc90237fc4b22"
+        },
+        {
+          "index": 4,
+          "material_sha256": "9b282d653be70abaf952f73f9b8581728bbd5a7ba89fa98f47eac47c7fb14813",
+          "metrics": {
+            "checked_b_cross_ns": 1253029441,
+            "checked_binding_ns": 16621635,
+            "checked_checker_total_ns": 37663631404,
+            "checked_direct_query_ns": 171854826,
+            "checked_equation_ns": 5045776771,
+            "checked_external_wrapper_ns": 4614435,
+            "checked_full_load_ns": 37671467979,
+            "checked_internal_unallocated_ns": 186974,
+            "checked_material_decode_ns": 4025964311,
+            "checked_peak_rss_kib": 56092,
+            "checked_pk_decode_ns": 4477316518,
+            "checked_powers_ns": 5502780251,
+            "checked_reconstruction_ns": 17122111741,
+            "checked_relation_ns": 46204581,
+            "checked_structural_ns": 29158379246,
+            "checked_total_unallocated_ns": 4801409,
+            "checked_vk_decode_ns": 1784355,
+            "ordinary_full_load_ns": 4994138119,
+            "ordinary_peak_rss_kib": 14400,
+            "paired_extra_checked_ns": 32677329860,
+            "power_construction_ns": 13322064978,
+            "prove_ns": 195686198,
+            "serialization_write_ns": 14957089,
+            "setup_ns": 13489197279,
+            "setup_peak_rss_kib": 48628,
+            "setup_process_wall_ns": 13510000000,
+            "verify_ns": 2304721
+          },
+          "order": "ordinary,checked",
+          "pk_sha256": "046fd5bfe11c33cd5b8e9be8b7b2a46528a14f6a73c8137ea4277dcb76f072f3",
+          "serialized_bytes": {
+            "material": 2359456,
+            "pk": 2846544,
+            "vk": 1064
+          },
+          "vk_sha256": "fbe3082af1f1a2be0a715ad45655be1be333bec570a1cce5a35c74c33ade41cb"
+        },
+        {
+          "index": 5,
+          "material_sha256": "ea07b80a95007f143797f2170bbbcbd34e0e5404ac6ac9fbc26a8c7d0be7e5b0",
+          "metrics": {
+            "checked_b_cross_ns": 1212843937,
+            "checked_binding_ns": 16833666,
+            "checked_checker_total_ns": 37344943174,
+            "checked_direct_query_ns": 146424563,
+            "checked_equation_ns": 4975685553,
+            "checked_external_wrapper_ns": 5240714,
+            "checked_full_load_ns": 37352743643,
+            "checked_internal_unallocated_ns": 184999,
+            "checked_material_decode_ns": 4062371942,
+            "checked_peak_rss_kib": 55912,
+            "checked_pk_decode_ns": 4454898768,
+            "checked_powers_ns": 5455051107,
+            "checked_reconstruction_ns": 16972676190,
+            "checked_relation_ns": 46198556,
+            "checked_structural_ns": 28825713572,
+            "checked_total_unallocated_ns": 5425713,
+            "checked_vk_decode_ns": 1773893,
+            "ordinary_full_load_ns": 3815620586,
+            "ordinary_peak_rss_kib": 14080,
+            "paired_extra_checked_ns": 33537123057,
+            "power_construction_ns": 13052659078,
+            "prove_ns": 185236153,
+            "serialization_write_ns": 14773251,
+            "setup_ns": 13227488823,
+            "setup_peak_rss_kib": 48920,
+            "setup_process_wall_ns": 13250000000,
+            "verify_ns": 2149899
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "5ba6eeb969b45b3d69f753ecc250bb067755d076d95294f206d49449884a6fab",
+          "serialized_bytes": {
+            "material": 2359456,
+            "pk": 2846544,
+            "vk": 1064
+          },
+          "vk_sha256": "ebad6d953d39f4f140078278b27459192f9449a367f0f106a6ded4a180faafdb"
+        }
+      ],
+      "summaries": {
+        "checked_b_cross_ns": {
+          "max": 1287014272,
+          "median": 1254265395,
+          "min": 1212843937,
+          "unit": "ns"
+        },
+        "checked_binding_ns": {
+          "max": 16991759,
+          "median": 16833666,
+          "min": 16621635,
+          "unit": "ns"
+        },
+        "checked_checker_total_ns": {
+          "max": 38978496718,
+          "median": 37663631404,
+          "min": 37284645149,
+          "unit": "ns"
+        },
+        "checked_direct_query_ns": {
+          "max": 192397632,
+          "median": 148060120,
+          "min": 146424563,
+          "unit": "ns"
+        },
+        "checked_equation_ns": {
+          "max": 5045776771,
+          "median": 4975685553,
+          "min": 4923672649,
+          "unit": "ns"
+        },
+        "checked_external_wrapper_ns": {
+          "max": 5306039,
+          "median": 5241033,
+          "min": 4614435,
+          "unit": "ns"
+        },
+        "checked_full_load_ns": {
+          "max": 38987983879,
+          "median": 37671467979,
+          "min": 37294108221,
+          "unit": "ns"
+        },
+        "checked_internal_unallocated_ns": {
+          "max": 234344,
+          "median": 220858,
+          "min": 184999,
+          "unit": "ns"
+        },
+        "checked_material_decode_ns": {
+          "max": 4769836177,
+          "median": 4062371942,
+          "min": 3905521667,
+          "unit": "ns"
+        },
+        "checked_peak_rss_kib": {
+          "max": 56092,
+          "median": 55912,
+          "min": 55628,
+          "unit": "KiB"
+        },
+        "checked_pk_decode_ns": {
+          "max": 5036692085,
+          "median": 4477316518,
+          "min": 4132165994,
+          "unit": "ns"
+        },
+        "checked_powers_ns": {
+          "max": 5715264742,
+          "median": 5473540669,
+          "min": 5426862704,
+          "unit": "ns"
+        },
+        "checked_reconstruction_ns": {
+          "max": 17821545629,
+          "median": 17122111741,
+          "min": 16879564692,
+          "unit": "ns"
+        },
+        "checked_relation_ns": {
+          "max": 59366112,
+          "median": 46198556,
+          "min": 45847497,
+          "unit": "ns"
+        },
+        "checked_structural_ns": {
+          "max": 29757760176,
+          "median": 29158379246,
+          "min": 28742279931,
+          "unit": "ns"
+        },
+        "checked_total_unallocated_ns": {
+          "max": 5540383,
+          "median": 5461891,
+          "min": 4801409,
+          "unit": "ns"
+        },
+        "checked_vk_decode_ns": {
+          "max": 2345280,
+          "median": 1784355,
+          "min": 1773893,
+          "unit": "ns"
+        },
+        "ordinary_full_load_ns": {
+          "max": 4994138119,
+          "median": 3841075372,
+          "min": 3748305963,
+          "unit": "ns"
+        },
+        "ordinary_peak_rss_kib": {
+          "max": 14400,
+          "median": 14080,
+          "min": 13760,
+          "unit": "KiB"
+        },
+        "paired_extra_checked_ns": {
+          "max": 35239677916,
+          "median": 33537123057,
+          "min": 32677329860,
+          "unit": "ns"
+        },
+        "power_construction_ns": {
+          "max": 13550277013,
+          "median": 13108714435,
+          "min": 12963074443,
+          "unit": "ns"
+        },
+        "prove_ns": {
+          "max": 195686198,
+          "median": 185828801,
+          "min": 185121082,
+          "unit": "ns"
+        },
+        "serialization_write_ns": {
+          "max": 17903964,
+          "median": 14773251,
+          "min": 11840682,
+          "unit": "ns"
+        },
+        "setup_ns": {
+          "max": 13836069986,
+          "median": 13277229381,
+          "min": 13134649595,
+          "unit": "ns"
+        },
+        "setup_peak_rss_kib": {
+          "max": 48920,
+          "median": 47956,
+          "min": 47500,
+          "unit": "KiB"
+        },
+        "setup_process_wall_ns": {
+          "max": 13860000000,
+          "median": 13300000000,
+          "min": 13150000000,
+          "unit": "ns"
+        },
+        "verify_ns": {
+          "max": 2304721,
+          "median": 2212866,
+          "min": 2149899,
+          "unit": "ns"
+        }
+      },
+      "verified_proofs": 5
+    },
+    "joint": {
+      "completed_bundles": 5,
+      "fresh_pk_vk_material": true,
+      "observations": [
+        {
+          "index": 1,
+          "material_sha256": "bfffacebea37d81a86340156bb28af46664c1098b705b1cfd5ad753cd6631432",
+          "metrics": {
+            "checked_b_cross_ns": 21548596635,
+            "checked_binding_ns": 344487753,
+            "checked_checker_total_ns": 889499697405,
+            "checked_direct_query_ns": 3328635530,
+            "checked_equation_ns": 84084622967,
+            "checked_external_wrapper_ns": 118128677,
+            "checked_full_load_ns": 889691139998,
+            "checked_internal_unallocated_ns": 307014,
+            "checked_material_decode_ns": 77376906256,
+            "checked_peak_rss_kib": 892620,
+            "checked_pk_decode_ns": 85035932022,
+            "checked_powers_ns": 81129835140,
+            "checked_reconstruction_ns": 535333709224,
+            "checked_relation_ns": 1313392666,
+            "checked_structural_ns": 727083279915,
+            "checked_total_unallocated_ns": 118435691,
+            "checked_vk_decode_ns": 3272198,
+            "ordinary_full_load_ns": 84415024967,
+            "ordinary_peak_rss_kib": 220160,
+            "paired_extra_checked_ns": 805276115031,
+            "power_construction_ns": 244896184487,
+            "prove_ns": 4188468096,
+            "serialization_write_ns": 342290783,
+            "setup_ns": 247872560857,
+            "setup_peak_rss_kib": 805172,
+            "setup_process_wall_ns": 248370000000,
+            "verify_ns": 3138369
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "5bca267900af0e5ebf08e978c5fd43b6a7e07373fdc7a5750fb78576994e0520",
+          "serialized_bytes": {
+            "material": 37748896,
+            "pk": 53924784,
+            "vk": 1496
+          },
+          "vk_sha256": "57d339f3425d0bd419c883a6d255a9531d8d93b587f8bead2e9985bd498f1752"
+        },
+        {
+          "index": 2,
+          "material_sha256": "acaab37cc12c1de574aa2dd3a3e189292c101d6bd55c1da5fbf7a2a0b46a32e3",
+          "metrics": {
+            "checked_b_cross_ns": 21628930914,
+            "checked_binding_ns": 347750698,
+            "checked_checker_total_ns": 887235757964,
+            "checked_direct_query_ns": 3719538901,
+            "checked_equation_ns": 84053070047,
+            "checked_external_wrapper_ns": 116821939,
+            "checked_full_load_ns": 887403933392,
+            "checked_internal_unallocated_ns": 396878,
+            "checked_material_decode_ns": 77976211402,
+            "checked_peak_rss_kib": 893676,
+            "checked_pk_decode_ns": 85728522000,
+            "checked_powers_ns": 81353539279,
+            "checked_reconstruction_ns": 530674135098,
+            "checked_relation_ns": 1750376813,
+            "checked_structural_ns": 723527341750,
+            "checked_total_unallocated_ns": 117218817,
+            "checked_vk_decode_ns": 3285934,
+            "ordinary_full_load_ns": 82531237369,
+            "ordinary_peak_rss_kib": 219520,
+            "paired_extra_checked_ns": 804872696023,
+            "power_construction_ns": 251273298407,
+            "prove_ns": 4234321842,
+            "serialization_write_ns": 295643619,
+            "setup_ns": 255184952719,
+            "setup_peak_rss_kib": 803396,
+            "setup_process_wall_ns": 255600000000,
+            "verify_ns": 3109369
+          },
+          "order": "ordinary,checked",
+          "pk_sha256": "266cac777e506fe34af1f4bffbe5c04a796decab1b48c6e098c61c03f1ac15b1",
+          "serialized_bytes": {
+            "material": 37748896,
+            "pk": 53924784,
+            "vk": 1496
+          },
+          "vk_sha256": "52ab261673500f3991613470b0ef93d097750aa4fbff61a93c2924b895e62d33"
+        },
+        {
+          "index": 3,
+          "material_sha256": "51eb4b15eac0ba7740b237a366c174c5c4a9670d8677f440b435eae91f310c33",
+          "metrics": {
+            "checked_b_cross_ns": 21697765385,
+            "checked_binding_ns": 347181147,
+            "checked_checker_total_ns": 898071781211,
+            "checked_direct_query_ns": 3742073928,
+            "checked_equation_ns": 83845621328,
+            "checked_external_wrapper_ns": 122167779,
+            "checked_full_load_ns": 898251368754,
+            "checked_internal_unallocated_ns": 369796,
+            "checked_material_decode_ns": 74220626142,
+            "checked_peak_rss_kib": 893360,
+            "checked_pk_decode_ns": 91379149693,
+            "checked_powers_ns": 81040333308,
+            "checked_reconstruction_ns": 540076064775,
+            "checked_relation_ns": 1720090642,
+            "checked_structural_ns": 732469130513,
+            "checked_total_unallocated_ns": 122537575,
+            "checked_vk_decode_ns": 2505067,
+            "ordinary_full_load_ns": 80963205161,
+            "ordinary_peak_rss_kib": 219840,
+            "paired_extra_checked_ns": 817288163593,
+            "power_construction_ns": 243016883856,
+            "prove_ns": 4161102069,
+            "serialization_write_ns": 289918971,
+            "setup_ns": 245962161320,
+            "setup_peak_rss_kib": 802852,
+            "setup_process_wall_ns": 246380000000,
+            "verify_ns": 3141800
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "1ced6ca108620db30b7e1ae28f8072fcee74d074e0056152363971461e578d41",
+          "serialized_bytes": {
+            "material": 37748896,
+            "pk": 53924784,
+            "vk": 1496
+          },
+          "vk_sha256": "4ab5d6ad7d870a87731e6c30cd92019c9556c074d3af3a0ef0704dd9f592c50f"
+        },
+        {
+          "index": 4,
+          "material_sha256": "67334fd6100e6e0c8f0c6a810df564185d92329dca802f4f34d446af94bc1b00",
+          "metrics": {
+            "checked_b_cross_ns": 21562627500,
+            "checked_binding_ns": 339813976,
+            "checked_checker_total_ns": 882183198179,
+            "checked_direct_query_ns": 3725711409,
+            "checked_equation_ns": 84007409134,
+            "checked_external_wrapper_ns": 116470020,
+            "checked_full_load_ns": 882350575605,
+            "checked_internal_unallocated_ns": 304385,
+            "checked_material_decode_ns": 73304882670,
+            "checked_peak_rss_kib": 893692,
+            "checked_pk_decode_ns": 87728580158,
+            "checked_powers_ns": 88986842367,
+            "checked_reconstruction_ns": 520799352081,
+            "checked_relation_ns": 1725187410,
+            "checked_structural_ns": 721146943877,
+            "checked_total_unallocated_ns": 116774405,
+            "checked_vk_decode_ns": 2487089,
+            "ordinary_full_load_ns": 84093802215,
+            "ordinary_peak_rss_kib": 220160,
+            "paired_extra_checked_ns": 798256773390,
+            "power_construction_ns": 249301394175,
+            "prove_ns": 4134390780,
+            "serialization_write_ns": 273754616,
+            "setup_ns": 253120738645,
+            "setup_peak_rss_kib": 804916,
+            "setup_process_wall_ns": 253500000000,
+            "verify_ns": 3133273
+          },
+          "order": "ordinary,checked",
+          "pk_sha256": "deac1f7bfc080532dbec4fd82240f48d29494efadc8b7a03916d864822a04619",
+          "serialized_bytes": {
+            "material": 37748896,
+            "pk": 53924784,
+            "vk": 1496
+          },
+          "vk_sha256": "aaf37c14e957e65fd79319c44cab47e00c80c2a235f5a7f78b298d466a5d6cee"
+        },
+        {
+          "index": 5,
+          "material_sha256": "3fc536d49ae1e2e463b9bd47f0b6dde8364096252eb9f9b18b3289d6b59ac918",
+          "metrics": {
+            "checked_b_cross_ns": 21453055832,
+            "checked_binding_ns": 345242123,
+            "checked_checker_total_ns": 880189984427,
+            "checked_direct_query_ns": 3206219725,
+            "checked_equation_ns": 83879915722,
+            "checked_external_wrapper_ns": 103794009,
+            "checked_full_load_ns": 880353552333,
+            "checked_internal_unallocated_ns": 293721,
+            "checked_material_decode_ns": 73818638990,
+            "checked_peak_rss_kib": 893504,
+            "checked_pk_decode_ns": 81174040130,
+            "checked_powers_ns": 80929147242,
+            "checked_reconstruction_ns": 533922277538,
+            "checked_relation_ns": 1457831634,
+            "checked_structural_ns": 725193689816,
+            "checked_total_unallocated_ns": 104087730,
+            "checked_vk_decode_ns": 3321770,
+            "ordinary_full_load_ns": 83073839504,
+            "ordinary_peak_rss_kib": 219840,
+            "paired_extra_checked_ns": 797279712829,
+            "power_construction_ns": 242572941735,
+            "prove_ns": 4209859766,
+            "serialization_write_ns": 296747141,
+            "setup_ns": 245539949577,
+            "setup_peak_rss_kib": 802904,
+            "setup_process_wall_ns": 245990000000,
+            "verify_ns": 3123069
+          },
+          "order": "checked,ordinary",
+          "pk_sha256": "adfaae3e5828359488ad3467efa7d57f9c280c3fa0d6201456e0b0eedd84d9fd",
+          "serialized_bytes": {
+            "material": 37748896,
+            "pk": 53924784,
+            "vk": 1496
+          },
+          "vk_sha256": "3c034fe984c64ab54f1729e731f2796478431fe9cb832f8c38a653e08840d1cb"
+        }
+      ],
+      "summaries": {
+        "checked_b_cross_ns": {
+          "max": 21697765385,
+          "median": 21562627500,
+          "min": 21453055832,
+          "unit": "ns"
+        },
+        "checked_binding_ns": {
+          "max": 347750698,
+          "median": 345242123,
+          "min": 339813976,
+          "unit": "ns"
+        },
+        "checked_checker_total_ns": {
+          "max": 898071781211,
+          "median": 887235757964,
+          "min": 880189984427,
+          "unit": "ns"
+        },
+        "checked_direct_query_ns": {
+          "max": 3742073928,
+          "median": 3719538901,
+          "min": 3206219725,
+          "unit": "ns"
+        },
+        "checked_equation_ns": {
+          "max": 84084622967,
+          "median": 84007409134,
+          "min": 83845621328,
+          "unit": "ns"
+        },
+        "checked_external_wrapper_ns": {
+          "max": 122167779,
+          "median": 116821939,
+          "min": 103794009,
+          "unit": "ns"
+        },
+        "checked_full_load_ns": {
+          "max": 898251368754,
+          "median": 887403933392,
+          "min": 880353552333,
+          "unit": "ns"
+        },
+        "checked_internal_unallocated_ns": {
+          "max": 396878,
+          "median": 307014,
+          "min": 293721,
+          "unit": "ns"
+        },
+        "checked_material_decode_ns": {
+          "max": 77976211402,
+          "median": 74220626142,
+          "min": 73304882670,
+          "unit": "ns"
+        },
+        "checked_peak_rss_kib": {
+          "max": 893692,
+          "median": 893504,
+          "min": 892620,
+          "unit": "KiB"
+        },
+        "checked_pk_decode_ns": {
+          "max": 91379149693,
+          "median": 85728522000,
+          "min": 81174040130,
+          "unit": "ns"
+        },
+        "checked_powers_ns": {
+          "max": 88986842367,
+          "median": 81129835140,
+          "min": 80929147242,
+          "unit": "ns"
+        },
+        "checked_reconstruction_ns": {
+          "max": 540076064775,
+          "median": 533922277538,
+          "min": 520799352081,
+          "unit": "ns"
+        },
+        "checked_relation_ns": {
+          "max": 1750376813,
+          "median": 1720090642,
+          "min": 1313392666,
+          "unit": "ns"
+        },
+        "checked_structural_ns": {
+          "max": 732469130513,
+          "median": 725193689816,
+          "min": 721146943877,
+          "unit": "ns"
+        },
+        "checked_total_unallocated_ns": {
+          "max": 122537575,
+          "median": 117218817,
+          "min": 104087730,
+          "unit": "ns"
+        },
+        "checked_vk_decode_ns": {
+          "max": 3321770,
+          "median": 3272198,
+          "min": 2487089,
+          "unit": "ns"
+        },
+        "ordinary_full_load_ns": {
+          "max": 84415024967,
+          "median": 83073839504,
+          "min": 80963205161,
+          "unit": "ns"
+        },
+        "ordinary_peak_rss_kib": {
+          "max": 220160,
+          "median": 219840,
+          "min": 219520,
+          "unit": "KiB"
+        },
+        "paired_extra_checked_ns": {
+          "max": 817288163593,
+          "median": 804872696023,
+          "min": 797279712829,
+          "unit": "ns"
+        },
+        "power_construction_ns": {
+          "max": 251273298407,
+          "median": 244896184487,
+          "min": 242572941735,
+          "unit": "ns"
+        },
+        "prove_ns": {
+          "max": 4234321842,
+          "median": 4188468096,
+          "min": 4134390780,
+          "unit": "ns"
+        },
+        "serialization_write_ns": {
+          "max": 342290783,
+          "median": 295643619,
+          "min": 273754616,
+          "unit": "ns"
+        },
+        "setup_ns": {
+          "max": 255184952719,
+          "median": 247872560857,
+          "min": 245539949577,
+          "unit": "ns"
+        },
+        "setup_peak_rss_kib": {
+          "max": 805172,
+          "median": 803396,
+          "min": 802852,
+          "unit": "KiB"
+        },
+        "setup_process_wall_ns": {
+          "max": 255600000000,
+          "median": 248370000000,
+          "min": 245990000000,
+          "unit": "ns"
+        },
+        "verify_ns": {
+          "max": 3141800,
+          "median": 3133273,
+          "min": 3109369,
+          "unit": "ns"
+        }
+      },
+      "verified_proofs": 5
+    }
+  },
+  "schema": "r4-formal-analysis-v1",
+  "stable_speedup_inference": false
+}

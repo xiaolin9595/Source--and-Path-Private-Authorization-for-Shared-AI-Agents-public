@@ -1,0 +1,5 @@
+214e4e8df3a105ef4fa2990a00198466b1435b82042cb33ef3e68e2363b426bc  ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/raw/TRIALS.jsonl
+043ef8974a58144795060e8d39aca070d9446d769cf5e3ff94d553ccbb6f1b72  ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/E2.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/E2.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/CHECK.stdout
+92ebcae5ce8009a484a9faf7f1aa4d22c370353eafed7ea3d1e3561f1622f8ea  ${REMOTE_DATA}/pets2027/plan_a_20261023/runs/e2_formal_v1/CHECK.stderr

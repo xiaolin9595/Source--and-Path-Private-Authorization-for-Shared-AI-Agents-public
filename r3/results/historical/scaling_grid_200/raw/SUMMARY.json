@@ -1,0 +1,7 @@
+{
+  "schema": "plan-a-e2-raw-v1",
+  "random_seed": 20261023,
+  "expected_trials": 200,
+  "completed_trials": 200,
+  "note": "Each trial is an independent OsRng setup, in-memory proof and verification; pk_load_ms is null. Process RSS includes setup, proving, verification and serialization."
+}

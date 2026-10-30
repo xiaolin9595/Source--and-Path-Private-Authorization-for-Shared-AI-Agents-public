@@ -1,0 +1,18 @@
+   Compiling ark-poly v0.4.2
+   Compiling ark-ec v0.4.2
+   Compiling ark-r1cs-std v0.4.0
+   Compiling ark-bls12-381 v0.4.0
+   Compiling ark-crypto-primitives v0.4.0
+   Compiling ark-ed-on-bls12-381 v0.4.0
+   Compiling ark-groth16 v0.4.0
+   Compiling plan-a-joint-circuit v0.1.0 (${REMOTE_DATA}/pets2027/checklist_experiments_v17_2026_10_27/r14_shared_remeasurement/implementation)
+warning: function `trial` is never used
+   --> src/bin/plan_a_proof_cli.rs:114:4
+    |
+114 | fn trial<const L: usize>(
+    |    ^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `plan-a-joint-circuit` (bin "plan_a_proof_cli") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 21.29s

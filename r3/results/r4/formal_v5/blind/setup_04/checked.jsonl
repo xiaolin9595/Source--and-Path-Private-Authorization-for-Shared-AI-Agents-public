@@ -1,0 +1,13 @@
+{"duration_ns":3222140,"event":"stage","stage":"file_read"}
+{"duration_ns":4477316518,"event":"stage","stage":"pk_decode"}
+{"duration_ns":1784355,"event":"stage","stage":"vk_decode"}
+{"duration_ns":4025964311,"event":"stage","stage":"material_decode"}
+{"duration_ns":46204581,"event":"stage","stage":"relation"}
+{"duration_ns":5502780251,"event":"stage","stage":"powers"}
+{"duration_ns":17122111741,"event":"stage","stage":"reconstruction"}
+{"duration_ns":171854826,"event":"stage","stage":"direct_query"}
+{"duration_ns":1253029441,"event":"stage","stage":"b_cross"}
+{"duration_ns":5045776771,"event":"stage","stage":"equations"}
+{"duration_ns":16621635,"event":"stage","stage":"binding"}
+{"duration_ns":37663631404,"event":"stage","stage":"checker_total"}
+{"bytes":{"material":2359456,"pk":2846544,"vk":1064},"checker_call_ns":37668209772,"event":"gate","failed_bundle_rejected":true,"file_read_ns":3222140,"full_load_ns":37671467979,"metrics":{"b_cross_ns":1253029441,"binding_ns":16621635,"checker_total_ns":37663631404,"direct_query_ns":171854826,"equation_ns":5045776771,"material_decode_ns":4025964311,"pk_decode_ns":4477316518,"powers_ns":5502780251,"reconstruction_ns":17122111741,"relation_ns":46204581,"vk_decode_ns":1784355},"prove_ns":195686198,"receipt":"4ac44fe9dfd8fa207f01278150609c81d7fd0a97fcb296fcc2604be3aa04e703","relation":"blind-update","shape_template_constructed_inside_checker_call":true,"verified":true,"verify_ns":2304721}

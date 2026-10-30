@@ -1,0 +1,59 @@
+{
+  "schema": "e2-paper-metrics-v1",
+  "complete": true,
+  "formal_updates": 300,
+  "accepted_formal_updates": 300,
+  "warmups_excluded": 30,
+  "setups": 10,
+  "errors": 0,
+  "units": "milliseconds unless stated otherwise",
+  "bootstrap": {
+    "clusters": 10,
+    "replicates": 10000,
+    "seed": 20261029,
+    "prng": "Python random.Random (MT19937)",
+    "percentile": "type-7 linear interpolation",
+    "shared_cluster_indices_across_metrics": true
+  },
+  "pooled_formal": {
+    "witness_prepare": {"n": 300, "median_ms": 0.893231, "ci95_ms": [0.884262, 0.8994425]},
+    "proof_generate_loaded_pk": {"n": 300, "median_ms": 174.8377235, "ci95_ms": [162.690898, 181.1149365]},
+    "owner_sign_serialize": {"n": 300, "median_ms": 1.769963, "ci95_ms": [1.7132125, 1.908579]},
+    "pure_proof_verify": {"n": 300, "median_ms": 6.521322, "ci95_ms": [6.484158, 6.582]},
+    "server_verify_external": {"n": 300, "median_ms": 16.314057, "ci95_ms": [16.0029705, 16.6012365]},
+    "atomic_replace": {"n": 300, "median_ms": 11.5492815, "ci95_ms": [11.4514125, 11.5845]},
+    "http_request_to_committed_response": {"n": 300, "median_ms": 29.5243145, "ci95_ms": [29.1568935, 30.096981]},
+    "client_prepare_to_response": {"n": 300, "median_ms": 206.6236975, "ci95_ms": [193.872385, 214.2434625]},
+    "publication": null
+  },
+  "deployment_costs": {
+    "setup": {"n": 10, "median_ms": 190.180478, "ci95_ms": [183.5292235, 205.124048]},
+    "checked_pk_load": {"n": 10, "median_ms": 4544.1178995, "ci95_ms": [4270.053524, 5007.492242]},
+    "vk_load_prepare": {"n": 10, "median_ms": 4.300288, "ci95_ms": [4.231659, 5.0319075]}
+  },
+  "position30_minus_position1": {
+    "http": {"n_pairs": 10, "median_ms": 3.1601645, "ci95_ms": [2.491345, 7.795627]},
+    "client": {"n_pairs": 10, "median_ms": -4.1499655, "ci95_ms": [-8.8892905, 4.7850985]}
+  },
+  "shape": {
+    "constraints": 11427,
+    "instance_variables_including_one_constant": 15,
+    "public_inputs": 14,
+    "witness_variables": 8567,
+    "proof_bytes": 192,
+    "pk_bytes": 2846544,
+    "vk_bytes": 1064,
+    "request_bytes_range": [1032, 1036],
+    "matrix_sha256": "b5b94001cc975f101a5aba22cce1429a0bc7643a0d146f7a6e884aacb3815875"
+  },
+  "artifacts": {
+    "observations_sha256": "5ca2bbc0e0eb1f44db4ba19d0920d1801602ea3379c3e0f2c476c63382f93cf3",
+    "analysis_sha256": "a7e8f0e0bc050db5c6bd2a8ff547911117da3a1c5fbe695da7d3689af009e5ad",
+    "reproduced_analysis_sha256": "a7e8f0e0bc050db5c6bd2a8ff547911117da3a1c5fbe695da7d3689af009e5ad",
+    "source_manifest_sha256": "23c25dc6fb7eeaa9596d79da37835a813266412bdffe5bac5dd0e840c13ee714",
+    "gate_manifest_sha256": "8ef08678fbafb1f68089e24258d2951490d75a12ef4ba2195b27bb6165962b76",
+    "driver_sha256": "c5d8eaf561ab32785efb78569b91f29ba03d8b404b8652c260ff93898fed647d",
+    "analyzer_sha256": "88fbed134a54df8a6813a7bcd1bc453156ddaa8b3d1c620dd3d2d4d785eb01c0",
+    "protocol_sha256": "e18d82ca488887e37ddc1493b15f6888e6c6607967647b63b350091f0d55999a"
+  }
+}
