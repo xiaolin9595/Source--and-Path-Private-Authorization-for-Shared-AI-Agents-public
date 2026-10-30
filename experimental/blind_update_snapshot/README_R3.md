@@ -16,16 +16,16 @@ The new request, response, and post-update row contain no grant root, state expi
 
 The inspected baseline has no authority suspension, tombstone, or recovery API. It only supports owner `active=true -> false` and forbids owner `false -> true`. This implementation preserves that behavior inside the proof and does not invent a new authority role or recovery path. The handbook statement that SR active suspension already exists is therefore not implemented evidence.
 
-## Reproduce the functional gate on `206160G`
+## Reproduce the functional gate
 
 ```sh
-rsync -a --delete --exclude target ./ 206160G:/home/lzb/r3_blind_update_impl_codex/
-ssh 206160G 'cd /home/lzb/r3_blind_update_impl_codex/implementation && PATH=/home/lzb/.cargo/bin:$PATH CARGO_HOME=/home/lzb/pets2027_r3_e1_original_20261029/.cargo-home cargo +1.95.0 test --test blind_update --offline'
-ssh 206160G 'cd /home/lzb/r3_blind_update_impl_codex/implementation && PATH=/home/lzb/.cargo/bin:$PATH CARGO_HOME=/home/lzb/pets2027_r3_e1_original_20261029/.cargo-home cargo +1.95.0 build --bin blind_update_fixture --bin plan_a_service_core --offline'
-ssh 206160G 'cd /home/lzb/r3_blind_update_impl_codex/service && BLIND_UPDATE_FIXTURE_BIN=/home/lzb/r3_blind_update_impl_codex/implementation/target/debug/blind_update_fixture PLAN_A_SERVICE_CORE_BIN=/home/lzb/r3_blind_update_impl_codex/implementation/target/debug/plan_a_service_core python3 test_blind_update_service.py -v'
+export ARTIFACT_ROOT="$(pwd)"
+cd "$ARTIFACT_ROOT/implementation" && cargo +1.95.0 test --test blind_update --offline
+cargo +1.95.0 build --bin blind_update_fixture --bin plan_a_service_core --offline
+cd "$ARTIFACT_ROOT/service" && BLIND_UPDATE_FIXTURE_BIN="$ARTIFACT_ROOT/implementation/target/debug/blind_update_fixture" PLAN_A_SERVICE_CORE_BIN="$ARTIFACT_ROOT/implementation/target/debug/plan_a_service_core" python3 test_blind_update_service.py -v
 ```
 
-This is a functional/compile/proof gate, not formal E2 sampling. During formal E1 use of `206160G`, do not run these Rust commands concurrently; the post-review rerun is intentionally pending.
+This is a functional/compile/proof gate, not formal E2 sampling. Run it without competing measurement workloads.
 
 ## Source-diff command
 

@@ -17,9 +17,7 @@ BAD_NAMES = re.compile(
     r"proving[_-]?key|(^|[_.-])pk\.(bin|dat|raw)$|failure\.log$)", re.I
 )
 BAD_TEXT = [
-    ("macOS user path", re.compile(rb"/Users/[A-Za-z0-9._-]+/")),
-    ("mounted personal path", re.compile(rb"/Volumes/[A-Za-z0-9._-]+/")),
-    ("Unix home path", re.compile(rb"/home/[A-Za-z0-9._-]+/")),
+    ("personal filesystem path", re.compile(rb"/(?:Users|Volumes|home)/[A-Za-z0-9._-]+/")),
     ("private key", re.compile(rb"BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY")),
     ("GitHub token", re.compile(rb"(?:gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]+)")),
     ("AWS access key", re.compile(rb"AKIA[0-9A-Z]{16}")),
