@@ -42,3 +42,6 @@ downloaded-ZIP verification recommendation.
 The project-authored material is released under `LICENSE`, subject to the scope
 statement in `LICENSE_SCOPE.json`. Dependency attributions are in
 `THIRD_PARTY_NOTICES.md` and `licenses/third_party/`.
+
+See [Data sources and terms](DATA_SOURCES_AND_TERMS.md) for source-specific roles, provider metadata, applicable terms,
+and frozen input identifiers. Third-party data are not relicensed by the code license.

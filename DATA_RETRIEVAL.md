@@ -10,3 +10,5 @@ CSV and ARFF representations describe the same multiset before analysis.
 Generated figures, tables, and result directories are deliberately omitted.
 Only small synthetic fixtures used directly by tests are included.
 
+See [Data sources and terms](r3/DATA_SOURCES_AND_TERMS.md) for source-specific roles, provider metadata, applicable terms,
+and frozen input identifiers. Third-party data are not relicensed by the code license.
